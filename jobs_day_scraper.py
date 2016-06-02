@@ -6,7 +6,7 @@ import os
 import csv
 import pickle
 
-location=os.path.dirname(os.path.realpath(__file__))
+location=os.path.dirname(os.path.realpath(__file__))+'data/'
 print location
 
 # get the month and year of the *previous* month
@@ -20,11 +20,11 @@ year=currentmonth.year
 
 month=currentmonth.strftime("%B")
 datestring=month+', '+str(year)
-date_start_string=fourmonths+', '+str(startyear)
-date_end_string=threemonthsout+', '+str(endyear)
-two_string=monthdelta(currentmonth,-1).strftime("%B")+', '+monthdelta(currentmonth,-1).strftime("%Y")
-three_string=monthdelta(currentmonth,-2).strftime("%B")+', '+monthdelta(currentmonth,-1).strftime("%Y")
-four_string=monthdelta(currentmonth,-3).strftime("%B")+', '+monthdelta(currentmonth,-1).strftime("%Y")
+date_start_string=three_month_ago.strftime("%B")+', '+str(three_month_ago.year)
+date_end_string=three_month_future.strftime("%B")+', '+str(three_month_future.year)
+one_string=monthdelta(currentmonth,-1).strftime("%B")+', '+str(one_month_ago.year)
+two_string=monthdelta(currentmonth,-2).strftime("%B")+', '+str(two_month_ago.year)
+three_string=monthdelta(currentmonth,-3).strftime("%B")+', '+str(three_month_ago.year)
 
 # headers
 headers = {'Content-type': 'application/json'}
@@ -53,7 +53,7 @@ def monthdelta(date, delta):
 # function to update all data series
 def data_scrape():
 	# get all series data in one go
-	series=['LNS12300060','CES0500000001','CES9000000001','LNS14000003','LNS14000006','LNS14000009','LNS14000000','LNS13327709','LNS12032194','LNS12600000','CES0500000008','CES2000000001','CES3000000001','CES4200000001','CES6561000001','CES6562000001','CUUR0000SA0']
+	series=['LNS12300060','CES0500000001','CES9000000001','LNS14000003','LNS14000006','LNS14000009','LNS14000000','LNS13327709','LNS12032194','LNS12600000','CES0500000008','CES2000000001','CES3000000001','CES4200000001','CES6561000001','CES6562000001','CUUR0000SA0','CES7000000001']
 	data = json.dumps({"seriesid": series,"startyear":year-1, "endyear":year})
 	p = requests.post('http://api.bls.gov/publicAPI/v2/timeseries/data/', data=data, headers=headers)
 	json_data = json.loads(p.text)
@@ -82,16 +82,17 @@ def graph1(json_data,comparison):
 		three_months=[]
 
 		for time_period in temp['data']:
-			if time_period['periodName']==month:
-				data.append([time_period['value'],datestring])
+			if time_period['periodName']==month and int(time_period['year'])==year:
+				if datestring not in [row[1] for row in data]:
+					data.append([float(time_period['value']),datestring])
+				
 				three_months.append(float(time_period['value']))
 
 		for row in data:
-			if row[1]==three_string or row[1]==two_string:
+			if row[1]==one_string or row[1]==two_string:
 				three_months.append(float(row[0]))
 
 		average=sum(three_months)/len(three_months)
-		print 'average for graph 1: ',average
 
 		for i,row in enumerate(data):
 			if row[5]=='3-month average':
@@ -104,27 +105,29 @@ def graph1(json_data,comparison):
 			for row in data:
 				writer.writerow(row)
 
-def graph2(json_data):
+def graph2(json_data,comparison):
 	# graph 2 - load existing data:
 	with open(location+'jobs-g2.csv','rU') as cfile:
 		reader=csv.reader(cfile)
 		data=[row for row in reader]
 
 	temp=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12300060'][0]
+	temp_compare=[series for series in comparison['Results']['series'] if series['seriesID']=='LNS12300060'][0]
 
-	elapsed=8+((2016-now.year)*12)+(1/12)*(now.month-1)
+	if temp!=temp_compare:
+		elapsed=8+((2016-now.year)*12)+(1/12)*(now.month-1)
 
-	for time_period in temp['data']:
-		if time_period['periodName']==month:
-			epop=time_period['value']
-			data.append(['December 2007-Present',epop,elapsed,float(epop)-79.7])
+		for time_period in temp['data']:
+			if time_period['periodName']==month and int(time_period['year'])==year:
+				epop=float(time_period['value'])
+				data.append(['December 2007-Present',epop,elapsed,float(epop)-79.7])
 
-	with open(location+'jobs-g1.csv','w') as cfile:
-		writer=csv.writer(cfile)
-		for row in data:
-			writer.writerow(row)
+		with open(location+'jobs-g2.csv','w') as cfile:
+			writer=csv.writer(cfile)
+			for row in data:
+				writer.writerow(row)
 
-def graph3(json_data):
+def graph3(json_data,comparison):
 	# graph 3 - load existing data:
 	with open(location+'jobs-g3.csv','rU') as cfile:
 		reader=csv.reader(cfile)
@@ -132,37 +135,344 @@ def graph3(json_data):
 
 	temp_private=[series for series in json_data['Results']['series'] if series['seriesID']=='CES0500000001'][0]
 	temp_public=[series for series in json_data['Results']['series'] if series['seriesID']=='CES9000000001'][0]
-
-	three_months_private=[]
-	three_months_public=[]
+	temp_private_compare=[series for series in comparison['Results']['series'] if series['seriesID']=='CES0500000001'][0]
+	temp_public_compare=[series for series in comparison['Results']['series'] if series['seriesID']=='CES9000000001'][0]
 
 	start_emp_private=115778
 	start_emp_public=22219
 
-	for time_period in temp_private['data']:
-		if time_period['periodName']==month:
-			private_emp=time_period['value']
-			data.append([datestring,private_emp,100*(private_emp/start_emp_private,'Private Sector')])
-			three_months_private.append(float(time_period['value']))
+	if temp_private!=temp_private_compare:
+		for time_period in temp_private['data']:
+			if time_period['periodName']==month and int(time_period['year'])==year:
+				private_emp=float(time_period['value'])
+				data.append([datestring,private_emp,100*(private_emp/start_emp_private),'Private Sector'])
 
-	for time_period in temp_public['data']:
-		if time_period['periodName']==month:
-			public_emp=time_period['value']
-			data.append([datestring,public_emp,100*(public_emp/start_emp_public,'Public Sector')])
-			three_months_public.append(float(time_period['value']))
+		# since there is preliminary data, make sure you go back three months and check those against the new data
+		for i,row in enumerate(data):
+			if row[0]==two_string and row[3]=='Private Sector':
+				match=[item for item in temp_private if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year and item[3]=='Private Sector']
+				private_emp=float(time_period['value'])
+				data[i][1]=private_emp
+				data[i][2]=100*(private_emp/start_emp_private)
 
-	for row in data:
-		if row[1]==three_string or row[1]==two_string:
-			if row[3]=='Public Sector':
-				three_months_public.append(float(row[2]))
-			if row[3]=='Private Sector':
-				three_months_private.append(float(row[2]))
+			if row[0]==three_string and row[3]=='Private Sector':
+				match=[item for item in temp_private if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year and item[3]=='Private Sector']
+				private_emp=float(time_period['value'])
+				data[i][1]=private_emp
+				data[i][2]=100*(private_emp/start_emp_private)
 
-	average=sum(three_months_public)/len(three_months_public)
-	print 'average for public: ',average
+			if row[0]==one_string and row[3]=='Private Sector':
+				match=[item for item in temp_private if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year and item[3]=='Private Sector']
+				private_emp=float(time_period['value'])
+				data[i][1]=private_emp
+				data[i][2]=100*(private_emp/start_emp_private)
 
-	average=sum(three_months_private)/len(three_months_private)
-	print 'average for private: ',average
+	if temp_public!=temp_public_compare:
+		for time_period in temp_public['data']:
+			if time_period['periodName']==month and int(time_period['year'])==year:
+				public_emp=float(time_period['value'])
+				data.append([datestring,public_emp,100*(public_emp/start_emp_public),'Public Sector'])
+
+		# since there is preliminary data, make sure you go back three months and check those against the new data
+		for i,row in enumerate(data):
+			if row[0]==two_string and row[3]=='Public Sector':
+				match=[item for item in temp_public if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year and item[3]=='Public Sector']
+				public_emp=float(time_period['value'])
+				data[i][1]=public_emp
+				data[i][2]=100*(public_emp/start_emp_public)
+
+			if row[0]==three_string and row[3]=='Public Sector':
+				match=[item for item in temp_public if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year and item[3]=='Public Sector']
+				public_emp=float(time_period['value'])
+				data[i][1]=public_emp
+				data[i][2]=100*(public_emp/start_emp_public)
+
+			if row[0]==one_string and row[3]=='Public Sector':
+				match=[item for item in temp_public if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year and item[3]=='Public Sector']
+				public_emp=float(time_period['value'])
+				data[i][1]=public_emp
+				data[i][2]=100*(public_emp/start_emp_public)
+
+	with open(location+'jobs-g3.csv','w') as cfile:
+		writer=csv.writer(cfile)
+		for row in data:
+			writer.writerow(row)
+
+def graph7(json_data,comparison):
+	# graph 7 - load existing data:
+	with open(location+'jobs-g7.csv','rU') as cfile:
+		reader=csv.reader(cfile)
+		data=[row for row in reader]
+
+	temp_inflation=[series for series in json_data['Results']['series'] if series['seriesID']=='CUUR0000SA0'][0]
+	temp_earnings=[series for series in json_data['Results']['series'] if series['seriesID']=='CES0500000008'][0]
+	temp_inflation_compare=[series for series in comparison['Results']['series'] if series['seriesID']=='CUUR0000SA0'][0]
+	temp_earnings_compare=[series for series in comparison['Results']['series'] if series['seriesID']=='CES0500000008'][0]
+
+	oneyearstring=month+', '+str(year-1)
+	oys_1=one_month_ago.strftime("%B")+', '+str(one_month_ago.year-1)
+	oys_2=two_month_ago.strftime("%B")+', '+str(two_month_ago.year-1)
+	oys_3=three_month_ago.strftime("%B")+', '+str(three_month_ago.year-1)
+
+	if temp_earnings!=temp_earnings_compare:
+		for time_period in temp_earnings_compare['data']:
+			if time_period['periodName']==month and int(time_period['year'])==year:
+				earnings=float(time_period['value'])
+				for row in data:
+					if row[0]==oneyearstring and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
+						old_earnings=row[3]
+
+				growth=100*(float(earnings)-float(old_earnings))/float(old_earnings)
+				data.append([datestring,growth,'Year over year change in earnings for production and nonsupervisory workers',earnings])
+
+		# since there is preliminary data, make sure you go back three months and check those against the new data
+		for i,row in enumerate(data):
+			if row[0]==two_string and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
+				match=[item for item in temp_earnings_compare if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
+				earnings=float(time_period['value'])
+
+				for row in data:
+					if row[0]==oys_2 and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
+						old_earnings=row[3]
+
+				data[i][1]=100*(float(earnings)-float(old_earnings))/float(old_earnings)
+				data[i][3]=earnings
+
+			if row[0]==three_string and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
+				match=[item for item in temp_earnings_compare if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
+				earnings=float(time_period['value'])
+
+				for row in data:
+					if row[0]==oys_3 and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
+						old_earnings=row[3]
+
+				data[i][1]=100*(float(earnings)-float(old_earnings))/float(old_earnings)
+				data[i][3]=earnings
+
+			if row[0]==one_string and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
+				match=[item for item in temp_earnings_compare if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
+				earnings=float(time_period['value'])
+
+				for row in data:
+					if row[0]==oys_1 and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
+						old_earnings=row[3]
+
+				data[i][1]=100*(float(earnings)-float(old_earnings))/float(old_earnings)
+				data[i][3]=earnings
+
+	if temp_inflation!=temp_inflation_compare:
+		for time_period in temp_inflation['data']:
+			if time_period['periodName']==month and int(time_period['year'])==year:
+				inflation=float(time_period['value'])
+				for row in data:
+					if row[0]==oneyearstring and row[2]=='Annual Inflation':
+						old_inflation=row[3]
+
+				growth=100*(float(inflation)-float(old_inflation))/float(old_inflation)
+				data.append([datestring,growth,'Annual Inflation',inflation])
+
+	with open(location+'jobs-g7.csv','w') as cfile:
+		writer=csv.writer(cfile)
+		for row in data:
+			writer.writerow(row)
 
 
-{u'status': u'REQUEST_SUCCEEDED', u'message': [], u'Results': {u'series': [{u'seriesID': u'CES6561000001', u'data': [{u'footnotes': [{u'text': u'preliminary', u'code': u'P'}], u'periodName': u'April', u'period': u'M04', u'value': u'3529.6', u'year': u'2016'}, {u'footnotes': [{u'text': u'preliminary', u'code': u'P'}], u'periodName': u'March', u'period': u'M03', u'value': u'3513.7', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'February', u'period': u'M02', u'value': u'3505.3', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'January', u'period': u'M01', u'value': u'3484.4', u'year': u'2016'}]}, {u'seriesID': u'CES0500000001', u'data': [{u'footnotes': [{u'text': u'preliminary', u'code': u'P'}], u'periodName': u'April', u'period': u'M04', u'value': u'121838', u'year': u'2016'}, {u'footnotes': [{u'text': u'preliminary', u'code': u'P'}], u'periodName': u'March', u'period': u'M03', u'value': u'121667', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'February', u'period': u'M02', u'value': u'121483', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'January', u'period': u'M01', u'value': u'121261', u'year': u'2016'}]}, {u'seriesID': u'LNS14000000', u'data': [{u'footnotes': [{}], u'periodName': u'April', u'period': u'M04', u'value': u'5.0', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'March', u'period': u'M03', u'value': u'5.0', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'February', u'period': u'M02', u'value': u'4.9', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'January', u'period': u'M01', u'value': u'4.9', u'year': u'2016'}]}, {u'seriesID': u'LNS12300060', u'data': [{u'footnotes': [{}], u'periodName': u'April', u'period': u'M04', u'value': u'77.7', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'March', u'period': u'M03', u'value': u'78.0', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'February', u'period': u'M02', u'value': u'77.8', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'January', u'period': u'M01', u'value': u'77.7', u'year': u'2016'}]}, {u'seriesID': u'LNS14000003', u'data': [{u'footnotes': [{}], u'periodName': u'April', u'period': u'M04', u'value': u'4.3', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'March', u'period': u'M03', u'value': u'4.3', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'February', u'period': u'M02', u'value': u'4.3', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'January', u'period': u'M01', u'value': u'4.3', u'year': u'2016'}]}, {u'seriesID': u'LNS14000006', u'data': [{u'footnotes': [{}], u'periodName': u'April', u'period': u'M04', u'value': u'8.8', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'March', u'period': u'M03', u'value': u'9.0', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'February', u'period': u'M02', u'value': u'8.8', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'January', u'period': u'M01', u'value': u'8.8', u'year': u'2016'}]}, {u'seriesID': u'CES0500000008', u'data': [{u'footnotes': [{u'text': u'preliminary', u'code': u'P'}], u'periodName': u'April', u'period': u'M04', u'value': u'21.45', u'year': u'2016'}, {u'footnotes': [{u'text': u'preliminary', u'code': u'P'}], u'periodName': u'March', u'period': u'M03', u'value': u'21.40', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'February', u'period': u'M02', u'value': u'21.35', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'January', u'period': u'M01', u'value': u'21.33', u'year': u'2016'}]}, {u'seriesID': u'CES2000000001', u'data': [{u'footnotes': [{u'text': u'preliminary', u'code': u'P'}], u'periodName': u'April', u'period': u'M04', u'value': u'6670', u'year': u'2016'}, {u'footnotes': [{u'text': u'preliminary', u'code': u'P'}], u'periodName': u'March', u'period': u'M03', u'value': u'6669', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'February', u'period': u'M02', u'value': u'6628', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'January', u'period': u'M01', u'value': u'6615', u'year': u'2016'}]}, {u'seriesID': u'CES9000000001', u'data': [{u'footnotes': [{u'text': u'preliminary', u'code': u'P'}], u'periodName': u'April', u'period': u'M04', u'value': u'22077', u'year': u'2016'}, {u'footnotes': [{u'text': u'preliminary', u'code': u'P'}], u'periodName': u'March', u'period': u'M03', u'value': u'22088', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'February', u'period': u'M02', u'value': u'22064', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'January', u'period': u'M01', u'value': u'22053', u'year': u'2016'}]}, {u'seriesID': u'LNS14000009', u'data': [{u'footnotes': [{}], u'periodName': u'April', u'period': u'M04', u'value': u'6.1', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'March', u'period': u'M03', u'value': u'5.6', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'February', u'period': u'M02', u'value': u'5.4', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'January', u'period': u'M01', u'value': u'5.9', u'year': u'2016'}]}, {u'seriesID': u'LNS12600000', u'data': [{u'footnotes': [{}], u'periodName': u'April', u'period': u'M04', u'value': u'27797', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'March', u'period': u'M03', u'value': u'27818', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'February', u'period': u'M02', u'value': u'27853', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'January', u'period': u'M01', u'value': u'27364', u'year': u'2016'}]}, {u'seriesID': u'CES4200000001', u'data': [{u'footnotes': [{u'text': u'preliminary', u'code': u'P'}], u'periodName': u'April', u'period': u'M04', u'value': u'15915.2', u'year': u'2016'}, {u'footnotes': [{u'text': u'preliminary', u'code': u'P'}], u'periodName': u'March', u'period': u'M03', u'value': u'15918.3', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'February', u'period': u'M02', u'value': u'15879.3', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'January', u'period': u'M01', u'value': u'15827.3', u'year': u'2016'}]}, {u'seriesID': u'LNS13327709', u'data': [{u'footnotes': [{}], u'periodName': u'April', u'period': u'M04', u'value': u'9.7', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'March', u'period': u'M03', u'value': u'9.8', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'February', u'period': u'M02', u'value': u'9.7', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'January', u'period': u'M01', u'value': u'9.9', u'year': u'2016'}]}, {u'seriesID': u'LNS12032194', u'data': [{u'footnotes': [{}], u'periodName': u'April', u'period': u'M04', u'value': u'5962', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'March', u'period': u'M03', u'value': u'6123', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'February', u'period': u'M02', u'value': u'5988', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'January', u'period': u'M01', u'value': u'5988', u'year': u'2016'}]}, {u'seriesID': u'CES6562000001', u'data': [{u'footnotes': [{u'text': u'preliminary', u'code': u'P'}], u'periodName': u'April', u'period': u'M04', u'value': u'19048.3', u'year': u'2016'}, {u'footnotes': [{u'text': u'preliminary', u'code': u'P'}], u'periodName': u'March', u'period': u'M03', u'value': u'19010.1', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'February', u'period': u'M02', u'value': u'18976.1', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'January', u'period': u'M01', u'value': u'18919.4', u'year': u'2016'}]}, {u'seriesID': u'CES3000000001', u'data': [{u'footnotes': [{u'text': u'preliminary', u'code': u'P'}], u'periodName': u'April', u'period': u'M04', u'value': u'12297', u'year': u'2016'}, {u'footnotes': [{u'text': u'preliminary', u'code': u'P'}], u'periodName': u'March', u'period': u'M03', u'value': u'12293', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'February', u'period': u'M02', u'value': u'12322', u'year': u'2016'}, {u'footnotes': [{}], u'periodName': u'January', u'period': u'M01', u'value': u'12338', u'year': u'2016'}]}]}, u'responseTime': 185}
+def graph8(json_data,comparison):
+	# graph 8 - load existing data:
+	with open(location+'jobs-g8.csv','rU') as cfile:
+		reader=csv.reader(cfile)
+		data=[row for row in reader]
+
+	temp_construction=[series for series in json_data['Results']['series'] if series['seriesID']=='CES2000000001'][0]
+	temp_manufacturing=[series for series in json_data['Results']['series'] if series['seriesID']=='CES3000000001'][0]
+	temp_retail=[series for series in json_data['Results']['series'] if series['seriesID']=='CES4200000001'][0]
+	temp_ed=[series for series in json_data['Results']['series'] if series['seriesID']=='CES6561000001'][0]
+	temp_health=[series for series in json_data['Results']['series'] if series['seriesID']=='CES6562000001'][0]
+	temp_leisure=[series for series in json_data['Results']['series'] if series['seriesID']=='CES7000000001'][0]
+
+	temp_construction_compare=[series for series in json_data['Results']['series'] if series['seriesID']=='CES2000000001'][0]
+	temp_manufacturing_compare=[series for series in json_data['Results']['series'] if series['seriesID']=='CES3000000001'][0]
+	temp_retail_compare=[series for series in json_data['Results']['series'] if series['seriesID']=='CES4200000001'][0]
+	temp_ed_compare=[series for series in json_data['Results']['series'] if series['seriesID']=='CES6561000001'][0]
+	temp_health_compare=[series for series in json_data['Results']['series'] if series['seriesID']=='CES6562000001'][0]
+	temp_leisure_compare=[series for series in json_data['Results']['series'] if series['seriesID']=='CES7000000001'][0]
+
+	con_average=7627.3
+	man_average=13877.8
+	ret_average=15516.3
+	edu_average=2941.7
+	hea_average=15734.3
+	lei_average=13427.9
+
+	if temp_construction!=temp_construction_compare:
+		for time_period in temp_construction['data']:
+			if time_period['periodName']==month and int(time_period['year'])==year:
+				raw_emp=float(time_period['value'])
+				data.append([datestring,100*raw_emp/con_average,'Construction',raw_emp,con_average])
+
+		# since there is preliminary data, make sure you go back three months and check those against the new data
+		for i,row in enumerate(data):
+			if row[0]==one_string and row[2]=='Construction':
+				match=[item for item in temp_private if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/con_average
+				data[3]=raw_emp
+
+			if row[0]==two_string and row[2]=='Construction':
+				match=[item for item in temp_private if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/con_average
+				data[3]=raw_emp
+
+			if row[0]==three_string and row[2]=='Construction':
+				match=[item for item in temp_private if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/con_average
+				data[3]=raw_emp
+
+	if temp_manufacturing!=temp_manufacturing_compare:
+		for time_period in temp_manufacturing['data']:
+			if time_period['periodName']==month and int(time_period['year'])==year:
+				raw_emp=float(time_period['value'])
+				data.append([datestring,100*raw_emp/man_average,'Manufacturing',raw_emp,man_average])
+
+		# since there is preliminary data, make sure you go back three months and check those against the new data
+		for i,row in enumerate(data):
+			if row[0]==one_string and row[2]=='Manufacturing':
+				match=[item for item in temp_private if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/man_average
+				data[3]=raw_emp
+
+			if row[0]==two_string and row[2]=='Manufacturing':
+				match=[item for item in temp_private if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/man_average
+				data[3]=raw_emp
+
+			if row[0]==three_string and row[2]=='Manufacturing':
+				match=[item for item in temp_private if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/man_average
+				data[3]=raw_emp
+
+	if temp_retail!=temp_retail_compare:
+		for time_period in temp_retail['data']:
+			if time_period['periodName']==month and int(time_period['year'])==year:
+				raw_emp=float(time_period['value'])
+				data.append([datestring,100*raw_emp/ret_average,'Retail',raw_emp,ret_average])
+
+		# since there is preliminary data, make sure you go back three months and check those against the new data
+		for i,row in enumerate(data):
+			if row[0]==one_string and row[2]=='Retail':
+				match=[item for item in temp_private if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/ret_average
+				data[3]=raw_emp
+
+			if row[0]==two_string and row[2]=='Retail':
+				match=[item for item in temp_private if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/ret_average
+				data[3]=raw_emp
+
+			if row[0]==three_string and row[2]=='Retail':
+				match=[item for item in temp_private if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/ret_average
+				data[3]=raw_emp
+
+	if temp_ed!=temp_ed_compare:
+		for time_period in temp_ed['data']:
+			if time_period['periodName']==month and int(time_period['year'])==year:
+				raw_emp=float(time_period['value'])
+				data.append([datestring,100*raw_emp/edu_average,'Educational Services',raw_emp,edu_average])
+
+		# since there is preliminary data, make sure you go back three months and check those against the new data
+		for i,row in enumerate(data):
+			if row[0]==one_string and row[2]=='Educational Services':
+				match=[item for item in temp_private if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/edu_average
+				data[3]=raw_emp
+
+			if row[0]==two_string and row[2]=='Educational Services':
+				match=[item for item in temp_private if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/edu_average
+				data[3]=raw_emp
+
+			if row[0]==three_string and row[2]=='Educational Services':
+				match=[item for item in temp_private if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/edu_average
+				data[3]=raw_emp
+
+	if temp_health!=temp_health_compare:
+		for time_period in temp_health['data']:
+			if time_period['periodName']==month and int(time_period['year'])==year:
+				raw_emp=float(time_period['value'])
+				data.append([datestring,100*raw_emp/hea_average,'Health care and social assistance',raw_emp,hea_average])
+
+		# since there is preliminary data, make sure you go back three months and check those against the new data
+		for i,row in enumerate(data):
+			if row[0]==one_string and row[2]=='Health care and social assistance':
+				match=[item for item in temp_private if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/hea_average
+				data[3]=raw_emp
+
+			if row[0]==two_string and row[2]=='Health care and social assistance':
+				match=[item for item in temp_private if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/hea_average
+				data[3]=raw_emp
+
+			if row[0]==three_string and row[2]=='Health care and social assistance':
+				match=[item for item in temp_private if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/hea_average
+				data[3]=raw_emp
+
+	if temp_leisure!=temp_leisure_compare:
+		for time_period in temp_leisure['data']:
+			if time_period['periodName']==month and int(time_period['year'])==year:
+				raw_emp=float(time_period['value'])
+				data.append([datestring,100*raw_emp/lei_average,'Leisure and hospitality',raw_emp,lei_average])
+
+		# since there is preliminary data, make sure you go back three months and check those against the new data
+		for i,row in enumerate(data):
+			if row[0]==one_string and row[2]=='Leisure and hospitality':
+				match=[item for item in temp_private if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/lei_average
+				data[3]=raw_emp
+
+			if row[0]==two_string and row[2]=='Leisure and hospitality':
+				match=[item for item in temp_private if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/lei_average
+				data[3]=raw_emp
+
+			if row[0]==three_string and row[2]=='Leisure and hospitality':
+				match=[item for item in temp_private if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
+				raw_emp=time_period['value']
+				data[1]=100*raw_emp/lei_average
+				data[3]=raw_emp
+
+	with open(location+'jobs-g8.csv','w') as cfile:
+		writer=csv.writer(cfile)
+		for row in data:
+			writer.writerow(row)
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,673 +1,673 @@
-date,index,type
-"January, 2007",101,Construction
-"February, 2007",100,Construction
-"March, 2007",101,Construction
-"April, 2007",101,Construction
-"May, 2007",101,Construction
-"June, 2007",101,Construction
-"July, 2007",100,Construction
-"August, 2007",100,Construction
-"September, 2007",99,Construction
-"October, 2007",99,Construction
-"November, 2007",99,Construction
-"December, 2007",98,Construction
-"January, 2008",98,Construction
-"February, 2008",98,Construction
-"March, 2008",97,Construction
-"April, 2008",96,Construction
-"May, 2008",95,Construction
-"June, 2008",95,Construction
-"July, 2008",94,Construction
-"August, 2008",93,Construction
-"September, 2008",92,Construction
-"October, 2008",91,Construction
-"November, 2008",89,Construction
-"December, 2008",88,Construction
-"January, 2009",86,Construction
-"February, 2009",85,Construction
-"March, 2009",82,Construction
-"April, 2009",81,Construction
-"May, 2009",80,Construction
-"June, 2009",79,Construction
-"July, 2009",78,Construction
-"August, 2009",77,Construction
-"September, 2009",76,Construction
-"October, 2009",75,Construction
-"November, 2009",75,Construction
-"December, 2009",74,Construction
-"January, 2010",73,Construction
-"February, 2010",72,Construction
-"March, 2010",73,Construction
-"April, 2010",73,Construction
-"May, 2010",72,Construction
-"June, 2010",72,Construction
-"July, 2010",72,Construction
-"August, 2010",72,Construction
-"September, 2010",72,Construction
-"October, 2010",72,Construction
-"November, 2010",72,Construction
-"December, 2010",72,Construction
-"January, 2011",71,Construction
-"February, 2011",71,Construction
-"March, 2011",72,Construction
-"April, 2011",72,Construction
-"May, 2011",72,Construction
-"June, 2011",72,Construction
-"July, 2011",73,Construction
-"August, 2011",73,Construction
-"September, 2011",73,Construction
-"October, 2011",73,Construction
-"November, 2011",73,Construction
-"December, 2011",74,Construction
-"January, 2012",74,Construction
-"February, 2012",74,Construction
-"March, 2012",74,Construction
-"April, 2012",74,Construction
-"May, 2012",73,Construction
-"June, 2012",74,Construction
-"July, 2012",74,Construction
-"August, 2012",74,Construction
-"September, 2012",74,Construction
-"October, 2012",74,Construction
-"November, 2012",74,Construction
-"December, 2012",75,Construction
-"January, 2013",75,Construction
-"February, 2013",76,Construction
-"March, 2013",76,Construction
-"April, 2013",76,Construction
-"May, 2013",76,Construction
-"June, 2013",77,Construction
-"July, 2013",77,Construction
-"August, 2013",77,Construction
-"September, 2013",77,Construction
-"October, 2013",78,Construction
-"November, 2013",78,Construction
-"December, 2013",78,Construction
-"January, 2014",79,Construction
-"February, 2014",79,Construction
-"March, 2014",79,Construction
-"April, 2014",80,Construction
-"May, 2014",80,Construction
-"June, 2014",80,Construction
-"July, 2014",81,Construction
-"August, 2014",81,Construction
-"September, 2014",82,Construction
-"October, 2014",82,Construction
-"November, 2014",82,Construction
-"December, 2014",83,Construction
-"January, 2015",83,Construction
-"February, 2015",84,Construction
-"March, 2015",84,Construction
-"April, 2015",84,Construction
-"May, 2015",84,Construction
-"June, 2015",84,Construction
-"July, 2015",84,Construction
-"August, 2015",84,Construction
-"September, 2015",85,Construction
-"October, 2015",85,Construction
-"November, 2015",86,Construction
-"December, 2015",86,Construction
-"January, 2016",87,Construction
-"February, 2016",87,Construction
-"March, 2016",87,Construction
-"April, 2016",87,Construction
-"January, 2007",101,Manufacturing
-"February, 2007",101,Manufacturing
-"March, 2007",101,Manufacturing
-"April, 2007",100,Manufacturing
-"May, 2007",100,Manufacturing
-"June, 2007",100,Manufacturing
-"July, 2007",100,Manufacturing
-"August, 2007",100,Manufacturing
-"September, 2007",99,Manufacturing
-"October, 2007",99,Manufacturing
-"November, 2007",99,Manufacturing
-"December, 2007",99,Manufacturing
-"January, 2008",99,Manufacturing
-"February, 2008",99,Manufacturing
-"March, 2008",98,Manufacturing
-"April, 2008",98,Manufacturing
-"May, 2008",98,Manufacturing
-"June, 2008",97,Manufacturing
-"July, 2008",97,Manufacturing
-"August, 2008",96,Manufacturing
-"September, 2008",96,Manufacturing
-"October, 2008",95,Manufacturing
-"November, 2008",94,Manufacturing
-"December, 2008",93,Manufacturing
-"January, 2009",91,Manufacturing
-"February, 2009",89,Manufacturing
-"March, 2009",88,Manufacturing
-"April, 2009",87,Manufacturing
-"May, 2009",85,Manufacturing
-"June, 2009",84,Manufacturing
-"July, 2009",84,Manufacturing
-"August, 2009",84,Manufacturing
-"September, 2009",84,Manufacturing
-"October, 2009",83,Manufacturing
-"November, 2009",83,Manufacturing
-"December, 2009",83,Manufacturing
-"January, 2010",83,Manufacturing
-"February, 2010",83,Manufacturing
-"March, 2010",83,Manufacturing
-"April, 2010",83,Manufacturing
-"May, 2010",83,Manufacturing
-"June, 2010",83,Manufacturing
-"July, 2010",83,Manufacturing
-"August, 2010",83,Manufacturing
-"September, 2010",83,Manufacturing
-"October, 2010",83,Manufacturing
-"November, 2010",83,Manufacturing
-"December, 2010",84,Manufacturing
-"January, 2011",84,Manufacturing
-"February, 2011",84,Manufacturing
-"March, 2011",84,Manufacturing
-"April, 2011",84,Manufacturing
-"May, 2011",84,Manufacturing
-"June, 2011",85,Manufacturing
-"July, 2011",85,Manufacturing
-"August, 2011",85,Manufacturing
-"September, 2011",85,Manufacturing
-"October, 2011",85,Manufacturing
-"November, 2011",85,Manufacturing
-"December, 2011",85,Manufacturing
-"January, 2012",85,Manufacturing
-"February, 2012",85,Manufacturing
-"March, 2012",86,Manufacturing
-"April, 2012",86,Manufacturing
-"May, 2012",86,Manufacturing
-"June, 2012",86,Manufacturing
-"July, 2012",86,Manufacturing
-"August, 2012",86,Manufacturing
-"September, 2012",86,Manufacturing
-"October, 2012",86,Manufacturing
-"November, 2012",86,Manufacturing
-"December, 2012",86,Manufacturing
-"January, 2013",86,Manufacturing
-"February, 2013",86,Manufacturing
-"March, 2013",86,Manufacturing
-"April, 2013",86,Manufacturing
-"May, 2013",86,Manufacturing
-"June, 2013",86,Manufacturing
-"July, 2013",86,Manufacturing
-"August, 2013",87,Manufacturing
-"September, 2013",87,Manufacturing
-"October, 2013",87,Manufacturing
-"November, 2013",87,Manufacturing
-"December, 2013",87,Manufacturing
-"January, 2014",87,Manufacturing
-"February, 2014",87,Manufacturing
-"March, 2014",87,Manufacturing
-"April, 2014",87,Manufacturing
-"May, 2014",88,Manufacturing
-"June, 2014",88,Manufacturing
-"July, 2014",88,Manufacturing
-"August, 2014",88,Manufacturing
-"September, 2014",88,Manufacturing
-"October, 2014",88,Manufacturing
-"November, 2014",88,Manufacturing
-"December, 2014",89,Manufacturing
-"January, 2015",89,Manufacturing
-"February, 2015",89,Manufacturing
-"March, 2015",89,Manufacturing
-"April, 2015",89,Manufacturing
-"May, 2015",89,Manufacturing
-"June, 2015",89,Manufacturing
-"July, 2015",89,Manufacturing
-"August, 2015",89,Manufacturing
-"September, 2015",89,Manufacturing
-"October, 2015",89,Manufacturing
-"November, 2015",89,Manufacturing
-"December, 2015",89,Manufacturing
-"January, 2016",89,Manufacturing
-"February, 2016",89,Manufacturing
-"March, 2016",89,Manufacturing
-"April, 2016",89,Manufacturing
-"January, 2007",100,Retail
-"February, 2007",100,Retail
-"March, 2007",100,Retail
-"April, 2007",100,Retail
-"May, 2007",100,Retail
-"June, 2007",100,Retail
-"July, 2007",100,Retail
-"August, 2007",100,Retail
-"September, 2007",100,Retail
-"October, 2007",100,Retail
-"November, 2007",100,Retail
-"December, 2007",100,Retail
-"January, 2008",100,Retail
-"February, 2008",100,Retail
-"March, 2008",100,Retail
-"April, 2008",99,Retail
-"May, 2008",99,Retail
-"June, 2008",99,Retail
-"July, 2008",99,Retail
-"August, 2008",98,Retail
-"September, 2008",98,Retail
-"October, 2008",97,Retail
-"November, 2008",97,Retail
-"December, 2008",96,Retail
-"January, 2009",95,Retail
-"February, 2009",95,Retail
-"March, 2009",94,Retail
-"April, 2009",94,Retail
-"May, 2009",94,Retail
-"June, 2009",94,Retail
-"July, 2009",93,Retail
-"August, 2009",93,Retail
-"September, 2009",93,Retail
-"October, 2009",93,Retail
-"November, 2009",93,Retail
-"December, 2009",92,Retail
-"January, 2010",93,Retail
-"February, 2010",93,Retail
-"March, 2010",93,Retail
-"April, 2010",93,Retail
-"May, 2010",93,Retail
-"June, 2010",93,Retail
-"July, 2010",93,Retail
-"August, 2010",93,Retail
-"September, 2010",93,Retail
-"October, 2010",93,Retail
-"November, 2010",93,Retail
-"December, 2010",93,Retail
-"January, 2011",94,Retail
-"February, 2011",94,Retail
-"March, 2011",94,Retail
-"April, 2011",94,Retail
-"May, 2011",94,Retail
-"June, 2011",95,Retail
-"July, 2011",95,Retail
-"August, 2011",95,Retail
-"September, 2011",95,Retail
-"October, 2011",95,Retail
-"November, 2011",95,Retail
-"December, 2011",95,Retail
-"January, 2012",95,Retail
-"February, 2012",95,Retail
-"March, 2012",95,Retail
-"April, 2012",96,Retail
-"May, 2012",96,Retail
-"June, 2012",95,Retail
-"July, 2012",95,Retail
-"August, 2012",95,Retail
-"September, 2012",96,Retail
-"October, 2012",96,Retail
-"November, 2012",96,Retail
-"December, 2012",96,Retail
-"January, 2013",96,Retail
-"February, 2013",96,Retail
-"March, 2013",96,Retail
-"April, 2013",96,Retail
-"May, 2013",97,Retail
-"June, 2013",97,Retail
-"July, 2013",97,Retail
-"August, 2013",98,Retail
-"September, 2013",98,Retail
-"October, 2013",98,Retail
-"November, 2013",98,Retail
-"December, 2013",98,Retail
-"January, 2014",98,Retail
-"February, 2014",98,Retail
-"March, 2014",98,Retail
-"April, 2014",99,Retail
-"May, 2014",99,Retail
-"June, 2014",99,Retail
-"July, 2014",99,Retail
-"August, 2014",99,Retail
-"September, 2014",99,Retail
-"October, 2014",99,Retail
-"November, 2014",100,Retail
-"December, 2014",100,Retail
-"January, 2015",100,Retail
-"February, 2015",100,Retail
-"March, 2015",100,Retail
-"April, 2015",100,Retail
-"May, 2015",101,Retail
-"June, 2015",101,Retail
-"July, 2015",101,Retail
-"August, 2015",101,Retail
-"September, 2015",101,Retail
-"October, 2015",101,Retail
-"November, 2015",102,Retail
-"December, 2015",102,Retail
-"January, 2016",102,Retail
-"February, 2016",102,Retail
-"March, 2016",103,Retail
-"April, 2016",103,Retail
-"January, 2007",99,Educational services
-"February, 2007",99,Educational services
-"March, 2007",99,Educational services
-"April, 2007",100,Educational services
-"May, 2007",100,Educational services
-"June, 2007",100,Educational services
-"July, 2007",100,Educational services
-"August, 2007",100,Educational services
-"September, 2007",101,Educational services
-"October, 2007",101,Educational services
-"November, 2007",101,Educational services
-"December, 2007",101,Educational services
-"January, 2008",102,Educational services
-"February, 2008",102,Educational services
-"March, 2008",102,Educational services
-"April, 2008",102,Educational services
-"May, 2008",103,Educational services
-"June, 2008",104,Educational services
-"July, 2008",104,Educational services
-"August, 2008",105,Educational services
-"September, 2008",104,Educational services
-"October, 2008",104,Educational services
-"November, 2008",104,Educational services
-"December, 2008",104,Educational services
-"January, 2009",105,Educational services
-"February, 2009",105,Educational services
-"March, 2009",105,Educational services
-"April, 2009",105,Educational services
-"May, 2009",105,Educational services
-"June, 2009",105,Educational services
-"July, 2009",105,Educational services
-"August, 2009",105,Educational services
-"September, 2009",104,Educational services
-"October, 2009",105,Educational services
-"November, 2009",105,Educational services
-"December, 2009",106,Educational services
-"January, 2010",106,Educational services
-"February, 2010",106,Educational services
-"March, 2010",106,Educational services
-"April, 2010",106,Educational services
-"May, 2010",107,Educational services
-"June, 2010",107,Educational services
-"July, 2010",108,Educational services
-"August, 2010",108,Educational services
-"September, 2010",107,Educational services
-"October, 2010",108,Educational services
-"November, 2010",109,Educational services
-"December, 2010",109,Educational services
-"January, 2011",109,Educational services
-"February, 2011",109,Educational services
-"March, 2011",109,Educational services
-"April, 2011",110,Educational services
-"May, 2011",110,Educational services
-"June, 2011",110,Educational services
-"July, 2011",110,Educational services
-"August, 2011",111,Educational services
-"September, 2011",111,Educational services
-"October, 2011",111,Educational services
-"November, 2011",112,Educational services
-"December, 2011",113,Educational services
-"January, 2012",113,Educational services
-"February, 2012",114,Educational services
-"March, 2012",114,Educational services
-"April, 2012",114,Educational services
-"May, 2012",114,Educational services
-"June, 2012",114,Educational services
-"July, 2012",114,Educational services
-"August, 2012",114,Educational services
-"September, 2012",114,Educational services
-"October, 2012",114,Educational services
-"November, 2012",113,Educational services
-"December, 2012",113,Educational services
-"January, 2013",113,Educational services
-"February, 2013",113,Educational services
-"March, 2013",113,Educational services
-"April, 2013",114,Educational services
-"May, 2013",114,Educational services
-"June, 2013",113,Educational services
-"July, 2013",114,Educational services
-"August, 2013",115,Educational services
-"September, 2013",114,Educational services
-"October, 2013",114,Educational services
-"November, 2013",115,Educational services
-"December, 2013",115,Educational services
-"January, 2014",115,Educational services
-"February, 2014",115,Educational services
-"March, 2014",115,Educational services
-"April, 2014",116,Educational services
-"May, 2014",116,Educational services
-"June, 2014",116,Educational services
-"July, 2014",116,Educational services
-"August, 2014",116,Educational services
-"September, 2014",117,Educational services
-"October, 2014",117,Educational services
-"November, 2014",117,Educational services
-"December, 2014",117,Educational services
-"January, 2015",117,Educational services
-"February, 2015",117,Educational services
-"March, 2015",117,Educational services
-"April, 2015",117,Educational services
-"May, 2015",117,Educational services
-"June, 2015",117,Educational services
-"July, 2015",118,Educational services
-"August, 2015",118,Educational services
-"September, 2015",118,Educational services
-"October, 2015",118,Educational services
-"November, 2015",118,Educational services
-"December, 2015",119,Educational services
-"January, 2016",118,Educational services
-"February, 2016",119,Educational services
-"March, 2016",119,Educational services
-"April, 2016",120,Educational services
-"January, 2007",99,Health care and social assistance
-"February, 2007",99,Health care and social assistance
-"March, 2007",99,Health care and social assistance
-"April, 2007",99,Health care and social assistance
-"May, 2007",100,Health care and social assistance
-"June, 2007",100,Health care and social assistance
-"July, 2007",100,Health care and social assistance
-"August, 2007",100,Health care and social assistance
-"September, 2007",101,Health care and social assistance
-"October, 2007",101,Health care and social assistance
-"November, 2007",101,Health care and social assistance
-"December, 2007",101,Health care and social assistance
-"January, 2008",102,Health care and social assistance
-"February, 2008",102,Health care and social assistance
-"March, 2008",102,Health care and social assistance
-"April, 2008",102,Health care and social assistance
-"May, 2008",103,Health care and social assistance
-"June, 2008",103,Health care and social assistance
-"July, 2008",103,Health care and social assistance
-"August, 2008",103,Health care and social assistance
-"September, 2008",103,Health care and social assistance
-"October, 2008",104,Health care and social assistance
-"November, 2008",104,Health care and social assistance
-"December, 2008",104,Health care and social assistance
-"January, 2009",104,Health care and social assistance
-"February, 2009",104,Health care and social assistance
-"March, 2009",104,Health care and social assistance
-"April, 2009",105,Health care and social assistance
-"May, 2009",105,Health care and social assistance
-"June, 2009",105,Health care and social assistance
-"July, 2009",105,Health care and social assistance
-"August, 2009",105,Health care and social assistance
-"September, 2009",106,Health care and social assistance
-"October, 2009",106,Health care and social assistance
-"November, 2009",106,Health care and social assistance
-"December, 2009",106,Health care and social assistance
-"January, 2010",106,Health care and social assistance
-"February, 2010",106,Health care and social assistance
-"March, 2010",107,Health care and social assistance
-"April, 2010",107,Health care and social assistance
-"May, 2010",107,Health care and social assistance
-"June, 2010",107,Health care and social assistance
-"July, 2010",107,Health care and social assistance
-"August, 2010",107,Health care and social assistance
-"September, 2010",107,Health care and social assistance
-"October, 2010",107,Health care and social assistance
-"November, 2010",108,Health care and social assistance
-"December, 2010",108,Health care and social assistance
-"January, 2011",108,Health care and social assistance
-"February, 2011",108,Health care and social assistance
-"March, 2011",108,Health care and social assistance
-"April, 2011",108,Health care and social assistance
-"May, 2011",108,Health care and social assistance
-"June, 2011",108,Health care and social assistance
-"July, 2011",109,Health care and social assistance
-"August, 2011",109,Health care and social assistance
-"September, 2011",109,Health care and social assistance
-"October, 2011",109,Health care and social assistance
-"November, 2011",109,Health care and social assistance
-"December, 2011",109,Health care and social assistance
-"January, 2012",110,Health care and social assistance
-"February, 2012",110,Health care and social assistance
-"March, 2012",110,Health care and social assistance
-"April, 2012",110,Health care and social assistance
-"May, 2012",111,Health care and social assistance
-"June, 2012",111,Health care and social assistance
-"July, 2012",111,Health care and social assistance
-"August, 2012",111,Health care and social assistance
-"September, 2012",111,Health care and social assistance
-"October, 2012",111,Health care and social assistance
-"November, 2012",112,Health care and social assistance
-"December, 2012",112,Health care and social assistance
-"January, 2013",112,Health care and social assistance
-"February, 2013",112,Health care and social assistance
-"March, 2013",112,Health care and social assistance
-"April, 2013",113,Health care and social assistance
-"May, 2013",113,Health care and social assistance
-"June, 2013",113,Health care and social assistance
-"July, 2013",113,Health care and social assistance
-"August, 2013",113,Health care and social assistance
-"September, 2013",113,Health care and social assistance
-"October, 2013",113,Health care and social assistance
-"November, 2013",113,Health care and social assistance
-"December, 2013",113,Health care and social assistance
-"January, 2014",113,Health care and social assistance
-"February, 2014",114,Health care and social assistance
-"March, 2014",114,Health care and social assistance
-"April, 2014",114,Health care and social assistance
-"May, 2014",114,Health care and social assistance
-"June, 2014",114,Health care and social assistance
-"July, 2014",115,Health care and social assistance
-"August, 2014",115,Health care and social assistance
-"September, 2014",115,Health care and social assistance
-"October, 2014",115,Health care and social assistance
-"November, 2014",116,Health care and social assistance
-"December, 2014",116,Health care and social assistance
-"January, 2015",116,Health care and social assistance
-"February, 2015",117,Health care and social assistance
-"March, 2015",117,Health care and social assistance
-"April, 2015",117,Health care and social assistance
-"May, 2015",118,Health care and social assistance
-"June, 2015",118,Health care and social assistance
-"July, 2015",118,Health care and social assistance
-"August, 2015",119,Health care and social assistance
-"September, 2015",119,Health care and social assistance
-"October, 2015",119,Health care and social assistance
-"November, 2015",120,Health care and social assistance
-"December, 2015",120,Health care and social assistance
-"January, 2016",120,Health care and social assistance
-"February, 2016",121,Health care and social assistance
-"March, 2016",121,Health care and social assistance
-"April, 2016",121,Health care and social assistance
-"January, 2007",99,Leisure and hospitality
-"February, 2007",100,Leisure and hospitality
-"March, 2007",100,Leisure and hospitality
-"April, 2007",100,Leisure and hospitality
-"May, 2007",100,Leisure and hospitality
-"June, 2007",100,Leisure and hospitality
-"July, 2007",100,Leisure and hospitality
-"August, 2007",100,Leisure and hospitality
-"September, 2007",100,Leisure and hospitality
-"October, 2007",101,Leisure and hospitality
-"November, 2007",101,Leisure and hospitality
-"December, 2007",101,Leisure and hospitality
-"January, 2008",101,Leisure and hospitality
-"February, 2008",101,Leisure and hospitality
-"March, 2008",101,Leisure and hospitality
-"April, 2008",101,Leisure and hospitality
-"May, 2008",101,Leisure and hospitality
-"June, 2008",100,Leisure and hospitality
-"July, 2008",100,Leisure and hospitality
-"August, 2008",100,Leisure and hospitality
-"September, 2008",100,Leisure and hospitality
-"October, 2008",99,Leisure and hospitality
-"November, 2008",99,Leisure and hospitality
-"December, 2008",99,Leisure and hospitality
-"January, 2009",98,Leisure and hospitality
-"February, 2009",98,Leisure and hospitality
-"March, 2009",98,Leisure and hospitality
-"April, 2009",97,Leisure and hospitality
-"May, 2009",98,Leisure and hospitality
-"June, 2009",97,Leisure and hospitality
-"July, 2009",97,Leisure and hospitality
-"August, 2009",97,Leisure and hospitality
-"September, 2009",97,Leisure and hospitality
-"October, 2009",97,Leisure and hospitality
-"November, 2009",97,Leisure and hospitality
-"December, 2009",96,Leisure and hospitality
-"January, 2010",96,Leisure and hospitality
-"February, 2010",96,Leisure and hospitality
-"March, 2010",96,Leisure and hospitality
-"April, 2010",97,Leisure and hospitality
-"May, 2010",97,Leisure and hospitality
-"June, 2010",97,Leisure and hospitality
-"July, 2010",97,Leisure and hospitality
-"August, 2010",97,Leisure and hospitality
-"September, 2010",98,Leisure and hospitality
-"October, 2010",98,Leisure and hospitality
-"November, 2010",98,Leisure and hospitality
-"December, 2010",98,Leisure and hospitality
-"January, 2011",98,Leisure and hospitality
-"February, 2011",98,Leisure and hospitality
-"March, 2011",99,Leisure and hospitality
-"April, 2011",99,Leisure and hospitality
-"May, 2011",99,Leisure and hospitality
-"June, 2011",99,Leisure and hospitality
-"July, 2011",100,Leisure and hospitality
-"August, 2011",100,Leisure and hospitality
-"September, 2011",100,Leisure and hospitality
-"October, 2011",100,Leisure and hospitality
-"November, 2011",101,Leisure and hospitality
-"December, 2011",101,Leisure and hospitality
-"January, 2012",101,Leisure and hospitality
-"February, 2012",102,Leisure and hospitality
-"March, 2012",102,Leisure and hospitality
-"April, 2012",102,Leisure and hospitality
-"May, 2012",102,Leisure and hospitality
-"June, 2012",102,Leisure and hospitality
-"July, 2012",102,Leisure and hospitality
-"August, 2012",103,Leisure and hospitality
-"September, 2012",103,Leisure and hospitality
-"October, 2012",103,Leisure and hospitality
-"November, 2012",104,Leisure and hospitality
-"December, 2012",104,Leisure and hospitality
-"January, 2013",104,Leisure and hospitality
-"February, 2013",105,Leisure and hospitality
-"March, 2013",105,Leisure and hospitality
-"April, 2013",105,Leisure and hospitality
-"May, 2013",106,Leisure and hospitality
-"June, 2013",106,Leisure and hospitality
-"July, 2013",106,Leisure and hospitality
-"August, 2013",107,Leisure and hospitality
-"September, 2013",107,Leisure and hospitality
-"October, 2013",107,Leisure and hospitality
-"November, 2013",108,Leisure and hospitality
-"December, 2013",108,Leisure and hospitality
-"January, 2014",108,Leisure and hospitality
-"February, 2014",108,Leisure and hospitality
-"March, 2014",108,Leisure and hospitality
-"April, 2014",109,Leisure and hospitality
-"May, 2014",109,Leisure and hospitality
-"June, 2014",109,Leisure and hospitality
-"July, 2014",110,Leisure and hospitality
-"August, 2014",110,Leisure and hospitality
-"September, 2014",110,Leisure and hospitality
-"October, 2014",110,Leisure and hospitality
-"November, 2014",111,Leisure and hospitality
-"December, 2014",111,Leisure and hospitality
-"January, 2015",111,Leisure and hospitality
-"February, 2015",112,Leisure and hospitality
-"March, 2015",112,Leisure and hospitality
-"April, 2015",112,Leisure and hospitality
-"May, 2015",112,Leisure and hospitality
-"June, 2015",112,Leisure and hospitality
-"July, 2015",113,Leisure and hospitality
-"August, 2015",113,Leisure and hospitality
-"September, 2015",113,Leisure and hospitality
-"October, 2015",114,Leisure and hospitality
-"November, 2015",114,Leisure and hospitality
-"December, 2015",114,Leisure and hospitality
-"January, 2016",115,Leisure and hospitality
-"February, 2016",115,Leisure and hospitality
-"March, 2016",115,Leisure and hospitality
-"April, 2016",115,Leisure and hospitality
+date,index,type,raw_emp,first_year_average,,,,,,,,,,,,,,,
+"January, 2007",101.3,Construction,7725,7627.3,,,,,,,,,,,,,,,
+"February, 2007",100.0,Construction,7626,7627.333333,,,,,,,,,,,,,,,
+"March, 2007",101.0,Construction,7706,7627.333333,,,,,,,,,,,,,,,
+"April, 2007",100.8,Construction,7686,7627.333333,,,,,,,,,,,,,,,
+"May, 2007",100.6,Construction,7673,7627.333333,,,,,,,,,,,,,,,
+"June, 2007",100.8,Construction,7687,7627.333333,,,,,,,,,,,,,,,
+"July, 2007",100.4,Construction,7660,7627.333333,,,,,,,,,,,,,,,
+"August, 2007",99.8,Construction,7610,7627.333333,,,,,,,,,,,,,,,
+"September, 2007",99.3,Construction,7577,7627.333333,,,,,,,,,,,,,,,
+"October, 2007",99.2,Construction,7565,7627.333333,,,,,,,,,,,,,,,
+"November, 2007",98.6,Construction,7523,7627.333333,,,,,,,,,,,,,,,
+"December, 2007",98.2,Construction,7490,7627.333333,,,,,,,,,,,,,,,
+"January, 2008",98.0,Construction,7476,7627.333333,,,,,,,,,,,,,,,
+"February, 2008",97.7,Construction,7453,7627.333333,,,,,,,,,,,,,,,
+"March, 2008",97.1,Construction,7406,7627.333333,,,,,,,,,,,,,,,
+"April, 2008",96.1,Construction,7327,7627.333333,,,,,,,,,,,,,,,
+"May, 2008",95.4,Construction,7274,7627.333333,,,,,,,,,,,,,,,
+"June, 2008",94.6,Construction,7213,7627.333333,,,,,,,,,,,,,,,
+"July, 2008",93.9,Construction,7160,7627.333333,,,,,,,,,,,,,,,
+"August, 2008",93.3,Construction,7114,7627.333333,,,,,,,,,,,,,,,
+"September, 2008",92.4,Construction,7044,7627.333333,,,,,,,,,,,,,,,
+"October, 2008",91.3,Construction,6967,7627.333333,,,,,,,,,,,,,,,
+"November, 2008",89.3,Construction,6813,7627.333333,,,,,,,,,,,,,,,
+"December, 2008",87.9,Construction,6701,7627.333333,,,,,,,,,,,,,,,
+"January, 2009",86.1,Construction,6567,7627.333333,,,,,,,,,,,,,,,
+"February, 2009",84.5,Construction,6446,7627.333333,,,,,,,,,,,,,,,
+"March, 2009",82.5,Construction,6291,7627.333333,,,,,,,,,,,,,,,
+"April, 2009",80.7,Construction,6154,7627.333333,,,,,,,,,,,,,,,
+"May, 2009",80.0,Construction,6100,7627.333333,,,,,,,,,,,,,,,
+"June, 2009",78.8,Construction,6010,7627.333333,,,,,,,,,,,,,,,
+"July, 2009",77.8,Construction,5932,7627.333333,,,,,,,,,,,,,,,
+"August, 2009",76.8,Construction,5855,7627.333333,,,,,,,,,,,,,,,
+"September, 2009",75.9,Construction,5787,7627.333333,,,,,,,,,,,,,,,
+"October, 2009",74.9,Construction,5716,7627.333333,,,,,,,,,,,,,,,
+"November, 2009",74.7,Construction,5696,7627.333333,,,,,,,,,,,,,,,
+"December, 2009",74.1,Construction,5654,7627.333333,,,,,,,,,,,,,,,
+"January, 2010",73.2,Construction,5580,7627.333333,,,,,,,,,,,,,,,
+"February, 2010",72.1,Construction,5500,7627.333333,,,,,,,,,,,,,,,
+"March, 2010",72.6,Construction,5537,7627.333333,,,,,,,,,,,,,,,
+"April, 2010",72.8,Construction,5553,7627.333333,,,,,,,,,,,,,,,
+"May, 2010",72.4,Construction,5520,7627.333333,,,,,,,,,,,,,,,
+"June, 2010",72.3,Construction,5516,7627.333333,,,,,,,,,,,,,,,
+"July, 2010",72.2,Construction,5508,7627.333333,,,,,,,,,,,,,,,
+"August, 2010",72.4,Construction,5524,7627.333333,,,,,,,,,,,,,,,
+"September, 2010",72.1,Construction,5501,7627.333333,,,,,,,,,,,,,,,
+"October, 2010",72.2,Construction,5508,7627.333333,,,,,,,,,,,,,,,
+"November, 2010",72.2,Construction,5506,7627.333333,,,,,,,,,,,,,,,
+"December, 2010",71.7,Construction,5467,7627.333333,,,,,,,,,,,,,,,
+"January, 2011",71.2,Construction,5427,7627.333333,,,,,,,,,,,,,,,
+"February, 2011",71.5,Construction,5451,7627.333333,,,,,,,,,,,,,,,
+"March, 2011",71.8,Construction,5477,7627.333333,,,,,,,,,,,,,,,
+"April, 2011",71.9,Construction,5485,7627.333333,,,,,,,,,,,,,,,
+"May, 2011",72.3,Construction,5516,7627.333333,,,,,,,,,,,,,,,
+"June, 2011",72.5,Construction,5528,7627.333333,,,,,,,,,,,,,,,
+"July, 2011",72.7,Construction,5547,7627.333333,,,,,,,,,,,,,,,
+"August, 2011",72.8,Construction,5552,7627.333333,,,,,,,,,,,,,,,
+"September, 2011",73.2,Construction,5584,7627.333333,,,,,,,,,,,,,,,
+"October, 2011",73.3,Construction,5588,7627.333333,,,,,,,,,,,,,,,
+"November, 2011",73.3,Construction,5593,7627.333333,,,,,,,,,,,,,,,
+"December, 2011",73.6,Construction,5611,7627.333333,,,,,,,,,,,,,,,
+"January, 2012",73.8,Construction,5626,7627.333333,,,,,,,,,,,,,,,
+"February, 2012",73.8,Construction,5626,7627.333333,,,,,,,,,,,,,,,
+"March, 2012",73.8,Construction,5629,7627.333333,,,,,,,,,,,,,,,
+"April, 2012",73.8,Construction,5626,7627.333333,,,,,,,,,,,,,,,
+"May, 2012",73.5,Construction,5606,7627.333333,,,,,,,,,,,,,,,
+"June, 2012",73.7,Construction,5622,7627.333333,,,,,,,,,,,,,,,
+"July, 2012",73.9,Construction,5633,7627.333333,,,,,,,,,,,,,,,
+"August, 2012",74.0,Construction,5647,7627.333333,,,,,,,,,,,,,,,
+"September, 2012",74.2,Construction,5656,7627.333333,,,,,,,,,,,,,,,
+"October, 2012",74.4,Construction,5673,7627.333333,,,,,,,,,,,,,,,
+"November, 2012",74.5,Construction,5682,7627.333333,,,,,,,,,,,,,,,
+"December, 2012",75.1,Construction,5728,7627.333333,,,,,,,,,,,,,,,
+"January, 2013",75.3,Construction,5741,7627.333333,,,,,,,,,,,,,,,
+"February, 2013",76.0,Construction,5793,7627.333333,,,,,,,,,,,,,,,
+"March, 2013",76.2,Construction,5814,7627.333333,,,,,,,,,,,,,,,
+"April, 2013",76.2,Construction,5811,7627.333333,,,,,,,,,,,,,,,
+"May, 2013",76.4,Construction,5831,7627.333333,,,,,,,,,,,,,,,
+"June, 2013",76.8,Construction,5854,7627.333333,,,,,,,,,,,,,,,
+"July, 2013",76.8,Construction,5857,7627.333333,,,,,,,,,,,,,,,
+"August, 2013",77.0,Construction,5874,7627.333333,,,,,,,,,,,,,,,
+"September, 2013",77.4,Construction,5900,7627.333333,,,,,,,,,,,,,,,
+"October, 2013",77.7,Construction,5923,7627.333333,,,,,,,,,,,,,,,
+"November, 2013",78.1,Construction,5954,7627.333333,,,,,,,,,,,,,,,
+"December, 2013",77.9,Construction,5939,7627.333333,,,,,,,,,,,,,,,
+"January, 2014",78.7,Construction,5999,7627.333333,,,,,,,,,,,,,,,
+"February, 2014",78.9,Construction,6020,7627.333333,,,,,,,,,,,,,,,
+"March, 2014",79.5,Construction,6062,7627.333333,,,,,,,,,,,,,,,
+"April, 2014",80.0,Construction,6103,7627.333333,,,,,,,,,,,,,,,
+"May, 2014",80.2,Construction,6115,7627.333333,,,,,,,,,,,,,,,
+"June, 2014",80.3,Construction,6128,7627.333333,,,,,,,,,,,,,,,
+"July, 2014",80.9,Construction,6169,7627.333333,,,,,,,,,,,,,,,
+"August, 2014",81.2,Construction,6194,7627.333333,,,,,,,,,,,,,,,
+"September, 2014",81.5,Construction,6219,7627.333333,,,,,,,,,,,,,,,
+"October, 2014",81.7,Construction,6233,7627.333333,,,,,,,,,,,,,,,
+"November, 2014",82.0,Construction,6256,7627.333333,,,,,,,,,,,,,,,
+"December, 2014",82.6,Construction,6301,7627.333333,,,,,,,,,,,,,,,
+"January, 2015",83.3,Construction,6351,7627.333333,,,,,,,,,,,,,,,
+"February, 2015",83.6,Construction,6378,7627.333333,,,,,,,,,,,,,,,
+"March, 2015",83.5,Construction,6371,7627.333333,,,,,,,,,,,,,,,
+"April, 2015",84.0,Construction,6409,7627.333333,,,,,,,,,,,,,,,
+"May, 2015",84.2,Construction,6426,7627.333333,,,,,,,,,,,,,,,
+"June, 2015",84.2,Construction,6426,7627.333333,,,,,,,,,,,,,,,
+"July, 2015",84.4,Construction,6437,7627.333333,,,,,,,,,,,,,,,
+"August, 2015",84.4,Construction,6441,7627.333333,,,,,,,,,,,,,,,
+"September, 2015",84.6,Construction,6451,7627.333333,,,,,,,,,,,,,,,
+"October, 2015",85.0,Construction,6484,7627.333333,,,,,,,,,,,,,,,
+"November, 2015",85.9,Construction,6549,7627.333333,,,,,,,,,,,,,,,
+"December, 2015",86.5,Construction,6597,7627.333333,,,,,,,,,,,,,,,
+"January, 2016",86.7,Construction,6615,7627.333333,,,,,,,,,,,,,,,
+"February, 2016",86.9,Construction,6628,7627.333333,,,,,,,,,,,,,,,
+"March, 2016",87.4,Construction,6669,7627.333333,,,,,,,,,,,,,,,
+"April, 2016",87.4,Construction,6670,7627.333333,,,,,,,,,,,,,,,
+"January, 2007",100.9,Manufacturing,14008,13877.8,,,,,,,,,,,,,,,
+"February, 2007",100.9,Manufacturing,13997,13877.83333,,,,,,,,,,,,,,,
+"March, 2007",100.7,Manufacturing,13970,13877.83333,,,,,,,,,,,,,,,
+"April, 2007",100.5,Manufacturing,13945,13877.83333,,,,,,,,,,,,,,,
+"May, 2007",100.4,Manufacturing,13929,13877.83333,,,,,,,,,,,,,,,
+"June, 2007",100.2,Manufacturing,13911,13877.83333,,,,,,,,,,,,,,,
+"July, 2007",100.1,Manufacturing,13889,13877.83333,,,,,,,,,,,,,,,
+"August, 2007",99.6,Manufacturing,13828,13877.83333,,,,,,,,,,,,,,,
+"September, 2007",99.4,Manufacturing,13790,13877.83333,,,,,,,,,,,,,,,
+"October, 2007",99.2,Manufacturing,13764,13877.83333,,,,,,,,,,,,,,,
+"November, 2007",99.1,Manufacturing,13757,13877.83333,,,,,,,,,,,,,,,
+"December, 2007",99.1,Manufacturing,13746,13877.83333,,,,,,,,,,,,,,,
+"January, 2008",98.9,Manufacturing,13725,13877.83333,,,,,,,,,,,,,,,
+"February, 2008",98.7,Manufacturing,13696,13877.83333,,,,,,,,,,,,,,,
+"March, 2008",98.4,Manufacturing,13659,13877.83333,,,,,,,,,,,,,,,
+"April, 2008",98.0,Manufacturing,13599,13877.83333,,,,,,,,,,,,,,,
+"May, 2008",97.7,Manufacturing,13564,13877.83333,,,,,,,,,,,,,,,
+"June, 2008",97.3,Manufacturing,13504,13877.83333,,,,,,,,,,,,,,,
+"July, 2008",96.8,Manufacturing,13430,13877.83333,,,,,,,,,,,,,,,
+"August, 2008",96.3,Manufacturing,13358,13877.83333,,,,,,,,,,,,,,,
+"September, 2008",95.7,Manufacturing,13275,13877.83333,,,,,,,,,,,,,,,
+"October, 2008",94.7,Manufacturing,13147,13877.83333,,,,,,,,,,,,,,,
+"November, 2008",93.9,Manufacturing,13034,13877.83333,,,,,,,,,,,,,,,
+"December, 2008",92.6,Manufacturing,12850,13877.83333,,,,,,,,,,,,,,,
+"January, 2009",90.5,Manufacturing,12561,13877.83333,,,,,,,,,,,,,,,
+"February, 2009",89.2,Manufacturing,12380,13877.83333,,,,,,,,,,,,,,,
+"March, 2009",88.0,Manufacturing,12208,13877.83333,,,,,,,,,,,,,,,
+"April, 2009",86.7,Manufacturing,12030,13877.83333,,,,,,,,,,,,,,,
+"May, 2009",85.5,Manufacturing,11862,13877.83333,,,,,,,,,,,,,,,
+"June, 2009",84.5,Manufacturing,11726,13877.83333,,,,,,,,,,,,,,,
+"July, 2009",84.1,Manufacturing,11668,13877.83333,,,,,,,,,,,,,,,
+"August, 2009",83.8,Manufacturing,11626,13877.83333,,,,,,,,,,,,,,,
+"September, 2009",83.5,Manufacturing,11591,13877.83333,,,,,,,,,,,,,,,
+"October, 2009",83.1,Manufacturing,11538,13877.83333,,,,,,,,,,,,,,,
+"November, 2009",82.9,Manufacturing,11509,13877.83333,,,,,,,,,,,,,,,
+"December, 2009",82.7,Manufacturing,11475,13877.83333,,,,,,,,,,,,,,,
+"January, 2010",82.6,Manufacturing,11460,13877.83333,,,,,,,,,,,,,,,
+"February, 2010",82.5,Manufacturing,11453,13877.83333,,,,,,,,,,,,,,,
+"March, 2010",82.5,Manufacturing,11453,13877.83333,,,,,,,,,,,,,,,
+"April, 2010",82.8,Manufacturing,11489,13877.83333,,,,,,,,,,,,,,,
+"May, 2010",83.0,Manufacturing,11525,13877.83333,,,,,,,,,,,,,,,
+"June, 2010",83.2,Manufacturing,11545,13877.83333,,,,,,,,,,,,,,,
+"July, 2010",83.3,Manufacturing,11561,13877.83333,,,,,,,,,,,,,,,
+"August, 2010",83.2,Manufacturing,11553,13877.83333,,,,,,,,,,,,,,,
+"September, 2010",83.3,Manufacturing,11563,13877.83333,,,,,,,,,,,,,,,
+"October, 2010",83.3,Manufacturing,11562,13877.83333,,,,,,,,,,,,,,,
+"November, 2010",83.5,Manufacturing,11585,13877.83333,,,,,,,,,,,,,,,
+"December, 2010",83.6,Manufacturing,11595,13877.83333,,,,,,,,,,,,,,,
+"January, 2011",83.7,Manufacturing,11621,13877.83333,,,,,,,,,,,,,,,
+"February, 2011",84.0,Manufacturing,11654,13877.83333,,,,,,,,,,,,,,,
+"March, 2011",84.1,Manufacturing,11675,13877.83333,,,,,,,,,,,,,,,
+"April, 2011",84.3,Manufacturing,11704,13877.83333,,,,,,,,,,,,,,,
+"May, 2011",84.4,Manufacturing,11713,13877.83333,,,,,,,,,,,,,,,
+"June, 2011",84.5,Manufacturing,11727,13877.83333,,,,,,,,,,,,,,,
+"July, 2011",84.6,Manufacturing,11746,13877.83333,,,,,,,,,,,,,,,
+"August, 2011",84.8,Manufacturing,11764,13877.83333,,,,,,,,,,,,,,,
+"September, 2011",84.8,Manufacturing,11769,13877.83333,,,,,,,,,,,,,,,
+"October, 2011",84.9,Manufacturing,11780,13877.83333,,,,,,,,,,,,,,,
+"November, 2011",84.8,Manufacturing,11770,13877.83333,,,,,,,,,,,,,,,
+"December, 2011",85.0,Manufacturing,11802,13877.83333,,,,,,,,,,,,,,,
+"January, 2012",85.3,Manufacturing,11836,13877.83333,,,,,,,,,,,,,,,
+"February, 2012",85.5,Manufacturing,11859,13877.83333,,,,,,,,,,,,,,,
+"March, 2012",85.7,Manufacturing,11899,13877.83333,,,,,,,,,,,,,,,
+"April, 2012",85.9,Manufacturing,11915,13877.83333,,,,,,,,,,,,,,,
+"May, 2012",86.0,Manufacturing,11929,13877.83333,,,,,,,,,,,,,,,
+"June, 2012",86.1,Manufacturing,11942,13877.83333,,,,,,,,,,,,,,,
+"July, 2012",86.2,Manufacturing,11967,13877.83333,,,,,,,,,,,,,,,
+"August, 2012",86.2,Manufacturing,11961,13877.83333,,,,,,,,,,,,,,,
+"September, 2012",86.1,Manufacturing,11952,13877.83333,,,,,,,,,,,,,,,
+"October, 2012",86.2,Manufacturing,11959,13877.83333,,,,,,,,,,,,,,,
+"November, 2012",86.1,Manufacturing,11948,13877.83333,,,,,,,,,,,,,,,
+"December, 2012",86.2,Manufacturing,11960,13877.83333,,,,,,,,,,,,,,,
+"January, 2013",86.3,Manufacturing,11980,13877.83333,,,,,,,,,,,,,,,
+"February, 2013",86.5,Manufacturing,12001,13877.83333,,,,,,,,,,,,,,,
+"March, 2013",86.5,Manufacturing,12003,13877.83333,,,,,,,,,,,,,,,
+"April, 2013",86.5,Manufacturing,12004,13877.83333,,,,,,,,,,,,,,,
+"May, 2013",86.5,Manufacturing,12002,13877.83333,,,,,,,,,,,,,,,
+"June, 2013",86.5,Manufacturing,12002,13877.83333,,,,,,,,,,,,,,,
+"July, 2013",86.3,Manufacturing,11983,13877.83333,,,,,,,,,,,,,,,
+"August, 2013",86.6,Manufacturing,12014,13877.83333,,,,,,,,,,,,,,,
+"September, 2013",86.7,Manufacturing,12029,13877.83333,,,,,,,,,,,,,,,
+"October, 2013",86.8,Manufacturing,12050,13877.83333,,,,,,,,,,,,,,,
+"November, 2013",87.0,Manufacturing,12076,13877.83333,,,,,,,,,,,,,,,
+"December, 2013",87.1,Manufacturing,12086,13877.83333,,,,,,,,,,,,,,,
+"January, 2014",87.1,Manufacturing,12094,13877.83333,,,,,,,,,,,,,,,
+"February, 2014",87.3,Manufacturing,12115,13877.83333,,,,,,,,,,,,,,,
+"March, 2014",87.4,Manufacturing,12125,13877.83333,,,,,,,,,,,,,,,
+"April, 2014",87.5,Manufacturing,12139,13877.83333,,,,,,,,,,,,,,,
+"May, 2014",87.5,Manufacturing,12146,13877.83333,,,,,,,,,,,,,,,
+"June, 2014",87.7,Manufacturing,12171,13877.83333,,,,,,,,,,,,,,,
+"July, 2014",87.8,Manufacturing,12189,13877.83333,,,,,,,,,,,,,,,
+"August, 2014",87.9,Manufacturing,12205,13877.83333,,,,,,,,,,,,,,,
+"September, 2014",88.0,Manufacturing,12217,13877.83333,,,,,,,,,,,,,,,
+"October, 2014",88.2,Manufacturing,12243,13877.83333,,,,,,,,,,,,,,,
+"November, 2014",88.4,Manufacturing,12272,13877.83333,,,,,,,,,,,,,,,
+"December, 2014",88.6,Manufacturing,12294,13877.83333,,,,,,,,,,,,,,,
+"January, 2015",88.7,Manufacturing,12311,13877.83333,,,,,,,,,,,,,,,
+"February, 2015",88.7,Manufacturing,12315,13877.83333,,,,,,,,,,,,,,,
+"March, 2015",88.8,Manufacturing,12318,13877.83333,,,,,,,,,,,,,,,
+"April, 2015",88.7,Manufacturing,12316,13877.83333,,,,,,,,,,,,,,,
+"May, 2015",88.8,Manufacturing,12324,13877.83333,,,,,,,,,,,,,,,
+"June, 2015",88.8,Manufacturing,12325,13877.83333,,,,,,,,,,,,,,,
+"July, 2015",88.9,Manufacturing,12336,13877.83333,,,,,,,,,,,,,,,
+"August, 2015",88.8,Manufacturing,12318,13877.83333,,,,,,,,,,,,,,,
+"September, 2015",88.7,Manufacturing,12309,13877.83333,,,,,,,,,,,,,,,
+"October, 2015",88.7,Manufacturing,12311,13877.83333,,,,,,,,,,,,,,,
+"November, 2015",88.7,Manufacturing,12314,13877.83333,,,,,,,,,,,,,,,
+"December, 2015",88.8,Manufacturing,12320,13877.83333,,,,,,,,,,,,,,,
+"January, 2016",88.9,Manufacturing,12338,13877.83333,,,,,,,,,,,,,,,
+"February, 2016",88.8,Manufacturing,12322,13877.83333,,,,,,,,,,,,,,,
+"March, 2016",88.6,Manufacturing,12293,13877.83333,,,,,,,,,,,,,,,
+"April, 2016",88.6,Manufacturing,12297,13877.83333,,,,,,,,,,,,,,,
+"January, 2007",99.6,Retail,15450.6,15516.325,,,,,,,,,,,,,,,
+"February, 2007",99.8,Retail,15478.5,15516.325,,,,,,,,,,,,,,,
+"March, 2007",100.1,Retail,15524.4,15516.325,,,,,,,,,,,,,,,
+"April, 2007",100.0,Retail,15514.7,15516.325,,,,,,,,,,,,,,,
+"May, 2007",100.1,Retail,15528.5,15516.325,,,,,,,,,,,,,,,
+"June, 2007",100.0,Retail,15509.7,15516.325,,,,,,,,,,,,,,,
+"July, 2007",99.9,Retail,15506.4,15516.325,,,,,,,,,,,,,,,
+"August, 2007",99.9,Retail,15506.9,15516.325,,,,,,,,,,,,,,,
+"September, 2007",100.0,Retail,15512.9,15516.325,,,,,,,,,,,,,,,
+"October, 2007",100.0,Retail,15516.2,15516.325,,,,,,,,,,,,,,,
+"November, 2007",100.4,Retail,15576.3,15516.325,,,,,,,,,,,,,,,
+"December, 2007",100.4,Retail,15570.8,15516.325,,,,,,,,,,,,,,,
+"January, 2008",100.3,Retail,15570.3,15516.325,,,,,,,,,,,,,,,
+"February, 2008",100.1,Retail,15527.9,15516.325,,,,,,,,,,,,,,,
+"March, 2008",99.9,Retail,15506.2,15516.325,,,,,,,,,,,,,,,
+"April, 2008",99.4,Retail,15428.9,15516.325,,,,,,,,,,,,,,,
+"May, 2008",99.1,Retail,15379.3,15516.325,,,,,,,,,,,,,,,
+"June, 2008",98.8,Retail,15334.5,15516.325,,,,,,,,,,,,,,,
+"July, 2008",98.6,Retail,15298.8,15516.325,,,,,,,,,,,,,,,
+"August, 2008",98.3,Retail,15245,15516.325,,,,,,,,,,,,,,,
+"September, 2008",97.8,Retail,15172,15516.325,,,,,,,,,,,,,,,
+"October, 2008",97.3,Retail,15102.9,15516.325,,,,,,,,,,,,,,,
+"November, 2008",96.5,Retail,14980.7,15516.325,,,,,,,,,,,,,,,
+"December, 2008",95.8,Retail,14869.9,15516.325,,,,,,,,,,,,,,,
+"January, 2009",95.3,Retail,14783,15516.325,,,,,,,,,,,,,,,
+"February, 2009",94.8,Retail,14714.5,15516.325,,,,,,,,,,,,,,,
+"March, 2009",94.2,Retail,14617.7,15516.325,,,,,,,,,,,,,,,
+"April, 2009",93.8,Retail,14549,15516.325,,,,,,,,,,,,,,,
+"May, 2009",93.8,Retail,14553.9,15516.325,,,,,,,,,,,,,,,
+"June, 2009",93.7,Retail,14536.8,15516.325,,,,,,,,,,,,,,,
+"July, 2009",93.4,Retail,14495.2,15516.325,,,,,,,,,,,,,,,
+"August, 2009",93.3,Retail,14479.1,15516.325,,,,,,,,,,,,,,,
+"September, 2009",93.1,Retail,14447.2,15516.325,,,,,,,,,,,,,,,
+"October, 2009",92.7,Retail,14386.7,15516.325,,,,,,,,,,,,,,,
+"November, 2009",92.6,Retail,14372.7,15516.325,,,,,,,,,,,,,,,
+"December, 2009",92.3,Retail,14324.5,15516.325,,,,,,,,,,,,,,,
+"January, 2010",92.7,Retail,14388.2,15516.325,,,,,,,,,,,,,,,
+"February, 2010",92.8,Retail,14399,15516.325,,,,,,,,,,,,,,,
+"March, 2010",92.9,Retail,14422.1,15516.325,,,,,,,,,,,,,,,
+"April, 2010",93.0,Retail,14422.8,15516.325,,,,,,,,,,,,,,,
+"May, 2010",93.0,Retail,14435.4,15516.325,,,,,,,,,,,,,,,
+"June, 2010",93.1,Retail,14438.5,15516.325,,,,,,,,,,,,,,,
+"July, 2010",93.2,Retail,14456.4,15516.325,,,,,,,,,,,,,,,
+"August, 2010",93.1,Retail,14452.1,15516.325,,,,,,,,,,,,,,,
+"September, 2010",93.3,Retail,14474.4,15516.325,,,,,,,,,,,,,,,
+"October, 2010",93.5,Retail,14500.5,15516.325,,,,,,,,,,,,,,,
+"November, 2010",93.3,Retail,14475.3,15516.325,,,,,,,,,,,,,,,
+"December, 2010",93.3,Retail,14473.7,15516.325,,,,,,,,,,,,,,,
+"January, 2011",93.7,Retail,14535.7,15516.325,,,,,,,,,,,,,,,
+"February, 2011",93.8,Retail,14561.9,15516.325,,,,,,,,,,,,,,,
+"March, 2011",93.9,Retail,14565.5,15516.325,,,,,,,,,,,,,,,
+"April, 2011",94.4,Retail,14645.6,15516.325,,,,,,,,,,,,,,,
+"May, 2011",94.4,Retail,14640.9,15516.325,,,,,,,,,,,,,,,
+"June, 2011",94.6,Retail,14676.1,15516.325,,,,,,,,,,,,,,,
+"July, 2011",94.8,Retail,14714,15516.325,,,,,,,,,,,,,,,
+"August, 2011",94.8,Retail,14714.3,15516.325,,,,,,,,,,,,,,,
+"September, 2011",95.0,Retail,14739.2,15516.325,,,,,,,,,,,,,,,
+"October, 2011",95.0,Retail,14741.7,15516.325,,,,,,,,,,,,,,,
+"November, 2011",95.1,Retail,14752.3,15516.325,,,,,,,,,,,,,,,
+"December, 2011",95.1,Retail,14758,15516.325,,,,,,,,,,,,,,,
+"January, 2012",95.5,Retail,14816.1,15516.325,,,,,,,,,,,,,,,
+"February, 2012",95.4,Retail,14799.8,15516.325,,,,,,,,,,,,,,,
+"March, 2012",95.4,Retail,14807.1,15516.325,,,,,,,,,,,,,,,
+"April, 2012",95.6,Retail,14828.4,15516.325,,,,,,,,,,,,,,,
+"May, 2012",95.6,Retail,14826.6,15516.325,,,,,,,,,,,,,,,
+"June, 2012",95.5,Retail,14810.6,15516.325,,,,,,,,,,,,,,,
+"July, 2012",95.4,Retail,14800.2,15516.325,,,,,,,,,,,,,,,
+"August, 2012",95.5,Retail,14811.1,15516.325,,,,,,,,,,,,,,,
+"September, 2012",95.6,Retail,14838,15516.325,,,,,,,,,,,,,,,
+"October, 2012",95.8,Retail,14860.8,15516.325,,,,,,,,,,,,,,,
+"November, 2012",96.3,Retail,14936.3,15516.325,,,,,,,,,,,,,,,
+"December, 2012",96.0,Retail,14899.5,15516.325,,,,,,,,,,,,,,,
+"January, 2013",96.3,Retail,14941.2,15516.325,,,,,,,,,,,,,,,
+"February, 2013",96.4,Retail,14952,15516.325,,,,,,,,,,,,,,,
+"March, 2013",96.3,Retail,14946.8,15516.325,,,,,,,,,,,,,,,
+"April, 2013",96.5,Retail,14967.2,15516.325,,,,,,,,,,,,,,,
+"May, 2013",96.7,Retail,15000.3,15516.325,,,,,,,,,,,,,,,
+"June, 2013",96.9,Retail,15039.9,15516.325,,,,,,,,,,,,,,,
+"July, 2013",97.2,Retail,15084.8,15516.325,,,,,,,,,,,,,,,
+"August, 2013",97.5,Retail,15129.3,15516.325,,,,,,,,,,,,,,,
+"September, 2013",97.7,Retail,15156.5,15516.325,,,,,,,,,,,,,,,
+"October, 2013",97.9,Retail,15187.8,15516.325,,,,,,,,,,,,,,,
+"November, 2013",98.1,Retail,15218.9,15516.325,,,,,,,,,,,,,,,
+"December, 2013",98.4,Retail,15267.3,15516.325,,,,,,,,,,,,,,,
+"January, 2014",98.3,Retail,15258.6,15516.325,,,,,,,,,,,,,,,
+"February, 2014",98.2,Retail,15240.9,15516.325,,,,,,,,,,,,,,,
+"March, 2014",98.4,Retail,15261.7,15516.325,,,,,,,,,,,,,,,
+"April, 2014",98.6,Retail,15301,15516.325,,,,,,,,,,,,,,,
+"May, 2014",98.7,Retail,15310.1,15516.325,,,,,,,,,,,,,,,
+"June, 2014",98.9,Retail,15346.5,15516.325,,,,,,,,,,,,,,,
+"July, 2014",99.1,Retail,15369.2,15516.325,,,,,,,,,,,,,,,
+"August, 2014",99.1,Retail,15376.9,15516.325,,,,,,,,,,,,,,,
+"September, 2014",99.3,Retail,15406.4,15516.325,,,,,,,,,,,,,,,
+"October, 2014",99.4,Retail,15419.8,15516.325,,,,,,,,,,,,,,,
+"November, 2014",99.8,Retail,15478.3,15516.325,,,,,,,,,,,,,,,
+"December, 2014",99.7,Retail,15476.8,15516.325,,,,,,,,,,,,,,,
+"January, 2015",100.0,Retail,15510,15516.325,,,,,,,,,,,,,,,
+"February, 2015",100.1,Retail,15539.2,15516.325,,,,,,,,,,,,,,,
+"March, 2015",100.3,Retail,15564.4,15516.325,,,,,,,,,,,,,,,
+"April, 2015",100.4,Retail,15577.8,15516.325,,,,,,,,,,,,,,,
+"May, 2015",100.6,Retail,15604.7,15516.325,,,,,,,,,,,,,,,
+"June, 2015",100.8,Retail,15639.6,15516.325,,,,,,,,,,,,,,,
+"July, 2015",101.0,Retail,15670.7,15516.325,,,,,,,,,,,,,,,
+"August, 2015",101.0,Retail,15674.6,15516.325,,,,,,,,,,,,,,,
+"September, 2015",101.1,Retail,15681,15516.325,,,,,,,,,,,,,,,
+"October, 2015",101.2,Retail,15702.4,15516.325,,,,,,,,,,,,,,,
+"November, 2015",101.5,Retail,15754.2,15516.325,,,,,,,,,,,,,,,
+"December, 2015",101.6,Retail,15760.8,15516.325,,,,,,,,,,,,,,,
+"January, 2016",102.0,Retail,15827.3,15516.325,,,,,,,,,,,,,,,
+"February, 2016",102.3,Retail,15879.3,15516.325,,,,,,,,,,,,,,,
+"March, 2016",102.6,Retail,15918.3,15516.325,,,,,,,,,,,,,,,
+"April, 2016",102.6,Retail,15915.2,15516.325,,,,,,,,,,,,,,,
+"January, 2007",99.1,Educational services,2916.2,2941.65,,,,,,,,,,,,,,,
+"February, 2007",99.0,Educational services,2912.2,2941.65,,,,,,,,,,,,,,,
+"March, 2007",99.5,Educational services,2925.6,2941.65,,,,,,,,,,,,,,,
+"April, 2007",99.5,Educational services,2927.9,2941.65,,,,,,,,,,,,,,,
+"May, 2007",99.7,Educational services,2932.1,2941.65,,,,,,,,,,,,,,,
+"June, 2007",99.7,Educational services,2934.1,2941.65,,,,,,,,,,,,,,,
+"July, 2007",99.6,Educational services,2928.8,2941.65,,,,,,,,,,,,,,,
+"August, 2007",100.2,Educational services,2946.3,2941.65,,,,,,,,,,,,,,,
+"September, 2007",100.7,Educational services,2963.1,2941.65,,,,,,,,,,,,,,,
+"October, 2007",101.0,Educational services,2971.3,2941.65,,,,,,,,,,,,,,,
+"November, 2007",100.8,Educational services,2965.8,2941.65,,,,,,,,,,,,,,,
+"December, 2007",101.2,Educational services,2976.4,2941.65,,,,,,,,,,,,,,,
+"January, 2008",101.6,Educational services,2987.6,2941.65,,,,,,,,,,,,,,,
+"February, 2008",101.7,Educational services,2992.8,2941.65,,,,,,,,,,,,,,,
+"March, 2008",102.1,Educational services,3002,2941.65,,,,,,,,,,,,,,,
+"April, 2008",102.5,Educational services,3014.4,2941.65,,,,,,,,,,,,,,,
+"May, 2008",102.8,Educational services,3023.2,2941.65,,,,,,,,,,,,,,,
+"June, 2008",103.6,Educational services,3046.2,2941.65,,,,,,,,,,,,,,,
+"July, 2008",104.2,Educational services,3065.4,2941.65,,,,,,,,,,,,,,,
+"August, 2008",105.1,Educational services,3091.2,2941.65,,,,,,,,,,,,,,,
+"September, 2008",104.4,Educational services,3069.9,2941.65,,,,,,,,,,,,,,,
+"October, 2008",104.1,Educational services,3062.5,2941.65,,,,,,,,,,,,,,,
+"November, 2008",104.2,Educational services,3064.7,2941.65,,,,,,,,,,,,,,,
+"December, 2008",104.4,Educational services,3070.6,2941.65,,,,,,,,,,,,,,,
+"January, 2009",105.1,Educational services,3091.7,2941.65,,,,,,,,,,,,,,,
+"February, 2009",105.0,Educational services,3088.2,2941.65,,,,,,,,,,,,,,,
+"March, 2009",104.8,Educational services,3082,2941.65,,,,,,,,,,,,,,,
+"April, 2009",104.6,Educational services,3076.6,2941.65,,,,,,,,,,,,,,,
+"May, 2009",104.8,Educational services,3083.1,2941.65,,,,,,,,,,,,,,,
+"June, 2009",105.1,Educational services,3092.3,2941.65,,,,,,,,,,,,,,,
+"July, 2009",104.9,Educational services,3085.1,2941.65,,,,,,,,,,,,,,,
+"August, 2009",105.3,Educational services,3098,2941.65,,,,,,,,,,,,,,,
+"September, 2009",104.5,Educational services,3073.9,2941.65,,,,,,,,,,,,,,,
+"October, 2009",105.2,Educational services,3094.6,2941.65,,,,,,,,,,,,,,,
+"November, 2009",105.3,Educational services,3097,2941.65,,,,,,,,,,,,,,,
+"December, 2009",105.7,Educational services,3108.2,2941.65,,,,,,,,,,,,,,,
+"January, 2010",105.6,Educational services,3106.1,2941.65,,,,,,,,,,,,,,,
+"February, 2010",105.8,Educational services,3112.5,2941.65,,,,,,,,,,,,,,,
+"March, 2010",106.5,Educational services,3131.8,2941.65,,,,,,,,,,,,,,,
+"April, 2010",106.5,Educational services,3131.6,2941.65,,,,,,,,,,,,,,,
+"May, 2010",106.8,Educational services,3142.5,2941.65,,,,,,,,,,,,,,,
+"June, 2010",107.1,Educational services,3151.5,2941.65,,,,,,,,,,,,,,,
+"July, 2010",107.6,Educational services,3164.5,2941.65,,,,,,,,,,,,,,,
+"August, 2010",107.8,Educational services,3171.5,2941.65,,,,,,,,,,,,,,,
+"September, 2010",106.9,Educational services,3146,2941.65,,,,,,,,,,,,,,,
+"October, 2010",108.2,Educational services,3181.4,2941.65,,,,,,,,,,,,,,,
+"November, 2010",108.7,Educational services,3196.5,2941.65,,,,,,,,,,,,,,,
+"December, 2010",108.6,Educational services,3194.9,2941.65,,,,,,,,,,,,,,,
+"January, 2011",109.4,Educational services,3219.6,2941.65,,,,,,,,,,,,,,,
+"February, 2011",109.5,Educational services,3220.5,2941.65,,,,,,,,,,,,,,,
+"March, 2011",109.2,Educational services,3211.8,2941.65,,,,,,,,,,,,,,,
+"April, 2011",110.1,Educational services,3237.9,2941.65,,,,,,,,,,,,,,,
+"May, 2011",109.7,Educational services,3227.9,2941.65,,,,,,,,,,,,,,,
+"June, 2011",110.2,Educational services,3240.6,2941.65,,,,,,,,,,,,,,,
+"July, 2011",110.3,Educational services,3244,2941.65,,,,,,,,,,,,,,,
+"August, 2011",110.6,Educational services,3252.1,2941.65,,,,,,,,,,,,,,,
+"September, 2011",111.0,Educational services,3264.7,2941.65,,,,,,,,,,,,,,,
+"October, 2011",111.5,Educational services,3278.7,2941.65,,,,,,,,,,,,,,,
+"November, 2011",112.2,Educational services,3299.8,2941.65,,,,,,,,,,,,,,,
+"December, 2011",112.6,Educational services,3313.5,2941.65,,,,,,,,,,,,,,,
+"January, 2012",112.6,Educational services,3311,2941.65,,,,,,,,,,,,,,,
+"February, 2012",113.5,Educational services,3340.2,2941.65,,,,,,,,,,,,,,,
+"March, 2012",113.7,Educational services,3345.3,2941.65,,,,,,,,,,,,,,,
+"April, 2012",113.8,Educational services,3347,2941.65,,,,,,,,,,,,,,,
+"May, 2012",114.0,Educational services,3353.8,2941.65,,,,,,,,,,,,,,,
+"June, 2012",113.7,Educational services,3343.8,2941.65,,,,,,,,,,,,,,,
+"July, 2012",113.7,Educational services,3344.8,2941.65,,,,,,,,,,,,,,,
+"August, 2012",113.8,Educational services,3346.2,2941.65,,,,,,,,,,,,,,,
+"September, 2012",114.2,Educational services,3359.8,2941.65,,,,,,,,,,,,,,,
+"October, 2012",113.6,Educational services,3342.6,2941.65,,,,,,,,,,,,,,,
+"November, 2012",113.3,Educational services,3331.5,2941.65,,,,,,,,,,,,,,,
+"December, 2012",113.4,Educational services,3337.1,2941.65,,,,,,,,,,,,,,,
+"January, 2013",113.2,Educational services,3330.9,2941.65,,,,,,,,,,,,,,,
+"February, 2013",113.0,Educational services,3323.2,2941.65,,,,,,,,,,,,,,,
+"March, 2013",113.4,Educational services,3337.3,2941.65,,,,,,,,,,,,,,,
+"April, 2013",113.7,Educational services,3345.5,2941.65,,,,,,,,,,,,,,,
+"May, 2013",114.3,Educational services,3363.2,2941.65,,,,,,,,,,,,,,,
+"June, 2013",113.4,Educational services,3335.9,2941.65,,,,,,,,,,,,,,,
+"July, 2013",114.3,Educational services,3362.1,2941.65,,,,,,,,,,,,,,,
+"August, 2013",114.7,Educational services,3374.8,2941.65,,,,,,,,,,,,,,,
+"September, 2013",114.3,Educational services,3361.4,2941.65,,,,,,,,,,,,,,,
+"October, 2013",114.5,Educational services,3368.1,2941.65,,,,,,,,,,,,,,,
+"November, 2013",114.8,Educational services,3377.3,2941.65,,,,,,,,,,,,,,,
+"December, 2013",114.7,Educational services,3374.7,2941.65,,,,,,,,,,,,,,,
+"January, 2014",115.0,Educational services,3384.3,2941.65,,,,,,,,,,,,,,,
+"February, 2014",115.1,Educational services,3385.5,2941.65,,,,,,,,,,,,,,,
+"March, 2014",115.4,Educational services,3393.9,2941.65,,,,,,,,,,,,,,,
+"April, 2014",115.8,Educational services,3405.9,2941.65,,,,,,,,,,,,,,,
+"May, 2014",115.9,Educational services,3408.9,2941.65,,,,,,,,,,,,,,,
+"June, 2014",116.2,Educational services,3419.5,2941.65,,,,,,,,,,,,,,,
+"July, 2014",116.1,Educational services,3416.5,2941.65,,,,,,,,,,,,,,,
+"August, 2014",116.4,Educational services,3424.1,2941.65,,,,,,,,,,,,,,,
+"September, 2014",117.1,Educational services,3443.6,2941.65,,,,,,,,,,,,,,,
+"October, 2014",116.8,Educational services,3434.4,2941.65,,,,,,,,,,,,,,,
+"November, 2014",116.7,Educational services,3433.3,2941.65,,,,,,,,,,,,,,,
+"December, 2014",116.8,Educational services,3434.6,2941.65,,,,,,,,,,,,,,,
+"January, 2015",116.5,Educational services,3427.1,2941.65,,,,,,,,,,,,,,,
+"February, 2015",117.2,Educational services,3447.7,2941.65,,,,,,,,,,,,,,,
+"March, 2015",117.4,Educational services,3452.7,2941.65,,,,,,,,,,,,,,,
+"April, 2015",117.4,Educational services,3454.3,2941.65,,,,,,,,,,,,,,,
+"May, 2015",117.3,Educational services,3450.3,2941.65,,,,,,,,,,,,,,,
+"June, 2015",117.4,Educational services,3452.3,2941.65,,,,,,,,,,,,,,,
+"July, 2015",117.7,Educational services,3461.6,2941.65,,,,,,,,,,,,,,,
+"August, 2015",117.7,Educational services,3463.2,2941.65,,,,,,,,,,,,,,,
+"September, 2015",118.0,Educational services,3471.5,2941.65,,,,,,,,,,,,,,,
+"October, 2015",118.4,Educational services,3482.6,2941.65,,,,,,,,,,,,,,,
+"November, 2015",118.5,Educational services,3485.6,2941.65,,,,,,,,,,,,,,,
+"December, 2015",119.0,Educational services,3501.8,2941.65,,,,,,,,,,,,,,,
+"January, 2016",118.5,Educational services,3484.4,2941.65,,,,,,,,,,,,,,,
+"February, 2016",119.2,Educational services,3505.3,2941.65,,,,,,,,,,,,,,,
+"March, 2016",119.4,Educational services,3513.7,2941.65,,,,,,,,,,,,,,,
+"April, 2016",120.0,Educational services,3529.6,2941.65,,,,,,,,,,,,,,,
+"January, 2007",98.5,Health care and social assistance,15499.1,15734.25833,,,,,,,,,,,,,,,
+"February, 2007",98.8,Health care and social assistance,15539.6,15734.25833,,,,,,,,,,,,,,,
+"March, 2007",99.0,Health care and social assistance,15581,15734.25833,,,,,,,,,,,,,,,
+"April, 2007",99.4,Health care and social assistance,15634.5,15734.25833,,,,,,,,,,,,,,,
+"May, 2007",99.6,Health care and social assistance,15676,15734.25833,,,,,,,,,,,,,,,
+"June, 2007",100.0,Health care and social assistance,15727.8,15734.25833,,,,,,,,,,,,,,,
+"July, 2007",100.2,Health care and social assistance,15765,15734.25833,,,,,,,,,,,,,,,
+"August, 2007",100.5,Health care and social assistance,15807,15734.25833,,,,,,,,,,,,,,,
+"September, 2007",100.7,Health care and social assistance,15847.8,15734.25833,,,,,,,,,,,,,,,
+"October, 2007",100.9,Health care and social assistance,15877.7,15734.25833,,,,,,,,,,,,,,,
+"November, 2007",101.1,Health care and social assistance,15908.3,15734.25833,,,,,,,,,,,,,,,
+"December, 2007",101.4,Health care and social assistance,15947.3,15734.25833,,,,,,,,,,,,,,,
+"January, 2008",101.6,Health care and social assistance,15991.2,15734.25833,,,,,,,,,,,,,,,
+"February, 2008",101.8,Health care and social assistance,16024.8,15734.25833,,,,,,,,,,,,,,,
+"March, 2008",102.1,Health care and social assistance,16065.9,15734.25833,,,,,,,,,,,,,,,
+"April, 2008",102.4,Health care and social assistance,16110.5,15734.25833,,,,,,,,,,,,,,,
+"May, 2008",102.6,Health care and social assistance,16143.5,15734.25833,,,,,,,,,,,,,,,
+"June, 2008",102.8,Health care and social assistance,16175.9,15734.25833,,,,,,,,,,,,,,,
+"July, 2008",103.0,Health care and social assistance,16211.4,15734.25833,,,,,,,,,,,,,,,
+"August, 2008",103.3,Health care and social assistance,16246.3,15734.25833,,,,,,,,,,,,,,,
+"September, 2008",103.4,Health care and social assistance,16274,15734.25833,,,,,,,,,,,,,,,
+"October, 2008",103.6,Health care and social assistance,16302.4,15734.25833,,,,,,,,,,,,,,,
+"November, 2008",103.8,Health care and social assistance,16334.9,15734.25833,,,,,,,,,,,,,,,
+"December, 2008",104.0,Health care and social assistance,16369.3,15734.25833,,,,,,,,,,,,,,,
+"January, 2009",104.2,Health care and social assistance,16389.3,15734.25833,,,,,,,,,,,,,,,
+"February, 2009",104.3,Health care and social assistance,16418.1,15734.25833,,,,,,,,,,,,,,,
+"March, 2009",104.4,Health care and social assistance,16431.3,15734.25833,,,,,,,,,,,,,,,
+"April, 2009",104.5,Health care and social assistance,16445.8,15734.25833,,,,,,,,,,,,,,,
+"May, 2009",104.9,Health care and social assistance,16499.1,15734.25833,,,,,,,,,,,,,,,
+"June, 2009",105.0,Health care and social assistance,16520.9,15734.25833,,,,,,,,,,,,,,,
+"July, 2009",105.1,Health care and social assistance,16543.4,15734.25833,,,,,,,,,,,,,,,
+"August, 2009",105.4,Health care and social assistance,16582.1,15734.25833,,,,,,,,,,,,,,,
+"September, 2009",105.6,Health care and social assistance,16619.4,15734.25833,,,,,,,,,,,,,,,
+"October, 2009",105.8,Health care and social assistance,16646.6,15734.25833,,,,,,,,,,,,,,,
+"November, 2009",106.0,Health care and social assistance,16671.7,15734.25833,,,,,,,,,,,,,,,
+"December, 2009",106.1,Health care and social assistance,16692.3,15734.25833,,,,,,,,,,,,,,,
+"January, 2010",106.2,Health care and social assistance,16713.7,15734.25833,,,,,,,,,,,,,,,
+"February, 2010",106.3,Health care and social assistance,16727.3,15734.25833,,,,,,,,,,,,,,,
+"March, 2010",106.5,Health care and social assistance,16762.9,15734.25833,,,,,,,,,,,,,,,
+"April, 2010",106.6,Health care and social assistance,16770.8,15734.25833,,,,,,,,,,,,,,,
+"May, 2010",106.7,Health care and social assistance,16791.9,15734.25833,,,,,,,,,,,,,,,
+"June, 2010",106.8,Health care and social assistance,16804.5,15734.25833,,,,,,,,,,,,,,,
+"July, 2010",106.9,Health care and social assistance,16814.8,15734.25833,,,,,,,,,,,,,,,
+"August, 2010",107.1,Health care and social assistance,16844.7,15734.25833,,,,,,,,,,,,,,,
+"September, 2010",107.1,Health care and social assistance,16855.2,15734.25833,,,,,,,,,,,,,,,
+"October, 2010",107.3,Health care and social assistance,16889.2,15734.25833,,,,,,,,,,,,,,,
+"November, 2010",107.5,Health care and social assistance,16920.1,15734.25833,,,,,,,,,,,,,,,
+"December, 2010",107.7,Health care and social assistance,16940,15734.25833,,,,,,,,,,,,,,,
+"January, 2011",107.6,Health care and social assistance,16933.8,15734.25833,,,,,,,,,,,,,,,
+"February, 2011",107.7,Health care and social assistance,16943.6,15734.25833,,,,,,,,,,,,,,,
+"March, 2011",107.8,Health care and social assistance,16965.5,15734.25833,,,,,,,,,,,,,,,
+"April, 2011",108.0,Health care and social assistance,16999.9,15734.25833,,,,,,,,,,,,,,,
+"May, 2011",108.2,Health care and social assistance,17023.3,15734.25833,,,,,,,,,,,,,,,
+"June, 2011",108.4,Health care and social assistance,17051.4,15734.25833,,,,,,,,,,,,,,,
+"July, 2011",108.6,Health care and social assistance,17086.7,15734.25833,,,,,,,,,,,,,,,
+"August, 2011",108.8,Health care and social assistance,17113.8,15734.25833,,,,,,,,,,,,,,,
+"September, 2011",109.0,Health care and social assistance,17150,15734.25833,,,,,,,,,,,,,,,
+"October, 2011",109.1,Health care and social assistance,17173.5,15734.25833,,,,,,,,,,,,,,,
+"November, 2011",109.3,Health care and social assistance,17192.7,15734.25833,,,,,,,,,,,,,,,
+"December, 2011",109.4,Health care and social assistance,17214.1,15734.25833,,,,,,,,,,,,,,,
+"January, 2012",109.7,Health care and social assistance,17259.7,15734.25833,,,,,,,,,,,,,,,
+"February, 2012",110.0,Health care and social assistance,17311.8,15734.25833,,,,,,,,,,,,,,,
+"March, 2012",110.2,Health care and social assistance,17346,15734.25833,,,,,,,,,,,,,,,
+"April, 2012",110.3,Health care and social assistance,17360.5,15734.25833,,,,,,,,,,,,,,,
+"May, 2012",110.5,Health care and social assistance,17391.1,15734.25833,,,,,,,,,,,,,,,
+"June, 2012",110.6,Health care and social assistance,17401.4,15734.25833,,,,,,,,,,,,,,,
+"July, 2012",110.8,Health care and social assistance,17427.6,15734.25833,,,,,,,,,,,,,,,
+"August, 2012",110.9,Health care and social assistance,17448.8,15734.25833,,,,,,,,,,,,,,,
+"September, 2012",111.2,Health care and social assistance,17492.2,15734.25833,,,,,,,,,,,,,,,
+"October, 2012",111.4,Health care and social assistance,17529.1,15734.25833,,,,,,,,,,,,,,,
+"November, 2012",111.5,Health care and social assistance,17546.3,15734.25833,,,,,,,,,,,,,,,
+"December, 2012",111.8,Health care and social assistance,17598.4,15734.25833,,,,,,,,,,,,,,,
+"January, 2013",111.9,Health care and social assistance,17611.7,15734.25833,,,,,,,,,,,,,,,
+"February, 2013",112.1,Health care and social assistance,17642.2,15734.25833,,,,,,,,,,,,,,,
+"March, 2013",112.3,Health care and social assistance,17666.5,15734.25833,,,,,,,,,,,,,,,
+"April, 2013",112.5,Health care and social assistance,17707.7,15734.25833,,,,,,,,,,,,,,,
+"May, 2013",112.5,Health care and social assistance,17705.6,15734.25833,,,,,,,,,,,,,,,
+"June, 2013",112.7,Health care and social assistance,17727.3,15734.25833,,,,,,,,,,,,,,,
+"July, 2013",112.6,Health care and social assistance,17712,15734.25833,,,,,,,,,,,,,,,
+"August, 2013",112.9,Health care and social assistance,17766.2,15734.25833,,,,,,,,,,,,,,,
+"September, 2013",113.0,Health care and social assistance,17781.4,15734.25833,,,,,,,,,,,,,,,
+"October, 2013",113.0,Health care and social assistance,17787.4,15734.25833,,,,,,,,,,,,,,,
+"November, 2013",113.3,Health care and social assistance,17822,15734.25833,,,,,,,,,,,,,,,
+"December, 2013",113.3,Health care and social assistance,17822.4,15734.25833,,,,,,,,,,,,,,,
+"January, 2014",113.4,Health care and social assistance,17836,15734.25833,,,,,,,,,,,,,,,
+"February, 2014",113.5,Health care and social assistance,17862,15734.25833,,,,,,,,,,,,,,,
+"March, 2014",113.7,Health care and social assistance,17896,15734.25833,,,,,,,,,,,,,,,
+"April, 2014",113.8,Health care and social assistance,17906.4,15734.25833,,,,,,,,,,,,,,,
+"May, 2014",114.1,Health care and social assistance,17958.2,15734.25833,,,,,,,,,,,,,,,
+"June, 2014",114.3,Health care and social assistance,17988.3,15734.25833,,,,,,,,,,,,,,,
+"July, 2014",114.6,Health care and social assistance,18032.6,15734.25833,,,,,,,,,,,,,,,
+"August, 2014",114.9,Health care and social assistance,18076.7,15734.25833,,,,,,,,,,,,,,,
+"September, 2014",115.1,Health care and social assistance,18106.9,15734.25833,,,,,,,,,,,,,,,
+"October, 2014",115.3,Health care and social assistance,18143.7,15734.25833,,,,,,,,,,,,,,,
+"November, 2014",115.6,Health care and social assistance,18194.6,15734.25833,,,,,,,,,,,,,,,
+"December, 2014",115.9,Health care and social assistance,18242.2,15734.25833,,,,,,,,,,,,,,,
+"January, 2015",116.3,Health care and social assistance,18304.1,15734.25833,,,,,,,,,,,,,,,
+"February, 2015",116.6,Health care and social assistance,18342.7,15734.25833,,,,,,,,,,,,,,,
+"March, 2015",116.8,Health care and social assistance,18374.9,15734.25833,,,,,,,,,,,,,,,
+"April, 2015",117.3,Health care and social assistance,18450.5,15734.25833,,,,,,,,,,,,,,,
+"May, 2015",117.7,Health care and social assistance,18512,15734.25833,,,,,,,,,,,,,,,
+"June, 2015",118.0,Health care and social assistance,18564.7,15734.25833,,,,,,,,,,,,,,,
+"July, 2015",118.3,Health care and social assistance,18613.7,15734.25833,,,,,,,,,,,,,,,
+"August, 2015",118.7,Health care and social assistance,18673.4,15734.25833,,,,,,,,,,,,,,,
+"September, 2015",119.0,Health care and social assistance,18720.3,15734.25833,,,,,,,,,,,,,,,
+"October, 2015",119.4,Health care and social assistance,18786.9,15734.25833,,,,,,,,,,,,,,,
+"November, 2015",119.7,Health care and social assistance,18829.3,15734.25833,,,,,,,,,,,,,,,
+"December, 2015",120.0,Health care and social assistance,18876,15734.25833,,,,,,,,,,,,,,,
+"January, 2016",120.2,Health care and social assistance,18919.4,15734.25833,,,,,,,,,,,,,,,
+"February, 2016",120.6,Health care and social assistance,18976.1,15734.25833,,,,,,,,,,,,,,,
+"March, 2016",120.8,Health care and social assistance,19010.1,15734.25833,,,,,,,,,,,,,,,
+"April, 2016",121.1,Health care and social assistance,19048.3,15734.25833,,,,,,,,,,,,,,,
+"January, 2007",99.3,Leisure and hospitality,13338,13427.91667,,,,,,,,,,,,,,,
+"February, 2007",99.5,Leisure and hospitality,13361,13427.91667,,,,,,,,,,,,,,,
+"March, 2007",99.5,Leisure and hospitality,13363,13427.91667,,,,,,,,,,,,,,,
+"April, 2007",99.6,Leisure and hospitality,13375,13427.91667,,,,,,,,,,,,,,,
+"May, 2007",99.8,Leisure and hospitality,13404,13427.91667,,,,,,,,,,,,,,,
+"June, 2007",99.9,Leisure and hospitality,13413,13427.91667,,,,,,,,,,,,,,,
+"July, 2007",99.9,Leisure and hospitality,13417,13427.91667,,,,,,,,,,,,,,,
+"August, 2007",99.9,Leisure and hospitality,13419,13427.91667,,,,,,,,,,,,,,,
+"September, 2007",100.2,Leisure and hospitality,13461,13427.91667,,,,,,,,,,,,,,,
+"October, 2007",100.5,Leisure and hospitality,13499,13427.91667,,,,,,,,,,,,,,,
+"November, 2007",100.8,Leisure and hospitality,13535,13427.91667,,,,,,,,,,,,,,,
+"December, 2007",100.9,Leisure and hospitality,13550,13427.91667,,,,,,,,,,,,,,,
+"January, 2008",100.8,Leisure and hospitality,13542,13427.91667,,,,,,,,,,,,,,,
+"February, 2008",100.9,Leisure and hospitality,13543,13427.91667,,,,,,,,,,,,,,,
+"March, 2008",100.8,Leisure and hospitality,13531,13427.91667,,,,,,,,,,,,,,,
+"April, 2008",100.6,Leisure and hospitality,13511,13427.91667,,,,,,,,,,,,,,,
+"May, 2008",100.5,Leisure and hospitality,13498,13427.91667,,,,,,,,,,,,,,,
+"June, 2008",100.4,Leisure and hospitality,13482,13427.91667,,,,,,,,,,,,,,,
+"July, 2008",100.3,Leisure and hospitality,13463,13427.91667,,,,,,,,,,,,,,,
+"August, 2008",100.0,Leisure and hospitality,13431,13427.91667,,,,,,,,,,,,,,,
+"September, 2008",99.6,Leisure and hospitality,13379,13427.91667,,,,,,,,,,,,,,,
+"October, 2008",99.4,Leisure and hospitality,13352,13427.91667,,,,,,,,,,,,,,,
+"November, 2008",99.0,Leisure and hospitality,13300,13427.91667,,,,,,,,,,,,,,,
+"December, 2008",98.7,Leisure and hospitality,13256,13427.91667,,,,,,,,,,,,,,,
+"January, 2009",98.5,Leisure and hospitality,13222,13427.91667,,,,,,,,,,,,,,,
+"February, 2009",98.3,Leisure and hospitality,13193,13427.91667,,,,,,,,,,,,,,,
+"March, 2009",97.8,Leisure and hospitality,13127,13427.91667,,,,,,,,,,,,,,,
+"April, 2009",97.2,Leisure and hospitality,13056,13427.91667,,,,,,,,,,,,,,,
+"May, 2009",97.6,Leisure and hospitality,13106,13427.91667,,,,,,,,,,,,,,,
+"June, 2009",97.4,Leisure and hospitality,13076,13427.91667,,,,,,,,,,,,,,,
+"July, 2009",97.4,Leisure and hospitality,13078,13427.91667,,,,,,,,,,,,,,,
+"August, 2009",97.2,Leisure and hospitality,13046,13427.91667,,,,,,,,,,,,,,,
+"September, 2009",97.2,Leisure and hospitality,13054,13427.91667,,,,,,,,,,,,,,,
+"October, 2009",96.8,Leisure and hospitality,12995,13427.91667,,,,,,,,,,,,,,,
+"November, 2009",96.7,Leisure and hospitality,12986,13427.91667,,,,,,,,,,,,,,,
+"December, 2009",96.4,Leisure and hospitality,12944,13427.91667,,,,,,,,,,,,,,,
+"January, 2010",96.3,Leisure and hospitality,12932,13427.91667,,,,,,,,,,,,,,,
+"February, 2010",96.3,Leisure and hospitality,12927,13427.91667,,,,,,,,,,,,,,,
+"March, 2010",96.4,Leisure and hospitality,12943,13427.91667,,,,,,,,,,,,,,,
+"April, 2010",96.7,Leisure and hospitality,12979,13427.91667,,,,,,,,,,,,,,,
+"May, 2010",96.9,Leisure and hospitality,13012,13427.91667,,,,,,,,,,,,,,,
+"June, 2010",97.1,Leisure and hospitality,13034,13427.91667,,,,,,,,,,,,,,,
+"July, 2010",97.2,Leisure and hospitality,13048,13427.91667,,,,,,,,,,,,,,,
+"August, 2010",97.4,Leisure and hospitality,13081,13427.91667,,,,,,,,,,,,,,,
+"September, 2010",97.8,Leisure and hospitality,13137,13427.91667,,,,,,,,,,,,,,,
+"October, 2010",97.8,Leisure and hospitality,13127,13427.91667,,,,,,,,,,,,,,,
+"November, 2010",97.8,Leisure and hospitality,13126,13427.91667,,,,,,,,,,,,,,,
+"December, 2010",98.0,Leisure and hospitality,13157,13427.91667,,,,,,,,,,,,,,,
+"January, 2011",97.9,Leisure and hospitality,13149,13427.91667,,,,,,,,,,,,,,,
+"February, 2011",98.2,Leisure and hospitality,13188,13427.91667,,,,,,,,,,,,,,,
+"March, 2011",98.7,Leisure and hospitality,13247,13427.91667,,,,,,,,,,,,,,,
+"April, 2011",99.0,Leisure and hospitality,13298,13427.91667,,,,,,,,,,,,,,,
+"May, 2011",99.0,Leisure and hospitality,13293,13427.91667,,,,,,,,,,,,,,,
+"June, 2011",99.4,Leisure and hospitality,13343,13427.91667,,,,,,,,,,,,,,,
+"July, 2011",99.6,Leisure and hospitality,13370,13427.91667,,,,,,,,,,,,,,,
+"August, 2011",99.8,Leisure and hospitality,13395,13427.91667,,,,,,,,,,,,,,,
+"September, 2011",100.0,Leisure and hospitality,13426,13427.91667,,,,,,,,,,,,,,,
+"October, 2011",100.3,Leisure and hospitality,13464,13427.91667,,,,,,,,,,,,,,,
+"November, 2011",100.6,Leisure and hospitality,13511,13427.91667,,,,,,,,,,,,,,,
+"December, 2011",100.8,Leisure and hospitality,13538,13427.91667,,,,,,,,,,,,,,,
+"January, 2012",101.3,Leisure and hospitality,13598,13427.91667,,,,,,,,,,,,,,,
+"February, 2012",101.6,Leisure and hospitality,13641,13427.91667,,,,,,,,,,,,,,,
+"March, 2012",102.0,Leisure and hospitality,13702,13427.91667,,,,,,,,,,,,,,,
+"April, 2012",102.0,Leisure and hospitality,13700,13427.91667,,,,,,,,,,,,,,,
+"May, 2012",102.1,Leisure and hospitality,13704,13427.91667,,,,,,,,,,,,,,,
+"June, 2012",102.1,Leisure and hospitality,13711,13427.91667,,,,,,,,,,,,,,,
+"July, 2012",102.3,Leisure and hospitality,13743,13427.91667,,,,,,,,,,,,,,,
+"August, 2012",102.8,Leisure and hospitality,13809,13427.91667,,,,,,,,,,,,,,,
+"September, 2012",103.3,Leisure and hospitality,13873,13427.91667,,,,,,,,,,,,,,,
+"October, 2012",103.4,Leisure and hospitality,13885,13427.91667,,,,,,,,,,,,,,,
+"November, 2012",103.6,Leisure and hospitality,13912,13427.91667,,,,,,,,,,,,,,,
+"December, 2012",104.1,Leisure and hospitality,13981,13427.91667,,,,,,,,,,,,,,,
+"January, 2013",104.5,Leisure and hospitality,14032,13427.91667,,,,,,,,,,,,,,,
+"February, 2013",104.9,Leisure and hospitality,14081,13427.91667,,,,,,,,,,,,,,,
+"March, 2013",105.1,Leisure and hospitality,14111,13427.91667,,,,,,,,,,,,,,,
+"April, 2013",105.4,Leisure and hospitality,14150,13427.91667,,,,,,,,,,,,,,,
+"May, 2013",105.7,Leisure and hospitality,14198,13427.91667,,,,,,,,,,,,,,,
+"June, 2013",106.2,Leisure and hospitality,14255,13427.91667,,,,,,,,,,,,,,,
+"July, 2013",106.5,Leisure and hospitality,14296,13427.91667,,,,,,,,,,,,,,,
+"August, 2013",106.7,Leisure and hospitality,14334,13427.91667,,,,,,,,,,,,,,,
+"September, 2013",106.8,Leisure and hospitality,14340,13427.91667,,,,,,,,,,,,,,,
+"October, 2013",107.2,Leisure and hospitality,14392,13427.91667,,,,,,,,,,,,,,,
+"November, 2013",107.6,Leisure and hospitality,14443,13427.91667,,,,,,,,,,,,,,,
+"December, 2013",107.7,Leisure and hospitality,14460,13427.91667,,,,,,,,,,,,,,,
+"January, 2014",107.9,Leisure and hospitality,14494,13427.91667,,,,,,,,,,,,,,,
+"February, 2014",108.1,Leisure and hospitality,14512,13427.91667,,,,,,,,,,,,,,,
+"March, 2014",108.4,Leisure and hospitality,14561,13427.91667,,,,,,,,,,,,,,,
+"April, 2014",108.8,Leisure and hospitality,14605,13427.91667,,,,,,,,,,,,,,,
+"May, 2014",109.2,Leisure and hospitality,14662,13427.91667,,,,,,,,,,,,,,,
+"June, 2014",109.4,Leisure and hospitality,14693,13427.91667,,,,,,,,,,,,,,,
+"July, 2014",109.6,Leisure and hospitality,14714,13427.91667,,,,,,,,,,,,,,,
+"August, 2014",109.7,Leisure and hospitality,14735,13427.91667,,,,,,,,,,,,,,,
+"September, 2014",110.0,Leisure and hospitality,14771,13427.91667,,,,,,,,,,,,,,,
+"October, 2014",110.4,Leisure and hospitality,14818,13427.91667,,,,,,,,,,,,,,,
+"November, 2014",110.6,Leisure and hospitality,14856,13427.91667,,,,,,,,,,,,,,,
+"December, 2014",111.0,Leisure and hospitality,14901,13427.91667,,,,,,,,,,,,,,,
+"January, 2015",111.1,Leisure and hospitality,14924,13427.91667,,,,,,,,,,,,,,,
+"February, 2015",111.6,Leisure and hospitality,14989,13427.91667,,,,,,,,,,,,,,,
+"March, 2015",111.6,Leisure and hospitality,14989,13427.91667,,,,,,,,,,,,,,,
+"April, 2015",111.8,Leisure and hospitality,15010,13427.91667,,,,,,,,,,,,,,,
+"May, 2015",112.1,Leisure and hospitality,15059,13427.91667,,,,,,,,,,,,,,,
+"June, 2015",112.4,Leisure and hospitality,15089,13427.91667,,,,,,,,,,,,,,,
+"July, 2015",112.6,Leisure and hospitality,15125,13427.91667,,,,,,,,,,,,,,,
+"August, 2015",112.9,Leisure and hospitality,15158,13427.91667,,,,,,,,,,,,,,,
+"September, 2015",113.3,Leisure and hospitality,15208,13427.91667,,,,,,,,,,,,,,,
+"October, 2015",113.7,Leisure and hospitality,15261,13427.91667,,,,,,,,,,,,,,,
+"November, 2015",114.0,Leisure and hospitality,15307,13427.91667,,,,,,,,,,,,,,,
+"December, 2015",114.3,Leisure and hospitality,15342,13427.91667,,,,,,,,,,,,,,,
+"January, 2016",114.5,Leisure and hospitality,15376,13427.91667,,,,,,,,,,,,,,,
+"February, 2016",114.8,Leisure and hospitality,15413,13427.91667,,,,,,,,,,,,,,,
+"March, 2016",115.0,Leisure and hospitality,15437,13427.91667,,,,,,,,,,,,,,,
+"April, 2016",115.1,Leisure and hospitality,15459,13427.91667,,,,,,,,,,,,,,,
