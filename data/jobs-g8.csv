@@ -1,0 +1,673 @@
+date,index,type
+"January, 2007",101,Construction
+"February, 2007",100,Construction
+"March, 2007",101,Construction
+"April, 2007",101,Construction
+"May, 2007",101,Construction
+"June, 2007",101,Construction
+"July, 2007",100,Construction
+"August, 2007",100,Construction
+"September, 2007",99,Construction
+"October, 2007",99,Construction
+"November, 2007",99,Construction
+"December, 2007",98,Construction
+"January, 2008",98,Construction
+"February, 2008",98,Construction
+"March, 2008",97,Construction
+"April, 2008",96,Construction
+"May, 2008",95,Construction
+"June, 2008",95,Construction
+"July, 2008",94,Construction
+"August, 2008",93,Construction
+"September, 2008",92,Construction
+"October, 2008",91,Construction
+"November, 2008",89,Construction
+"December, 2008",88,Construction
+"January, 2009",86,Construction
+"February, 2009",85,Construction
+"March, 2009",82,Construction
+"April, 2009",81,Construction
+"May, 2009",80,Construction
+"June, 2009",79,Construction
+"July, 2009",78,Construction
+"August, 2009",77,Construction
+"September, 2009",76,Construction
+"October, 2009",75,Construction
+"November, 2009",75,Construction
+"December, 2009",74,Construction
+"January, 2010",73,Construction
+"February, 2010",72,Construction
+"March, 2010",73,Construction
+"April, 2010",73,Construction
+"May, 2010",72,Construction
+"June, 2010",72,Construction
+"July, 2010",72,Construction
+"August, 2010",72,Construction
+"September, 2010",72,Construction
+"October, 2010",72,Construction
+"November, 2010",72,Construction
+"December, 2010",72,Construction
+"January, 2011",71,Construction
+"February, 2011",71,Construction
+"March, 2011",72,Construction
+"April, 2011",72,Construction
+"May, 2011",72,Construction
+"June, 2011",72,Construction
+"July, 2011",73,Construction
+"August, 2011",73,Construction
+"September, 2011",73,Construction
+"October, 2011",73,Construction
+"November, 2011",73,Construction
+"December, 2011",74,Construction
+"January, 2012",74,Construction
+"February, 2012",74,Construction
+"March, 2012",74,Construction
+"April, 2012",74,Construction
+"May, 2012",73,Construction
+"June, 2012",74,Construction
+"July, 2012",74,Construction
+"August, 2012",74,Construction
+"September, 2012",74,Construction
+"October, 2012",74,Construction
+"November, 2012",74,Construction
+"December, 2012",75,Construction
+"January, 2013",75,Construction
+"February, 2013",76,Construction
+"March, 2013",76,Construction
+"April, 2013",76,Construction
+"May, 2013",76,Construction
+"June, 2013",77,Construction
+"July, 2013",77,Construction
+"August, 2013",77,Construction
+"September, 2013",77,Construction
+"October, 2013",78,Construction
+"November, 2013",78,Construction
+"December, 2013",78,Construction
+"January, 2014",79,Construction
+"February, 2014",79,Construction
+"March, 2014",79,Construction
+"April, 2014",80,Construction
+"May, 2014",80,Construction
+"June, 2014",80,Construction
+"July, 2014",81,Construction
+"August, 2014",81,Construction
+"September, 2014",82,Construction
+"October, 2014",82,Construction
+"November, 2014",82,Construction
+"December, 2014",83,Construction
+"January, 2015",83,Construction
+"February, 2015",84,Construction
+"March, 2015",84,Construction
+"April, 2015",84,Construction
+"May, 2015",84,Construction
+"June, 2015",84,Construction
+"July, 2015",84,Construction
+"August, 2015",84,Construction
+"September, 2015",85,Construction
+"October, 2015",85,Construction
+"November, 2015",86,Construction
+"December, 2015",86,Construction
+"January, 2016",87,Construction
+"February, 2016",87,Construction
+"March, 2016",87,Construction
+"April, 2016",87,Construction
+"January, 2007",101,Manufacturing
+"February, 2007",101,Manufacturing
+"March, 2007",101,Manufacturing
+"April, 2007",100,Manufacturing
+"May, 2007",100,Manufacturing
+"June, 2007",100,Manufacturing
+"July, 2007",100,Manufacturing
+"August, 2007",100,Manufacturing
+"September, 2007",99,Manufacturing
+"October, 2007",99,Manufacturing
+"November, 2007",99,Manufacturing
+"December, 2007",99,Manufacturing
+"January, 2008",99,Manufacturing
+"February, 2008",99,Manufacturing
+"March, 2008",98,Manufacturing
+"April, 2008",98,Manufacturing
+"May, 2008",98,Manufacturing
+"June, 2008",97,Manufacturing
+"July, 2008",97,Manufacturing
+"August, 2008",96,Manufacturing
+"September, 2008",96,Manufacturing
+"October, 2008",95,Manufacturing
+"November, 2008",94,Manufacturing
+"December, 2008",93,Manufacturing
+"January, 2009",91,Manufacturing
+"February, 2009",89,Manufacturing
+"March, 2009",88,Manufacturing
+"April, 2009",87,Manufacturing
+"May, 2009",85,Manufacturing
+"June, 2009",84,Manufacturing
+"July, 2009",84,Manufacturing
+"August, 2009",84,Manufacturing
+"September, 2009",84,Manufacturing
+"October, 2009",83,Manufacturing
+"November, 2009",83,Manufacturing
+"December, 2009",83,Manufacturing
+"January, 2010",83,Manufacturing
+"February, 2010",83,Manufacturing
+"March, 2010",83,Manufacturing
+"April, 2010",83,Manufacturing
+"May, 2010",83,Manufacturing
+"June, 2010",83,Manufacturing
+"July, 2010",83,Manufacturing
+"August, 2010",83,Manufacturing
+"September, 2010",83,Manufacturing
+"October, 2010",83,Manufacturing
+"November, 2010",83,Manufacturing
+"December, 2010",84,Manufacturing
+"January, 2011",84,Manufacturing
+"February, 2011",84,Manufacturing
+"March, 2011",84,Manufacturing
+"April, 2011",84,Manufacturing
+"May, 2011",84,Manufacturing
+"June, 2011",85,Manufacturing
+"July, 2011",85,Manufacturing
+"August, 2011",85,Manufacturing
+"September, 2011",85,Manufacturing
+"October, 2011",85,Manufacturing
+"November, 2011",85,Manufacturing
+"December, 2011",85,Manufacturing
+"January, 2012",85,Manufacturing
+"February, 2012",85,Manufacturing
+"March, 2012",86,Manufacturing
+"April, 2012",86,Manufacturing
+"May, 2012",86,Manufacturing
+"June, 2012",86,Manufacturing
+"July, 2012",86,Manufacturing
+"August, 2012",86,Manufacturing
+"September, 2012",86,Manufacturing
+"October, 2012",86,Manufacturing
+"November, 2012",86,Manufacturing
+"December, 2012",86,Manufacturing
+"January, 2013",86,Manufacturing
+"February, 2013",86,Manufacturing
+"March, 2013",86,Manufacturing
+"April, 2013",86,Manufacturing
+"May, 2013",86,Manufacturing
+"June, 2013",86,Manufacturing
+"July, 2013",86,Manufacturing
+"August, 2013",87,Manufacturing
+"September, 2013",87,Manufacturing
+"October, 2013",87,Manufacturing
+"November, 2013",87,Manufacturing
+"December, 2013",87,Manufacturing
+"January, 2014",87,Manufacturing
+"February, 2014",87,Manufacturing
+"March, 2014",87,Manufacturing
+"April, 2014",87,Manufacturing
+"May, 2014",88,Manufacturing
+"June, 2014",88,Manufacturing
+"July, 2014",88,Manufacturing
+"August, 2014",88,Manufacturing
+"September, 2014",88,Manufacturing
+"October, 2014",88,Manufacturing
+"November, 2014",88,Manufacturing
+"December, 2014",89,Manufacturing
+"January, 2015",89,Manufacturing
+"February, 2015",89,Manufacturing
+"March, 2015",89,Manufacturing
+"April, 2015",89,Manufacturing
+"May, 2015",89,Manufacturing
+"June, 2015",89,Manufacturing
+"July, 2015",89,Manufacturing
+"August, 2015",89,Manufacturing
+"September, 2015",89,Manufacturing
+"October, 2015",89,Manufacturing
+"November, 2015",89,Manufacturing
+"December, 2015",89,Manufacturing
+"January, 2016",89,Manufacturing
+"February, 2016",89,Manufacturing
+"March, 2016",89,Manufacturing
+"April, 2016",89,Manufacturing
+"January, 2007",100,Retail
+"February, 2007",100,Retail
+"March, 2007",100,Retail
+"April, 2007",100,Retail
+"May, 2007",100,Retail
+"June, 2007",100,Retail
+"July, 2007",100,Retail
+"August, 2007",100,Retail
+"September, 2007",100,Retail
+"October, 2007",100,Retail
+"November, 2007",100,Retail
+"December, 2007",100,Retail
+"January, 2008",100,Retail
+"February, 2008",100,Retail
+"March, 2008",100,Retail
+"April, 2008",99,Retail
+"May, 2008",99,Retail
+"June, 2008",99,Retail
+"July, 2008",99,Retail
+"August, 2008",98,Retail
+"September, 2008",98,Retail
+"October, 2008",97,Retail
+"November, 2008",97,Retail
+"December, 2008",96,Retail
+"January, 2009",95,Retail
+"February, 2009",95,Retail
+"March, 2009",94,Retail
+"April, 2009",94,Retail
+"May, 2009",94,Retail
+"June, 2009",94,Retail
+"July, 2009",93,Retail
+"August, 2009",93,Retail
+"September, 2009",93,Retail
+"October, 2009",93,Retail
+"November, 2009",93,Retail
+"December, 2009",92,Retail
+"January, 2010",93,Retail
+"February, 2010",93,Retail
+"March, 2010",93,Retail
+"April, 2010",93,Retail
+"May, 2010",93,Retail
+"June, 2010",93,Retail
+"July, 2010",93,Retail
+"August, 2010",93,Retail
+"September, 2010",93,Retail
+"October, 2010",93,Retail
+"November, 2010",93,Retail
+"December, 2010",93,Retail
+"January, 2011",94,Retail
+"February, 2011",94,Retail
+"March, 2011",94,Retail
+"April, 2011",94,Retail
+"May, 2011",94,Retail
+"June, 2011",95,Retail
+"July, 2011",95,Retail
+"August, 2011",95,Retail
+"September, 2011",95,Retail
+"October, 2011",95,Retail
+"November, 2011",95,Retail
+"December, 2011",95,Retail
+"January, 2012",95,Retail
+"February, 2012",95,Retail
+"March, 2012",95,Retail
+"April, 2012",96,Retail
+"May, 2012",96,Retail
+"June, 2012",95,Retail
+"July, 2012",95,Retail
+"August, 2012",95,Retail
+"September, 2012",96,Retail
+"October, 2012",96,Retail
+"November, 2012",96,Retail
+"December, 2012",96,Retail
+"January, 2013",96,Retail
+"February, 2013",96,Retail
+"March, 2013",96,Retail
+"April, 2013",96,Retail
+"May, 2013",97,Retail
+"June, 2013",97,Retail
+"July, 2013",97,Retail
+"August, 2013",98,Retail
+"September, 2013",98,Retail
+"October, 2013",98,Retail
+"November, 2013",98,Retail
+"December, 2013",98,Retail
+"January, 2014",98,Retail
+"February, 2014",98,Retail
+"March, 2014",98,Retail
+"April, 2014",99,Retail
+"May, 2014",99,Retail
+"June, 2014",99,Retail
+"July, 2014",99,Retail
+"August, 2014",99,Retail
+"September, 2014",99,Retail
+"October, 2014",99,Retail
+"November, 2014",100,Retail
+"December, 2014",100,Retail
+"January, 2015",100,Retail
+"February, 2015",100,Retail
+"March, 2015",100,Retail
+"April, 2015",100,Retail
+"May, 2015",101,Retail
+"June, 2015",101,Retail
+"July, 2015",101,Retail
+"August, 2015",101,Retail
+"September, 2015",101,Retail
+"October, 2015",101,Retail
+"November, 2015",102,Retail
+"December, 2015",102,Retail
+"January, 2016",102,Retail
+"February, 2016",102,Retail
+"March, 2016",103,Retail
+"April, 2016",103,Retail
+"January, 2007",99,Educational services
+"February, 2007",99,Educational services
+"March, 2007",99,Educational services
+"April, 2007",100,Educational services
+"May, 2007",100,Educational services
+"June, 2007",100,Educational services
+"July, 2007",100,Educational services
+"August, 2007",100,Educational services
+"September, 2007",101,Educational services
+"October, 2007",101,Educational services
+"November, 2007",101,Educational services
+"December, 2007",101,Educational services
+"January, 2008",102,Educational services
+"February, 2008",102,Educational services
+"March, 2008",102,Educational services
+"April, 2008",102,Educational services
+"May, 2008",103,Educational services
+"June, 2008",104,Educational services
+"July, 2008",104,Educational services
+"August, 2008",105,Educational services
+"September, 2008",104,Educational services
+"October, 2008",104,Educational services
+"November, 2008",104,Educational services
+"December, 2008",104,Educational services
+"January, 2009",105,Educational services
+"February, 2009",105,Educational services
+"March, 2009",105,Educational services
+"April, 2009",105,Educational services
+"May, 2009",105,Educational services
+"June, 2009",105,Educational services
+"July, 2009",105,Educational services
+"August, 2009",105,Educational services
+"September, 2009",104,Educational services
+"October, 2009",105,Educational services
+"November, 2009",105,Educational services
+"December, 2009",106,Educational services
+"January, 2010",106,Educational services
+"February, 2010",106,Educational services
+"March, 2010",106,Educational services
+"April, 2010",106,Educational services
+"May, 2010",107,Educational services
+"June, 2010",107,Educational services
+"July, 2010",108,Educational services
+"August, 2010",108,Educational services
+"September, 2010",107,Educational services
+"October, 2010",108,Educational services
+"November, 2010",109,Educational services
+"December, 2010",109,Educational services
+"January, 2011",109,Educational services
+"February, 2011",109,Educational services
+"March, 2011",109,Educational services
+"April, 2011",110,Educational services
+"May, 2011",110,Educational services
+"June, 2011",110,Educational services
+"July, 2011",110,Educational services
+"August, 2011",111,Educational services
+"September, 2011",111,Educational services
+"October, 2011",111,Educational services
+"November, 2011",112,Educational services
+"December, 2011",113,Educational services
+"January, 2012",113,Educational services
+"February, 2012",114,Educational services
+"March, 2012",114,Educational services
+"April, 2012",114,Educational services
+"May, 2012",114,Educational services
+"June, 2012",114,Educational services
+"July, 2012",114,Educational services
+"August, 2012",114,Educational services
+"September, 2012",114,Educational services
+"October, 2012",114,Educational services
+"November, 2012",113,Educational services
+"December, 2012",113,Educational services
+"January, 2013",113,Educational services
+"February, 2013",113,Educational services
+"March, 2013",113,Educational services
+"April, 2013",114,Educational services
+"May, 2013",114,Educational services
+"June, 2013",113,Educational services
+"July, 2013",114,Educational services
+"August, 2013",115,Educational services
+"September, 2013",114,Educational services
+"October, 2013",114,Educational services
+"November, 2013",115,Educational services
+"December, 2013",115,Educational services
+"January, 2014",115,Educational services
+"February, 2014",115,Educational services
+"March, 2014",115,Educational services
+"April, 2014",116,Educational services
+"May, 2014",116,Educational services
+"June, 2014",116,Educational services
+"July, 2014",116,Educational services
+"August, 2014",116,Educational services
+"September, 2014",117,Educational services
+"October, 2014",117,Educational services
+"November, 2014",117,Educational services
+"December, 2014",117,Educational services
+"January, 2015",117,Educational services
+"February, 2015",117,Educational services
+"March, 2015",117,Educational services
+"April, 2015",117,Educational services
+"May, 2015",117,Educational services
+"June, 2015",117,Educational services
+"July, 2015",118,Educational services
+"August, 2015",118,Educational services
+"September, 2015",118,Educational services
+"October, 2015",118,Educational services
+"November, 2015",118,Educational services
+"December, 2015",119,Educational services
+"January, 2016",118,Educational services
+"February, 2016",119,Educational services
+"March, 2016",119,Educational services
+"April, 2016",120,Educational services
+"January, 2007",99,Health care and social assistance
+"February, 2007",99,Health care and social assistance
+"March, 2007",99,Health care and social assistance
+"April, 2007",99,Health care and social assistance
+"May, 2007",100,Health care and social assistance
+"June, 2007",100,Health care and social assistance
+"July, 2007",100,Health care and social assistance
+"August, 2007",100,Health care and social assistance
+"September, 2007",101,Health care and social assistance
+"October, 2007",101,Health care and social assistance
+"November, 2007",101,Health care and social assistance
+"December, 2007",101,Health care and social assistance
+"January, 2008",102,Health care and social assistance
+"February, 2008",102,Health care and social assistance
+"March, 2008",102,Health care and social assistance
+"April, 2008",102,Health care and social assistance
+"May, 2008",103,Health care and social assistance
+"June, 2008",103,Health care and social assistance
+"July, 2008",103,Health care and social assistance
+"August, 2008",103,Health care and social assistance
+"September, 2008",103,Health care and social assistance
+"October, 2008",104,Health care and social assistance
+"November, 2008",104,Health care and social assistance
+"December, 2008",104,Health care and social assistance
+"January, 2009",104,Health care and social assistance
+"February, 2009",104,Health care and social assistance
+"March, 2009",104,Health care and social assistance
+"April, 2009",105,Health care and social assistance
+"May, 2009",105,Health care and social assistance
+"June, 2009",105,Health care and social assistance
+"July, 2009",105,Health care and social assistance
+"August, 2009",105,Health care and social assistance
+"September, 2009",106,Health care and social assistance
+"October, 2009",106,Health care and social assistance
+"November, 2009",106,Health care and social assistance
+"December, 2009",106,Health care and social assistance
+"January, 2010",106,Health care and social assistance
+"February, 2010",106,Health care and social assistance
+"March, 2010",107,Health care and social assistance
+"April, 2010",107,Health care and social assistance
+"May, 2010",107,Health care and social assistance
+"June, 2010",107,Health care and social assistance
+"July, 2010",107,Health care and social assistance
+"August, 2010",107,Health care and social assistance
+"September, 2010",107,Health care and social assistance
+"October, 2010",107,Health care and social assistance
+"November, 2010",108,Health care and social assistance
+"December, 2010",108,Health care and social assistance
+"January, 2011",108,Health care and social assistance
+"February, 2011",108,Health care and social assistance
+"March, 2011",108,Health care and social assistance
+"April, 2011",108,Health care and social assistance
+"May, 2011",108,Health care and social assistance
+"June, 2011",108,Health care and social assistance
+"July, 2011",109,Health care and social assistance
+"August, 2011",109,Health care and social assistance
+"September, 2011",109,Health care and social assistance
+"October, 2011",109,Health care and social assistance
+"November, 2011",109,Health care and social assistance
+"December, 2011",109,Health care and social assistance
+"January, 2012",110,Health care and social assistance
+"February, 2012",110,Health care and social assistance
+"March, 2012",110,Health care and social assistance
+"April, 2012",110,Health care and social assistance
+"May, 2012",111,Health care and social assistance
+"June, 2012",111,Health care and social assistance
+"July, 2012",111,Health care and social assistance
+"August, 2012",111,Health care and social assistance
+"September, 2012",111,Health care and social assistance
+"October, 2012",111,Health care and social assistance
+"November, 2012",112,Health care and social assistance
+"December, 2012",112,Health care and social assistance
+"January, 2013",112,Health care and social assistance
+"February, 2013",112,Health care and social assistance
+"March, 2013",112,Health care and social assistance
+"April, 2013",113,Health care and social assistance
+"May, 2013",113,Health care and social assistance
+"June, 2013",113,Health care and social assistance
+"July, 2013",113,Health care and social assistance
+"August, 2013",113,Health care and social assistance
+"September, 2013",113,Health care and social assistance
+"October, 2013",113,Health care and social assistance
+"November, 2013",113,Health care and social assistance
+"December, 2013",113,Health care and social assistance
+"January, 2014",113,Health care and social assistance
+"February, 2014",114,Health care and social assistance
+"March, 2014",114,Health care and social assistance
+"April, 2014",114,Health care and social assistance
+"May, 2014",114,Health care and social assistance
+"June, 2014",114,Health care and social assistance
+"July, 2014",115,Health care and social assistance
+"August, 2014",115,Health care and social assistance
+"September, 2014",115,Health care and social assistance
+"October, 2014",115,Health care and social assistance
+"November, 2014",116,Health care and social assistance
+"December, 2014",116,Health care and social assistance
+"January, 2015",116,Health care and social assistance
+"February, 2015",117,Health care and social assistance
+"March, 2015",117,Health care and social assistance
+"April, 2015",117,Health care and social assistance
+"May, 2015",118,Health care and social assistance
+"June, 2015",118,Health care and social assistance
+"July, 2015",118,Health care and social assistance
+"August, 2015",119,Health care and social assistance
+"September, 2015",119,Health care and social assistance
+"October, 2015",119,Health care and social assistance
+"November, 2015",120,Health care and social assistance
+"December, 2015",120,Health care and social assistance
+"January, 2016",120,Health care and social assistance
+"February, 2016",121,Health care and social assistance
+"March, 2016",121,Health care and social assistance
+"April, 2016",121,Health care and social assistance
+"January, 2007",99,Leisure and hospitality
+"February, 2007",100,Leisure and hospitality
+"March, 2007",100,Leisure and hospitality
+"April, 2007",100,Leisure and hospitality
+"May, 2007",100,Leisure and hospitality
+"June, 2007",100,Leisure and hospitality
+"July, 2007",100,Leisure and hospitality
+"August, 2007",100,Leisure and hospitality
+"September, 2007",100,Leisure and hospitality
+"October, 2007",101,Leisure and hospitality
+"November, 2007",101,Leisure and hospitality
+"December, 2007",101,Leisure and hospitality
+"January, 2008",101,Leisure and hospitality
+"February, 2008",101,Leisure and hospitality
+"March, 2008",101,Leisure and hospitality
+"April, 2008",101,Leisure and hospitality
+"May, 2008",101,Leisure and hospitality
+"June, 2008",100,Leisure and hospitality
+"July, 2008",100,Leisure and hospitality
+"August, 2008",100,Leisure and hospitality
+"September, 2008",100,Leisure and hospitality
+"October, 2008",99,Leisure and hospitality
+"November, 2008",99,Leisure and hospitality
+"December, 2008",99,Leisure and hospitality
+"January, 2009",98,Leisure and hospitality
+"February, 2009",98,Leisure and hospitality
+"March, 2009",98,Leisure and hospitality
+"April, 2009",97,Leisure and hospitality
+"May, 2009",98,Leisure and hospitality
+"June, 2009",97,Leisure and hospitality
+"July, 2009",97,Leisure and hospitality
+"August, 2009",97,Leisure and hospitality
+"September, 2009",97,Leisure and hospitality
+"October, 2009",97,Leisure and hospitality
+"November, 2009",97,Leisure and hospitality
+"December, 2009",96,Leisure and hospitality
+"January, 2010",96,Leisure and hospitality
+"February, 2010",96,Leisure and hospitality
+"March, 2010",96,Leisure and hospitality
+"April, 2010",97,Leisure and hospitality
+"May, 2010",97,Leisure and hospitality
+"June, 2010",97,Leisure and hospitality
+"July, 2010",97,Leisure and hospitality
+"August, 2010",97,Leisure and hospitality
+"September, 2010",98,Leisure and hospitality
+"October, 2010",98,Leisure and hospitality
+"November, 2010",98,Leisure and hospitality
+"December, 2010",98,Leisure and hospitality
+"January, 2011",98,Leisure and hospitality
+"February, 2011",98,Leisure and hospitality
+"March, 2011",99,Leisure and hospitality
+"April, 2011",99,Leisure and hospitality
+"May, 2011",99,Leisure and hospitality
+"June, 2011",99,Leisure and hospitality
+"July, 2011",100,Leisure and hospitality
+"August, 2011",100,Leisure and hospitality
+"September, 2011",100,Leisure and hospitality
+"October, 2011",100,Leisure and hospitality
+"November, 2011",101,Leisure and hospitality
+"December, 2011",101,Leisure and hospitality
+"January, 2012",101,Leisure and hospitality
+"February, 2012",102,Leisure and hospitality
+"March, 2012",102,Leisure and hospitality
+"April, 2012",102,Leisure and hospitality
+"May, 2012",102,Leisure and hospitality
+"June, 2012",102,Leisure and hospitality
+"July, 2012",102,Leisure and hospitality
+"August, 2012",103,Leisure and hospitality
+"September, 2012",103,Leisure and hospitality
+"October, 2012",103,Leisure and hospitality
+"November, 2012",104,Leisure and hospitality
+"December, 2012",104,Leisure and hospitality
+"January, 2013",104,Leisure and hospitality
+"February, 2013",105,Leisure and hospitality
+"March, 2013",105,Leisure and hospitality
+"April, 2013",105,Leisure and hospitality
+"May, 2013",106,Leisure and hospitality
+"June, 2013",106,Leisure and hospitality
+"July, 2013",106,Leisure and hospitality
+"August, 2013",107,Leisure and hospitality
+"September, 2013",107,Leisure and hospitality
+"October, 2013",107,Leisure and hospitality
+"November, 2013",108,Leisure and hospitality
+"December, 2013",108,Leisure and hospitality
+"January, 2014",108,Leisure and hospitality
+"February, 2014",108,Leisure and hospitality
+"March, 2014",108,Leisure and hospitality
+"April, 2014",109,Leisure and hospitality
+"May, 2014",109,Leisure and hospitality
+"June, 2014",109,Leisure and hospitality
+"July, 2014",110,Leisure and hospitality
+"August, 2014",110,Leisure and hospitality
+"September, 2014",110,Leisure and hospitality
+"October, 2014",110,Leisure and hospitality
+"November, 2014",111,Leisure and hospitality
+"December, 2014",111,Leisure and hospitality
+"January, 2015",111,Leisure and hospitality
+"February, 2015",112,Leisure and hospitality
+"March, 2015",112,Leisure and hospitality
+"April, 2015",112,Leisure and hospitality
+"May, 2015",112,Leisure and hospitality
+"June, 2015",112,Leisure and hospitality
+"July, 2015",113,Leisure and hospitality
+"August, 2015",113,Leisure and hospitality
+"September, 2015",113,Leisure and hospitality
+"October, 2015",114,Leisure and hospitality
+"November, 2015",114,Leisure and hospitality
+"December, 2015",114,Leisure and hospitality
+"January, 2016",115,Leisure and hospitality
+"February, 2016",115,Leisure and hospitality
+"March, 2016",115,Leisure and hospitality
+"April, 2016",115,Leisure and hospitality

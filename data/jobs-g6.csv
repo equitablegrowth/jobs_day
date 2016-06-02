@@ -1,0 +1,225 @@
+year,month,date,parttime,laborforce,value,type
+2007,January,"January, 2007",4279,153144,2.79,Part-time for economic reasons
+2007,February,"February, 2007",4220,152983,2.76,Part-time for economic reasons
+2007,March,"March, 2007",4253,153051,2.78,Part-time for economic reasons
+2007,April,"April, 2007",4313,152435,2.83,Part-time for economic reasons
+2007,May,"May, 2007",4473,152670,2.93,Part-time for economic reasons
+2007,June,"June, 2007",4342,153041,2.84,Part-time for economic reasons
+2007,July,"July, 2007",4410,153054,2.88,Part-time for economic reasons
+2007,August,"August, 2007",4576,152749,3,Part-time for economic reasons
+2007,September,"September, 2007",4521,153414,2.95,Part-time for economic reasons
+2007,October,"October, 2007",4325,153183,2.82,Part-time for economic reasons
+2007,November,"November, 2007",4494,153835,2.92,Part-time for economic reasons
+2007,December,"December, 2007",4618,153918,3,Part-time for economic reasons
+2008,January,"January, 2008",4846,154063,3.15,Part-time for economic reasons
+2008,February,"February, 2008",4902,153653,3.19,Part-time for economic reasons
+2008,March,"March, 2008",4904,153908,3.19,Part-time for economic reasons
+2008,April,"April, 2008",5220,153769,3.39,Part-time for economic reasons
+2008,May,"May, 2008",5286,154303,3.43,Part-time for economic reasons
+2008,June,"June, 2008",5540,154313,3.59,Part-time for economic reasons
+2008,July,"July, 2008",5930,154469,3.84,Part-time for economic reasons
+2008,August,"August, 2008",5851,154641,3.78,Part-time for economic reasons
+2008,September,"September, 2008",6148,154570,3.98,Part-time for economic reasons
+2008,October,"October, 2008",6690,154876,4.32,Part-time for economic reasons
+2008,November,"November, 2008",7311,154639,4.73,Part-time for economic reasons
+2008,December,"December, 2008",8029,154655,5.19,Part-time for economic reasons
+2009,January,"January, 2009",8046,154210,5.22,Part-time for economic reasons
+2009,February,"February, 2009",8796,154538,5.69,Part-time for economic reasons
+2009,March,"March, 2009",9145,154133,5.93,Part-time for economic reasons
+2009,April,"April, 2009",8908,154509,5.77,Part-time for economic reasons
+2009,May,"May, 2009",9113,154747,5.89,Part-time for economic reasons
+2009,June,"June, 2009",9024,154716,5.83,Part-time for economic reasons
+2009,July,"July, 2009",8891,154502,5.75,Part-time for economic reasons
+2009,August,"August, 2009",9029,154307,5.85,Part-time for economic reasons
+2009,September,"September, 2009",8847,153827,5.75,Part-time for economic reasons
+2009,October,"October, 2009",8979,153784,5.84,Part-time for economic reasons
+2009,November,"November, 2009",9114,153878,5.92,Part-time for economic reasons
+2009,December,"December, 2009",9098,153111,5.94,Part-time for economic reasons
+2010,January,"January, 2010",8530,153484,5.56,Part-time for economic reasons
+2010,February,"February, 2010",8936,153694,5.81,Part-time for economic reasons
+2010,March,"March, 2010",9233,153954,6,Part-time for economic reasons
+2010,April,"April, 2010",9178,154622,5.94,Part-time for economic reasons
+2010,May,"May, 2010",8845,154091,5.74,Part-time for economic reasons
+2010,June,"June, 2010",8577,153616,5.58,Part-time for economic reasons
+2010,July,"July, 2010",8500,153691,5.53,Part-time for economic reasons
+2010,August,"August, 2010",8800,154086,5.71,Part-time for economic reasons
+2010,September,"September, 2010",9246,153975,6,Part-time for economic reasons
+2010,October,"October, 2010",8837,153635,5.75,Part-time for economic reasons
+2010,November,"November, 2010",8873,154125,5.76,Part-time for economic reasons
+2010,December,"December, 2010",8935,153650,5.82,Part-time for economic reasons
+2011,January,"January, 2011",8470,153263,5.53,Part-time for economic reasons
+2011,February,"February, 2011",8464,153214,5.52,Part-time for economic reasons
+2011,March,"March, 2011",8645,153376,5.64,Part-time for economic reasons
+2011,April,"April, 2011",8652,153543,5.63,Part-time for economic reasons
+2011,May,"May, 2011",8576,153479,5.59,Part-time for economic reasons
+2011,June,"June, 2011",8427,153346,5.5,Part-time for economic reasons
+2011,July,"July, 2011",8281,153288,5.4,Part-time for economic reasons
+2011,August,"August, 2011",8788,153760,5.72,Part-time for economic reasons
+2011,September,"September, 2011",9166,154131,5.95,Part-time for economic reasons
+2011,October,"October, 2011",8657,153961,5.62,Part-time for economic reasons
+2011,November,"November, 2011",8447,154128,5.48,Part-time for economic reasons
+2011,December,"December, 2011",8171,153995,5.31,Part-time for economic reasons
+2012,January,"January, 2012",8267,154351,5.36,Part-time for economic reasons
+2012,February,"February, 2012",8214,154695,5.31,Part-time for economic reasons
+2012,March,"March, 2012",7793,154768,5.04,Part-time for economic reasons
+2012,April,"April, 2012",7907,154557,5.12,Part-time for economic reasons
+2012,May,"May, 2012",8123,154859,5.25,Part-time for economic reasons
+2012,June,"June, 2012",8081,155084,5.21,Part-time for economic reasons
+2012,July,"July, 2012",8092,154943,5.22,Part-time for economic reasons
+2012,August,"August, 2012",7998,154753,5.17,Part-time for economic reasons
+2012,September,"September, 2012",8667,155168,5.59,Part-time for economic reasons
+2012,October,"October, 2012",8229,155539,5.29,Part-time for economic reasons
+2012,November,"November, 2012",8150,155356,5.25,Part-time for economic reasons
+2012,December,"December, 2012",7922,155597,5.09,Part-time for economic reasons
+2013,January,"January, 2013",8030,155666,5.16,Part-time for economic reasons
+2013,February,"February, 2013",8089,155313,5.21,Part-time for economic reasons
+2013,March,"March, 2013",7682,155034,4.96,Part-time for economic reasons
+2013,April,"April, 2013",7924,155365,5.1,Part-time for economic reasons
+2013,May,"May, 2013",7901,155483,5.08,Part-time for economic reasons
+2013,June,"June, 2013",8104,155753,5.2,Part-time for economic reasons
+2013,July,"July, 2013",8093,155662,5.2,Part-time for economic reasons
+2013,August,"August, 2013",7837,155568,5.04,Part-time for economic reasons
+2013,September,"September, 2013",8008,155749,5.14,Part-time for economic reasons
+2013,October,"October, 2013",8028,154694,5.19,Part-time for economic reasons
+2013,November,"November, 2013",7708,155352,4.96,Part-time for economic reasons
+2013,December,"December, 2013",7763,155083,5.01,Part-time for economic reasons
+2014,January,"January, 2014",7250,155285,4.67,Part-time for economic reasons
+2014,February,"February, 2014",7230,155560,4.65,Part-time for economic reasons
+2014,March,"March, 2014",7428,156187,4.76,Part-time for economic reasons
+2014,April,"April, 2014",7452,155376,4.8,Part-time for economic reasons
+2014,May,"May, 2014",7219,155511,4.64,Part-time for economic reasons
+2014,June,"June, 2014",7473,155684,4.8,Part-time for economic reasons
+2014,July,"July, 2014",7440,156090,4.77,Part-time for economic reasons
+2014,August,"August, 2014",7213,156080,4.62,Part-time for economic reasons
+2014,September,"September, 2014",7124,156129,4.56,Part-time for economic reasons
+2014,October,"October, 2014",7065,156363,4.52,Part-time for economic reasons
+2014,November,"November, 2014",6844,156442,4.37,Part-time for economic reasons
+2014,December,"December, 2014",6786,156142,4.35,Part-time for economic reasons
+2015,January,"January, 2015",6784,157025,4.32,Part-time for economic reasons
+2015,February,"February, 2015",6630,156878,4.23,Part-time for economic reasons
+2015,March,"March, 2015",6673,156890,4.25,Part-time for economic reasons
+2015,April,"April, 2015",6549,157032,4.17,Part-time for economic reasons
+2015,May,"May, 2015",6600,157367,4.19,Part-time for economic reasons
+2015,June,"June, 2015",6465,156984,4.12,Part-time for economic reasons
+2015,July,"July, 2015",6300,157115,4.01,Part-time for economic reasons
+2015,August,"August, 2015",6481,157061,4.13,Part-time for economic reasons
+2015,September,"September, 2015",6034,156867,3.85,Part-time for economic reasons
+2015,October,"October, 2015",5761,157096,3.67,Part-time for economic reasons
+2015,November,"November, 2015",6085,157367,3.87,Part-time for economic reasons
+2015,December,"December, 2015",6022,157833,3.82,Part-time for economic reasons
+2016,January,"January, 2016",5988,158335,3.78,Part-time for economic reasons
+2016,February,"February, 2016",5988,158890,3.77,Part-time for economic reasons
+2016,March,"March, 2016",6123,159286,3.84,Part-time for economic reasons
+2016,April,"April, 2016",5962,158924,3.75,Part-time for economic reasons
+2007,January,"January, 2007",24986,153144,16.32,All part-time
+2007,February,"February, 2007",25016,152983,16.35,All part-time
+2007,March,"March, 2007",25144,153051,16.43,All part-time
+2007,April,"April, 2007",25143,152435,16.49,All part-time
+2007,May,"May, 2007",24932,152670,16.33,All part-time
+2007,June,"June, 2007",25435,153041,16.62,All part-time
+2007,July,"July, 2007",24897,153054,16.27,All part-time
+2007,August,"August, 2007",24753,152749,16.21,All part-time
+2007,September,"September, 2007",24996,153414,16.29,All part-time
+2007,October,"October, 2007",24680,153183,16.11,All part-time
+2007,November,"November, 2007",24758,153835,16.09,All part-time
+2007,December,"December, 2007",24745,153918,16.08,All part-time
+2008,January,"January, 2008",25067,154063,16.27,All part-time
+2008,February,"February, 2008",24692,153653,16.07,All part-time
+2008,March,"March, 2008",24715,153908,16.06,All part-time
+2008,April,"April, 2008",25352,153769,16.49,All part-time
+2008,May,"May, 2008",25063,154303,16.24,All part-time
+2008,June,"June, 2008",25416,154313,16.47,All part-time
+2008,July,"July, 2008",25288,154469,16.37,All part-time
+2008,August,"August, 2008",25595,154641,16.55,All part-time
+2008,September,"September, 2008",25327,154570,16.39,All part-time
+2008,October,"October, 2008",25508,154876,16.47,All part-time
+2008,November,"November, 2008",25666,154639,16.6,All part-time
+2008,December,"December, 2008",26333,154655,17.03,All part-time
+2009,January,"January, 2009",26377,154210,17.1,All part-time
+2009,February,"February, 2009",26722,154538,17.29,All part-time
+2009,March,"March, 2009",27069,154133,17.56,All part-time
+2009,April,"April, 2009",27279,154509,17.66,All part-time
+2009,May,"May, 2009",27239,154747,17.6,All part-time
+2009,June,"June, 2009",27459,154716,17.75,All part-time
+2009,July,"July, 2009",27737,154502,17.95,All part-time
+2009,August,"August, 2009",27509,154307,17.83,All part-time
+2009,September,"September, 2009",27273,153827,17.73,All part-time
+2009,October,"October, 2009",27462,153784,17.86,All part-time
+2009,November,"November, 2009",27327,153878,17.76,All part-time
+2009,December,"December, 2009",27479,153111,17.95,All part-time
+2010,January,"January, 2010",27781,153484,18.1,All part-time
+2010,February,"February, 2010",27627,153694,17.98,All part-time
+2010,March,"March, 2010",27558,153954,17.9,All part-time
+2010,April,"April, 2010",27386,154622,17.71,All part-time
+2010,May,"May, 2010",26692,154091,17.32,All part-time
+2010,June,"June, 2010",26658,153616,17.35,All part-time
+2010,July,"July, 2010",26991,153691,17.56,All part-time
+2010,August,"August, 2010",27703,154086,17.98,All part-time
+2010,September,"September, 2010",27459,153975,17.83,All part-time
+2010,October,"October, 2010",27353,153635,17.8,All part-time
+2010,November,"November, 2010",27561,154125,17.88,All part-time
+2010,December,"December, 2010",27419,153650,17.85,All part-time
+2011,January,"January, 2011",26987,153263,17.61,All part-time
+2011,February,"February, 2011",26872,153214,17.54,All part-time
+2011,March,"March, 2011",27282,153376,17.79,All part-time
+2011,April,"April, 2011",27333,153543,17.8,All part-time
+2011,May,"May, 2011",27381,153479,17.84,All part-time
+2011,June,"June, 2011",27469,153346,17.91,All part-time
+2011,July,"July, 2011",27432,153288,17.9,All part-time
+2011,August,"August, 2011",27296,153760,17.75,All part-time
+2011,September,"September, 2011",27644,154131,17.94,All part-time
+2011,October,"October, 2011",27474,153961,17.84,All part-time
+2011,November,"November, 2011",27434,154128,17.8,All part-time
+2011,December,"December, 2011",27168,153995,17.64,All part-time
+2012,January,"January, 2012",27841,154351,18.04,All part-time
+2012,February,"February, 2012",27599,154695,17.84,All part-time
+2012,March,"March, 2012",27050,154768,17.48,All part-time
+2012,April,"April, 2012",27533,154557,17.81,All part-time
+2012,May,"May, 2012",28061,154859,18.12,All part-time
+2012,June,"June, 2012",27666,155084,17.84,All part-time
+2012,July,"July, 2012",27745,154943,17.91,All part-time
+2012,August,"August, 2012",27569,154753,17.81,All part-time
+2012,September,"September, 2012",27801,155168,17.92,All part-time
+2012,October,"October, 2012",27939,155539,17.96,All part-time
+2012,November,"November, 2012",27529,155356,17.72,All part-time
+2012,December,"December, 2012",27566,155597,17.72,All part-time
+2013,January,"January, 2013",27523,155666,17.68,All part-time
+2013,February,"February, 2013",27554,155313,17.74,All part-time
+2013,March,"March, 2013",27497,155034,17.74,All part-time
+2013,April,"April, 2013",27590,155365,17.76,All part-time
+2013,May,"May, 2013",27756,155483,17.85,All part-time
+2013,June,"June, 2013",27859,155753,17.89,All part-time
+2013,July,"July, 2013",28175,155662,18.1,All part-time
+2013,August,"August, 2013",27851,155568,17.9,All part-time
+2013,September,"September, 2013",27546,155749,17.69,All part-time
+2013,October,"October, 2013",27293,154694,17.64,All part-time
+2013,November,"November, 2013",27388,155352,17.63,All part-time
+2013,December,"December, 2013",27390,155083,17.66,All part-time
+2014,January,"January, 2014",27530,155285,17.73,All part-time
+2014,February,"February, 2014",27371,155560,17.6,All part-time
+2014,March,"March, 2014",27727,156187,17.75,All part-time
+2014,April,"April, 2014",27220,155376,17.52,All part-time
+2014,May,"May, 2014",27181,155511,17.48,All part-time
+2014,June,"June, 2014",27970,155684,17.97,All part-time
+2014,July,"July, 2014",28044,156090,17.97,All part-time
+2014,August,"August, 2014",27715,156080,17.76,All part-time
+2014,September,"September, 2014",27429,156129,17.57,All part-time
+2014,October,"October, 2014",27720,156363,17.73,All part-time
+2014,November,"November, 2014",27702,156442,17.71,All part-time
+2014,December,"December, 2014",27445,156142,17.58,All part-time
+2015,January,"January, 2015",27484,157025,17.5,All part-time
+2015,February,"February, 2015",27415,156878,17.48,All part-time
+2015,March,"March, 2015",27293,156890,17.4,All part-time
+2015,April,"April, 2015",27707,157032,17.64,All part-time
+2015,May,"May, 2015",27452,157367,17.44,All part-time
+2015,June,"June, 2015",27651,156984,17.61,All part-time
+2015,July,"July, 2015",27208,157115,17.32,All part-time
+2015,August,"August, 2015",26949,157061,17.16,All part-time
+2015,September,"September, 2015",27009,156867,17.22,All part-time
+2015,October,"October, 2015",27209,157096,17.32,All part-time
+2015,November,"November, 2015",27332,157367,17.37,All part-time
+2015,December,"December, 2015",27359,157833,17.33,All part-time
+2016,January,"January, 2016",27364,158335,17.28,All part-time
+2016,February,"February, 2016",27853,158890,17.53,All part-time
+2016,March,"March, 2016",27818,159286,17.46,All part-time
+2016,April,"April, 2016",27797,158924,17.49,All part-time
