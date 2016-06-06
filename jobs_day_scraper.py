@@ -6,42 +6,6 @@ import os
 import csv
 import pickle
 
-location=os.path.dirname(os.path.realpath(__file__))+'data/'
-print location
-
-# get the month and year of the *previous* month
-now=datetime.date.today()
-currentmonth=monthdelta(now,-1)
-one_month_ago=monthdelta(currentmonth,-1)
-two_month_ago=monthdelta(currentmonth,-2)
-three_month_ago=monthdelta(currentmonth,-3)
-three_month_future=monthdelta(currentmonth,3)
-year=currentmonth.year
-
-month=currentmonth.strftime("%B")
-datestring=month+', '+str(year)
-date_start_string=three_month_ago.strftime("%B")+', '+str(three_month_ago.year)
-date_end_string=three_month_future.strftime("%B")+', '+str(three_month_future.year)
-one_string=monthdelta(currentmonth,-1).strftime("%B")+', '+str(one_month_ago.year)
-two_string=monthdelta(currentmonth,-2).strftime("%B")+', '+str(two_month_ago.year)
-three_string=monthdelta(currentmonth,-3).strftime("%B")+', '+str(three_month_ago.year)
-
-# headers
-headers = {'Content-type': 'application/json'}
-
-# MAIN FUNCTIONS
-# json_data=data_scrape()
-# comparison=compare(json_data)
-# if comparison!=json_data:
-#	graph1(json_data,comparison)
-#	graph2(json_data,comparison)
-#	graph3(json_data,comparison)
-#	graph4(json_data,comparison)
-#	graph5(json_data,comparison)
-#	graph6(json_data,comparison)
-#	graph7(json_data,comparison)
-#	graph8(json_data,comparison)
-
 # thank god someone else wrote this: http://stackoverflow.com/a/3425124
 def monthdelta(date, delta):
     m, y = (date.month+delta) % 12, date.year + ((date.month)+delta-1) // 12
@@ -50,7 +14,6 @@ def monthdelta(date, delta):
         29 if y%4==0 and not y%400==0 else 28,31,30,31,30,31,31,30,31,30,31][m-1])
     return date.replace(day=d,month=m, year=y)
 
-# function to update all data series
 def data_scrape():
 	# get all series data in one go
 	series=['LNS12300060','CES0500000001','CES9000000001','LNS14000003','LNS14000006','LNS14000009','LNS14000000','LNS13327709','LNS12032194','LNS12600000','CES0500000008','CES2000000001','CES3000000001','CES4200000001','CES6561000001','CES6562000001','CUUR0000SA0','CES7000000001']
@@ -62,10 +25,7 @@ def data_scrape():
 
 def compare(json_data):
 	# compare the json_data object to existing object
-	temp=pickle.load(open(location+'json_data.p','wb'))
-
-	if temp!=json_data:
-		pickle.dump(json_data,open(location+'json_data.p','wb'))
+	temp=pickle.load(open(location+'json_data.p','r'))		
 
 	return temp
 
@@ -79,6 +39,7 @@ def graph1(json_data,comparison):
 	temp_compare=[series for series in comparison['Results']['series'] if series['seriesID']=='LNS12300060'][0]
 
 	if temp!=temp_compare:
+		print 'graph 1 changed'
 		three_months=[]
 
 		for time_period in temp['data']:
@@ -98,7 +59,7 @@ def graph1(json_data,comparison):
 			if row[5]=='3-month average':
 				data[i][2]=average
 				data[i][3]=date_start_string
-				date[i][4]=date_end_string
+				data[i][4]=date_end_string
 
 		with open(location+'jobs-g1.csv','w') as cfile:
 			writer=csv.writer(cfile)
@@ -115,6 +76,7 @@ def graph2(json_data,comparison):
 	temp_compare=[series for series in comparison['Results']['series'] if series['seriesID']=='LNS12300060'][0]
 
 	if temp!=temp_compare:
+		print 'graph 2 changed'
 		elapsed=8+((2016-now.year)*12)+(1/12)*(now.month-1)
 
 		for time_period in temp['data']:
@@ -142,6 +104,7 @@ def graph3(json_data,comparison):
 	start_emp_public=22219
 
 	if temp_private!=temp_private_compare:
+		print 'graph 3 changed'
 		for time_period in temp_private['data']:
 			if time_period['periodName']==month and int(time_period['year'])==year:
 				private_emp=float(time_period['value'])
@@ -465,6 +428,50 @@ def graph8(json_data,comparison):
 		for row in data:
 			writer.writerow(row)
 
+location=os.path.dirname(os.path.realpath(__file__))+'/'
+print location
+
+# get the month and year of the *previous* month
+now=datetime.date.today()
+currentmonth=monthdelta(now,-1)
+one_month_ago=monthdelta(currentmonth,-1)
+two_month_ago=monthdelta(currentmonth,-2)
+three_month_ago=monthdelta(currentmonth,-3)
+three_month_future=monthdelta(currentmonth,3)
+year=currentmonth.year
+
+month=currentmonth.strftime("%B")
+datestring=month+', '+str(year)
+date_start_string=three_month_ago.strftime("%B")+', '+str(three_month_ago.year)
+date_end_string=three_month_future.strftime("%B")+', '+str(three_month_future.year)
+one_string=monthdelta(currentmonth,-1).strftime("%B")+', '+str(one_month_ago.year)
+two_string=monthdelta(currentmonth,-2).strftime("%B")+', '+str(two_month_ago.year)
+three_string=monthdelta(currentmonth,-3).strftime("%B")+', '+str(three_month_ago.year)
+
+# headers
+headers = {'Content-type': 'application/json'}
+
+# MAIN FUNCTIONS
+json_data=data_scrape()
+print 'got data'
+comparison=compare(json_data)
+print 'loaded comparison'
+if comparison!=json_data:
+	graph1(json_data,comparison)
+	print 'graph 1 done'
+	graph2(json_data,comparison)
+	print 'graph 2 done'
+	graph3(json_data,comparison)
+	print 'graph 3 done'
+#	graph4(json_data,comparison)
+#	graph5(json_data,comparison)
+#	graph6(json_data,comparison)
+	graph7(json_data,comparison)
+	print 'graph 7 done'
+	graph8(json_data,comparison)
+	print 'graph 8 done'
+
+	pickle.dump(json_data,open(location+'json_data.p','wb'))
 
 
 

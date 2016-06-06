@@ -109,8 +109,9 @@ date,employment,indexed,type
 "December, 2015",121106,104.6019106,Private Sector
 "January, 2016",121261,104.7357875,Private Sector
 "February, 2016",121483,104.9275337,Private Sector
-"March, 2016",121667,105.0864586,Private Sector
-"April, 2016",121838,105.234155,Private Sector
+"March, 2016",121650,105.2056522,Private Sector
+"April, 2016",121780,105.1840591,Private Sector
+"May, 2016",121805,105.2056522,Private Sector
 "January, 2007",22095,99.44005431,Public Sector
 "February, 2007",22131,99.60207476,Public Sector
 "March, 2007",22149,99.68308499,Public Sector
@@ -221,5 +222,6 @@ date,employment,indexed,type
 "December, 2015",22040,99.19252306,Public Sector
 "January, 2016",22053,99.25103044,Public Sector
 "February, 2016",22064,99.30053669,Public Sector
-"March, 2016",22088,99.40855033,Public Sector
-"April, 2016",22077,99.35904408,Public Sector
+"March, 2016",22083,99.38791125,Public Sector
+"April, 2016",22076,99.35640668,Public Sector
+"May, 2016",22089,99.41491516,Public Sector
