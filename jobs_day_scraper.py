@@ -56,10 +56,13 @@ def graph1(json_data,comparison):
 		average=sum(three_months)/len(three_months)
 
 		for i,row in enumerate(data):
-			if row[5]=='3-month average':
-				data[i][2]=average
-				data[i][3]=date_start_string
-				data[i][4]=date_end_string
+			try:
+				if row[5]=='3-month average':
+					data[i][2]=average
+					data[i][3]=date_start_string
+					data[i][4]=date_end_string
+			except:
+				pass
 
 		with open(location+'jobs-g1.csv','w') as cfile:
 			writer=csv.writer(cfile)
