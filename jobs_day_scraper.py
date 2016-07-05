@@ -20,13 +20,11 @@ def data_scrape():
 	data = json.dumps({"seriesid": series,"startyear":year-1, "endyear":year})
 	p = requests.post('http://api.bls.gov/publicAPI/v2/timeseries/data/', data=data, headers=headers)
 	json_data = json.loads(p.text)
-
 	return json_data
 
 def compare(json_data):
 	# compare the json_data object to existing object
 	temp=pickle.load(open(location+'json_data.p','r'))		
-
 	return temp
 
 def graph1(json_data,comparison):
@@ -46,7 +44,6 @@ def graph1(json_data,comparison):
 			if time_period['periodName']==month and int(time_period['year'])==year:
 				if datestring not in [row[1] for row in data]:
 					data.append([float(time_period['value']),datestring])
-				
 				three_months.append(float(time_period['value']))
 
 		for row in data:
@@ -113,48 +110,50 @@ def graph3(json_data,comparison):
 				private_emp=float(time_period['value'])
 				data.append([datestring,private_emp,100*(private_emp/start_emp_private),'Private Sector'])
 
+		print 'private prelim data for graph 3'
+
 		# since there is preliminary data, make sure you go back three months and check those against the new data
 		for i,row in enumerate(data):
 			if row[0]==two_string and row[3]=='Private Sector':
-				match=[item for item in temp_private if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year and item[3]=='Private Sector']
+				match=[item for item in temp_private['data'] if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
 				private_emp=float(time_period['value'])
 				data[i][1]=private_emp
 				data[i][2]=100*(private_emp/start_emp_private)
-
 			if row[0]==three_string and row[3]=='Private Sector':
-				match=[item for item in temp_private if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year and item[3]=='Private Sector']
+				match=[item for item in temp_private['data'] if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
 				private_emp=float(time_period['value'])
 				data[i][1]=private_emp
 				data[i][2]=100*(private_emp/start_emp_private)
-
 			if row[0]==one_string and row[3]=='Private Sector':
-				match=[item for item in temp_private if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year and item[3]=='Private Sector']
+				match=[item for item in temp_private['data'] if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
 				private_emp=float(time_period['value'])
 				data[i][1]=private_emp
 				data[i][2]=100*(private_emp/start_emp_private)
 
-	if temp_public!=temp_public_compare:
-		for time_period in temp_public['data']:
-			if time_period['periodName']==month and int(time_period['year'])==year:
-				public_emp=float(time_period['value'])
-				data.append([datestring,public_emp,100*(public_emp/start_emp_public),'Public Sector'])
+		if temp_public!=temp_public_compare:
+			for time_period in temp_public['data']:
+				if time_period['periodName']==month and int(time_period['year'])==year:
+					public_emp=float(time_period['value'])
+					data.append([datestring,public_emp,100*(public_emp/start_emp_public),'Public Sector'])
+
+		print 'public prelim data for graph 3'
 
 		# since there is preliminary data, make sure you go back three months and check those against the new data
 		for i,row in enumerate(data):
 			if row[0]==two_string and row[3]=='Public Sector':
-				match=[item for item in temp_public if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year and item[3]=='Public Sector']
+				match=[item for item in temp_public['data'] if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
 				public_emp=float(time_period['value'])
 				data[i][1]=public_emp
 				data[i][2]=100*(public_emp/start_emp_public)
 
 			if row[0]==three_string and row[3]=='Public Sector':
-				match=[item for item in temp_public if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year and item[3]=='Public Sector']
+				match=[item for item in temp_public['data'] if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
 				public_emp=float(time_period['value'])
 				data[i][1]=public_emp
 				data[i][2]=100*(public_emp/start_emp_public)
 
 			if row[0]==one_string and row[3]=='Public Sector':
-				match=[item for item in temp_public if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year and item[3]=='Public Sector']
+				match=[item for item in temp_public['data'] if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
 				public_emp=float(time_period['value'])
 				data[i][1]=public_emp
 				data[i][2]=100*(public_emp/start_emp_public)
@@ -186,7 +185,7 @@ def graph7(json_data,comparison):
 				earnings=float(time_period['value'])
 				for row in data:
 					if row[0]==oneyearstring and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-						old_earnings=row[3]
+						old_earnings=row[1]
 
 				growth=100*(float(earnings)-float(old_earnings))/float(old_earnings)
 				data.append([datestring,growth,'Year over year change in earnings for production and nonsupervisory workers',earnings])
@@ -194,45 +193,50 @@ def graph7(json_data,comparison):
 		# since there is preliminary data, make sure you go back three months and check those against the new data
 		for i,row in enumerate(data):
 			if row[0]==two_string and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-				match=[item for item in temp_earnings_compare if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
-				earnings=float(time_period['value'])
+				match=[item for item in temp_earnings['data'] if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
+				earnings=float(match[0]['value'])
 
 				for row in data:
 					if row[0]==oys_2 and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-						old_earnings=row[3]
+						old_earnings=row[1]
 
 				data[i][1]=100*(float(earnings)-float(old_earnings))/float(old_earnings)
-				data[i][3]=earnings
+				data[i][1]=earnings
 
 			if row[0]==three_string and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-				match=[item for item in temp_earnings_compare if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
-				earnings=float(time_period['value'])
+				match=[item for item in temp_earnings['data'] if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
+				earnings=float(match[0]['value'])
 
 				for row in data:
 					if row[0]==oys_3 and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-						old_earnings=row[3]
+						old_earnings=row[1]
 
 				data[i][1]=100*(float(earnings)-float(old_earnings))/float(old_earnings)
-				data[i][3]=earnings
+				data[i][1]=earnings
 
 			if row[0]==one_string and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-				match=[item for item in temp_earnings_compare if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
-				earnings=float(time_period['value'])
+				match=[item for item in temp_earnings['data'] if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
+				earnings=float(match[0]['value'])
 
 				for row in data:
 					if row[0]==oys_1 and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-						old_earnings=row[3]
+						old_earnings=row[1]
 
 				data[i][1]=100*(float(earnings)-float(old_earnings))/float(old_earnings)
-				data[i][3]=earnings
+				data[i][1]=earnings
 
 	if temp_inflation!=temp_inflation_compare:
+		print 'hi'
+		print month,year
 		for time_period in temp_inflation['data']:
+			print 'hi2'
 			if time_period['periodName']==month and int(time_period['year'])==year:
+				print 'hi3'
 				inflation=float(time_period['value'])
 				for row in data:
+					print 'hi4'
 					if row[0]==oneyearstring and row[2]=='Annual Inflation':
-						old_inflation=row[3]
+						old_inflation=row[4]
 
 				growth=100*(float(inflation)-float(old_inflation))/float(old_inflation)
 				data.append([datestring,growth,'Annual Inflation',inflation])
@@ -432,10 +436,12 @@ def graph8(json_data,comparison):
 			writer.writerow(row)
 
 location=os.path.dirname(os.path.realpath(__file__))+'/'
+# location='/home/eqgrowth/webapps/jobsday/data/'
 print location
 
 # get the month and year of the *previous* month
-now=datetime.date.today()
+# now=datetime.date.today()
+now=datetime.date(2016,6,24)
 currentmonth=monthdelta(now,-1)
 one_month_ago=monthdelta(currentmonth,-1)
 two_month_ago=monthdelta(currentmonth,-2)
