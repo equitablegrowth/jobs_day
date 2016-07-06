@@ -226,20 +226,17 @@ def graph7(json_data,comparison):
 				data[i][1]=earnings
 
 	if temp_inflation!=temp_inflation_compare:
-		print 'hi'
-		print month,year
 		for time_period in temp_inflation['data']:
-			print 'hi2'
-			if time_period['periodName']==month and int(time_period['year'])==year:
-				print 'hi3'
+			if time_period['periodName']==one_month_ago.strftime("%B") and int(time_period['year'])==one_month_ago.year:
 				inflation=float(time_period['value'])
-				for row in data:
-					print 'hi4'
-					if row[0]==oneyearstring and row[2]=='Annual Inflation':
-						old_inflation=row[4]
 
-				growth=100*(float(inflation)-float(old_inflation))/float(old_inflation)
-				data.append([datestring,growth,'Annual Inflation',inflation])
+		oneyearonemonthstring=one_month_ago.strftime("%B")+', '+str(one_month_ago.year-1)
+		for row in data:
+			if row[0]==oneyearonemonthstring and row[2]=='Annual inflation':
+				old_inflation=row[3]
+
+		growth=100*(float(inflation)-float(old_inflation))/float(old_inflation)
+		data.append([datestring,growth,'Annual inflation',inflation])
 
 	with open(location+'jobs-g7.csv','w') as cfile:
 		writer=csv.writer(cfile)
