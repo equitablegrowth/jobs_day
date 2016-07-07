@@ -16,8 +16,8 @@ def monthdelta(date, delta):
 
 def data_scrape():
 	# get all series data in one go
-	series=['LNS12300060','CES0500000001','CES9000000001','LNS14000003','LNS14000006','LNS14000009','LNS14000000','LNS13327709','LNS12032194','LNS12600000','CES0500000008','CES2000000001','CES3000000001','CES4200000001','CES6561000001','CES6562000001','CUUR0000SA0','CES7000000001']
-	data = json.dumps({"seriesid": series,"startyear":year-1, "endyear":year})
+	series=['LNS11000000','LNS12032197','LNS12032200','LNS12300060','CES0500000001','CES9000000001','LNS14000003','LNS14000006','LNS14000009','LNS14000000','LNS13327709','LNS12032194','LNS12600000','CES0500000008','CES2000000001','CES3000000001','CES4200000001','CES6561000001','CES6562000001','CUUR0000SA0','CES7000000001']
+	data = json.dumps({"seriesid": series,"startyear":2000, "endyear":year, "registrationKey":key})
 	p = requests.post('http://api.bls.gov/publicAPI/v2/timeseries/data/', data=data, headers=headers)
 	json_data = json.loads(p.text)
 	return json_data
@@ -116,17 +116,17 @@ def graph3(json_data,comparison):
 		for i,row in enumerate(data):
 			if row[0]==two_string and row[3]=='Private Sector':
 				match=[item for item in temp_private['data'] if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
-				private_emp=float(time_period['value'])
+				private_emp=float(match[0]['value'])
 				data[i][1]=private_emp
 				data[i][2]=100*(private_emp/start_emp_private)
 			if row[0]==three_string and row[3]=='Private Sector':
 				match=[item for item in temp_private['data'] if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
-				private_emp=float(time_period['value'])
+				private_emp=float(match[0]['value'])
 				data[i][1]=private_emp
 				data[i][2]=100*(private_emp/start_emp_private)
 			if row[0]==one_string and row[3]=='Private Sector':
 				match=[item for item in temp_private['data'] if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
-				private_emp=float(time_period['value'])
+				private_emp=float(match[0]['value'])
 				data[i][1]=private_emp
 				data[i][2]=100*(private_emp/start_emp_private)
 
@@ -142,19 +142,19 @@ def graph3(json_data,comparison):
 		for i,row in enumerate(data):
 			if row[0]==two_string and row[3]=='Public Sector':
 				match=[item for item in temp_public['data'] if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
-				public_emp=float(time_period['value'])
+				public_emp=float(match[0]['value'])
 				data[i][1]=public_emp
 				data[i][2]=100*(public_emp/start_emp_public)
 
 			if row[0]==three_string and row[3]=='Public Sector':
 				match=[item for item in temp_public['data'] if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
-				public_emp=float(time_period['value'])
+				public_emp=float(match[0]['value'])
 				data[i][1]=public_emp
 				data[i][2]=100*(public_emp/start_emp_public)
 
 			if row[0]==one_string and row[3]=='Public Sector':
 				match=[item for item in temp_public['data'] if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
-				public_emp=float(time_period['value'])
+				public_emp=float(match[0]['value'])
 				data[i][1]=public_emp
 				data[i][2]=100*(public_emp/start_emp_public)
 
@@ -162,6 +162,65 @@ def graph3(json_data,comparison):
 		writer=csv.writer(cfile)
 		for row in data:
 			writer.writerow(row)
+
+
+def graph4(json_data):
+	# graph 4. This is done a little differently than 1,2,3,7,8 because I fell on my head and became smarter. Instead of trying to maintain and update
+	# a master file, just overwrite the file every time, guarantees you always have as much data as possible and no re-writing the same thing over
+	# and over.
+	temp_voluntary=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12032200'][0]['data']
+	temp_involuntary=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12032197'][0]['data']
+	data=[['DATE','type','indexed']]
+
+	# percentage change indexed to December of 2007
+	voluntary_base=float([entry['value'] for entry in temp_voluntary if entry['year']=='2007' and entry['period']=='M12'][0])
+	involuntary_base=float([entry['value'] for entry in temp_involuntary if entry['year']=='2007' and entry['period']=='M12'][0])
+
+	# now build all rows
+	for item in temp_voluntary:
+		if(int(item['year'])>2006):
+			data.append([item['periodName']+', '+item['year'],'voluntary',100*(float(item['value'])-voluntary_base)/voluntary_base])
+
+	for item in temp_involuntary:
+		if(int(item['year'])>2006):
+			data.append([item['periodName']+', '+item['year'],'involuntary',100*(float(item['value'])-involuntary_base)/involuntary_base])
+
+	with open(location+'jobs-g6.csv','w') as cfile:
+		writer=csv.writer(cfile)
+		for row in data:
+			writer.writerow(row)	
+
+
+def graph5(json_data):
+	pass
+
+
+def graph6(json_data):
+	# graph 6. This is done a little differently than 1,2,3,7,8 because I fell on my head and became smarter. Instead of trying to maintain and update
+	# a master file, just overwrite the file every time, guarantees you always have as much data as possible and no re-writing the same thing over
+	# and over.
+	temp_voluntary=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12032200'][0]['data']
+	temp_involuntary=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12032197'][0]['data']
+	data=[['DATE','type','indexed']]
+
+	# percentage change indexed to December of 2007
+	voluntary_base=float([entry['value'] for entry in temp_voluntary if entry['year']=='2007' and entry['period']=='M12'][0])
+	involuntary_base=float([entry['value'] for entry in temp_involuntary if entry['year']=='2007' and entry['period']=='M12'][0])
+
+	# now build all rows
+	for item in temp_voluntary:
+		if(int(item['year'])>2006):
+			data.append([item['periodName']+', '+item['year'],'voluntary',100*(float(item['value'])-voluntary_base)/voluntary_base])
+
+	for item in temp_involuntary:
+		if(int(item['year'])>2006):
+			data.append([item['periodName']+', '+item['year'],'involuntary',100*(float(item['value'])-involuntary_base)/involuntary_base])
+
+	with open(location+'jobs-g6.csv','w') as cfile:
+		writer=csv.writer(cfile)
+		for row in data:
+			writer.writerow(row)	
+
 
 def graph7(json_data,comparison):
 	# graph 7 - load existing data:
@@ -180,12 +239,12 @@ def graph7(json_data,comparison):
 	oys_3=three_month_ago.strftime("%B")+', '+str(three_month_ago.year-1)
 
 	if temp_earnings!=temp_earnings_compare:
-		for time_period in temp_earnings_compare['data']:
+		for time_period in temp_earnings['data']:
 			if time_period['periodName']==month and int(time_period['year'])==year:
 				earnings=float(time_period['value'])
 				for row in data:
 					if row[0]==oneyearstring and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-						old_earnings=row[1]
+						old_earnings=row[3]
 
 				growth=100*(float(earnings)-float(old_earnings))/float(old_earnings)
 				data.append([datestring,growth,'Year over year change in earnings for production and nonsupervisory workers',earnings])
@@ -198,10 +257,10 @@ def graph7(json_data,comparison):
 
 				for row in data:
 					if row[0]==oys_2 and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-						old_earnings=row[1]
+						old_earnings=row[3]
 
 				data[i][1]=100*(float(earnings)-float(old_earnings))/float(old_earnings)
-				data[i][1]=earnings
+				data[i][3]=earnings
 
 			if row[0]==three_string and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
 				match=[item for item in temp_earnings['data'] if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
@@ -209,10 +268,10 @@ def graph7(json_data,comparison):
 
 				for row in data:
 					if row[0]==oys_3 and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-						old_earnings=row[1]
+						old_earnings=row[3]
 
 				data[i][1]=100*(float(earnings)-float(old_earnings))/float(old_earnings)
-				data[i][1]=earnings
+				data[i][3]=earnings
 
 			if row[0]==one_string and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
 				match=[item for item in temp_earnings['data'] if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
@@ -220,10 +279,10 @@ def graph7(json_data,comparison):
 
 				for row in data:
 					if row[0]==oys_1 and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-						old_earnings=row[1]
+						old_earnings=row[3]
 
 				data[i][1]=100*(float(earnings)-float(old_earnings))/float(old_earnings)
-				data[i][1]=earnings
+				data[i][3]=earnings
 
 	if temp_inflation!=temp_inflation_compare:
 		for time_period in temp_inflation['data']:
@@ -236,7 +295,8 @@ def graph7(json_data,comparison):
 				old_inflation=row[3]
 
 		growth=100*(float(inflation)-float(old_inflation))/float(old_inflation)
-		data.append([datestring,growth,'Annual inflation',inflation])
+		newstring=one_month_ago.strftime("%B")+', '+str(one_month_ago.year)
+		data.append([newstring,growth,'Annual inflation',inflation])
 
 	with open(location+'jobs-g7.csv','w') as cfile:
 		writer=csv.writer(cfile)
@@ -257,12 +317,12 @@ def graph8(json_data,comparison):
 	temp_health=[series for series in json_data['Results']['series'] if series['seriesID']=='CES6562000001'][0]
 	temp_leisure=[series for series in json_data['Results']['series'] if series['seriesID']=='CES7000000001'][0]
 
-	temp_construction_compare=[series for series in json_data['Results']['series'] if series['seriesID']=='CES2000000001'][0]
-	temp_manufacturing_compare=[series for series in json_data['Results']['series'] if series['seriesID']=='CES3000000001'][0]
-	temp_retail_compare=[series for series in json_data['Results']['series'] if series['seriesID']=='CES4200000001'][0]
-	temp_ed_compare=[series for series in json_data['Results']['series'] if series['seriesID']=='CES6561000001'][0]
-	temp_health_compare=[series for series in json_data['Results']['series'] if series['seriesID']=='CES6562000001'][0]
-	temp_leisure_compare=[series for series in json_data['Results']['series'] if series['seriesID']=='CES7000000001'][0]
+	temp_construction_compare=[series for series in comparison['Results']['series'] if series['seriesID']=='CES2000000001'][0]
+	temp_manufacturing_compare=[series for series in comparison['Results']['series'] if series['seriesID']=='CES3000000001'][0]
+	temp_retail_compare=[series for series in comparison['Results']['series'] if series['seriesID']=='CES4200000001'][0]
+	temp_ed_compare=[series for series in comparison['Results']['series'] if series['seriesID']=='CES6561000001'][0]
+	temp_health_compare=[series for series in comparison['Results']['series'] if series['seriesID']=='CES6562000001'][0]
+	temp_leisure_compare=[series for series in comparison['Results']['series'] if series['seriesID']=='CES7000000001'][0]
 
 	con_average=7627.3
 	man_average=13877.8
@@ -270,6 +330,9 @@ def graph8(json_data,comparison):
 	edu_average=2941.7
 	hea_average=15734.3
 	lei_average=13427.9
+
+	print temp_construction
+	print temp_construction_compare
 
 	if temp_construction!=temp_construction_compare:
 		for time_period in temp_construction['data']:
@@ -280,22 +343,22 @@ def graph8(json_data,comparison):
 		# since there is preliminary data, make sure you go back three months and check those against the new data
 		for i,row in enumerate(data):
 			if row[0]==one_string and row[2]=='Construction':
-				match=[item for item in temp_private if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/con_average
-				data[3]=raw_emp
+				match=[item for item in temp_construction['data'] if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/con_average
+				data[i][3]=raw_emp
 
 			if row[0]==two_string and row[2]=='Construction':
-				match=[item for item in temp_private if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/con_average
-				data[3]=raw_emp
+				match=[item for item in temp_construction['data'] if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/con_average
+				data[i][3]=raw_emp
 
 			if row[0]==three_string and row[2]=='Construction':
-				match=[item for item in temp_private if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/con_average
-				data[3]=raw_emp
+				match=[item for item in temp_construction['data'] if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/con_average
+				data[i][3]=raw_emp
 
 	if temp_manufacturing!=temp_manufacturing_compare:
 		for time_period in temp_manufacturing['data']:
@@ -306,22 +369,22 @@ def graph8(json_data,comparison):
 		# since there is preliminary data, make sure you go back three months and check those against the new data
 		for i,row in enumerate(data):
 			if row[0]==one_string and row[2]=='Manufacturing':
-				match=[item for item in temp_private if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/man_average
-				data[3]=raw_emp
+				match=[item for item in temp_manufacturing['data'] if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/man_average
+				data[i][3]=raw_emp
 
 			if row[0]==two_string and row[2]=='Manufacturing':
-				match=[item for item in temp_private if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/man_average
-				data[3]=raw_emp
+				match=[item for item in temp_manufacturing['data'] if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/man_average
+				data[i][3]=raw_emp
 
 			if row[0]==three_string and row[2]=='Manufacturing':
-				match=[item for item in temp_private if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/man_average
-				data[3]=raw_emp
+				match=[item for item in temp_manufacturing['data'] if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/man_average
+				data[i][3]=raw_emp
 
 	if temp_retail!=temp_retail_compare:
 		for time_period in temp_retail['data']:
@@ -332,22 +395,22 @@ def graph8(json_data,comparison):
 		# since there is preliminary data, make sure you go back three months and check those against the new data
 		for i,row in enumerate(data):
 			if row[0]==one_string and row[2]=='Retail':
-				match=[item for item in temp_private if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/ret_average
-				data[3]=raw_emp
+				match=[item for item in temp_retail['data'] if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/ret_average
+				data[i][3]=raw_emp
 
 			if row[0]==two_string and row[2]=='Retail':
-				match=[item for item in temp_private if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/ret_average
-				data[3]=raw_emp
+				match=[item for item in temp_retail['data'] if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/ret_average
+				data[i][3]=raw_emp
 
 			if row[0]==three_string and row[2]=='Retail':
-				match=[item for item in temp_private if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/ret_average
-				data[3]=raw_emp
+				match=[item for item in temp_retail['data'] if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/ret_average
+				data[i][3]=raw_emp
 
 	if temp_ed!=temp_ed_compare:
 		for time_period in temp_ed['data']:
@@ -358,22 +421,22 @@ def graph8(json_data,comparison):
 		# since there is preliminary data, make sure you go back three months and check those against the new data
 		for i,row in enumerate(data):
 			if row[0]==one_string and row[2]=='Educational Services':
-				match=[item for item in temp_private if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/edu_average
-				data[3]=raw_emp
+				match=[item for item in temp_ed['data'] if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/edu_average
+				data[i][3]=raw_emp
 
 			if row[0]==two_string and row[2]=='Educational Services':
-				match=[item for item in temp_private if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/edu_average
-				data[3]=raw_emp
+				match=[item for item in temp_ed['data'] if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/edu_average
+				data[i][3]=raw_emp
 
 			if row[0]==three_string and row[2]=='Educational Services':
-				match=[item for item in temp_private if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/edu_average
-				data[3]=raw_emp
+				match=[item for item in temp_ed['data'] if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/edu_average
+				data[i][3]=raw_emp
 
 	if temp_health!=temp_health_compare:
 		for time_period in temp_health['data']:
@@ -384,22 +447,22 @@ def graph8(json_data,comparison):
 		# since there is preliminary data, make sure you go back three months and check those against the new data
 		for i,row in enumerate(data):
 			if row[0]==one_string and row[2]=='Health care and social assistance':
-				match=[item for item in temp_private if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/hea_average
-				data[3]=raw_emp
+				match=[item for item in temp_health['data'] if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/hea_average
+				data[i][3]=raw_emp
 
 			if row[0]==two_string and row[2]=='Health care and social assistance':
-				match=[item for item in temp_private if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/hea_average
-				data[3]=raw_emp
+				match=[item for item in temp_health['data'] if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/hea_average
+				data[i][3]=raw_emp
 
 			if row[0]==three_string and row[2]=='Health care and social assistance':
-				match=[item for item in temp_private if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/hea_average
-				data[3]=raw_emp
+				match=[item for item in temp_health['data'] if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/hea_average
+				data[i][3]=raw_emp
 
 	if temp_leisure!=temp_leisure_compare:
 		for time_period in temp_leisure['data']:
@@ -410,22 +473,22 @@ def graph8(json_data,comparison):
 		# since there is preliminary data, make sure you go back three months and check those against the new data
 		for i,row in enumerate(data):
 			if row[0]==one_string and row[2]=='Leisure and hospitality':
-				match=[item for item in temp_private if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/lei_average
-				data[3]=raw_emp
+				match=[item for item in temp_leisure['data'] if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/lei_average
+				data[i][3]=raw_emp
 
 			if row[0]==two_string and row[2]=='Leisure and hospitality':
-				match=[item for item in temp_private if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/lei_average
-				data[3]=raw_emp
+				match=[item for item in temp_leisure['data'] if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/lei_average
+				data[i][3]=raw_emp
 
 			if row[0]==three_string and row[2]=='Leisure and hospitality':
-				match=[item for item in temp_private if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
-				raw_emp=time_period['value']
-				data[1]=100*raw_emp/lei_average
-				data[3]=raw_emp
+				match=[item for item in temp_leisure['data'] if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
+				raw_emp=float(match[0]['value'])
+				data[i][1]=100*raw_emp/lei_average
+				data[i][3]=raw_emp
 
 	with open(location+'jobs-g8.csv','w') as cfile:
 		writer=csv.writer(cfile)
@@ -435,6 +498,9 @@ def graph8(json_data,comparison):
 location=os.path.dirname(os.path.realpath(__file__))+'/'
 # location='/home/eqgrowth/webapps/jobsday/data/'
 print location
+
+# get API key
+key=open(location+'key.txt','r').read()
 
 # get the month and year of the *previous* month
 # now=datetime.date.today()
@@ -471,7 +537,8 @@ if comparison!=json_data:
 	print 'graph 3 done'
 #	graph4(json_data,comparison)
 #	graph5(json_data,comparison)
-#	graph6(json_data,comparison)
+	graph6(json_data)
+	print 'graph 6 done'
 	graph7(json_data,comparison)
 	print 'graph 7 done'
 	graph8(json_data,comparison)
