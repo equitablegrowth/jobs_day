@@ -27,6 +27,27 @@ def compare(json_data):
 	temp=pickle.load(open(location+'json_data.p','r'))		
 	return temp
 
+
+def graph1(json_data):
+	# graph 5. This is done a little differently than 1,2,3,7,8 because I fell on my head and became smarter. Instead of trying to maintain and update
+	# a master file, just overwrite the file every time, guarantees you always have as much data as possible and no re-writing the same thing over
+	# and over.
+	temp=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12300060'][0]['data']
+	data=[['EPOP','date','average','date_start','date_end','type']]
+
+	# build all rows
+	tempavg=sum([float(temp[0]['value']),float(temp[1]['value']),float(temp[2]['value'])])/3
+	for item in temp:
+		if(int(item['year'])>1999):
+			data.append([item['value'],item['periodName']+', '+item['year']])
+
+	data.append(['','',three_month_ago.strftime("%B")+', '+str(three_month_ago.year),three_month_future.strftime("%B")+', '+str(three_month_future.year),tempavg,'3-month average'])
+
+	with open(location+'jobs-g5.csv','w') as cfile:
+		writer=csv.writer(cfile)
+		for row in data:
+			writer.writerow(row)	
+
 def graph1(json_data,comparison):
 	# graph 1 - load existing data:
 	with open(location+'jobs-g1.csv','rU') as cfile:
@@ -168,31 +189,58 @@ def graph4(json_data):
 	# graph 4. This is done a little differently than 1,2,3,7,8 because I fell on my head and became smarter. Instead of trying to maintain and update
 	# a master file, just overwrite the file every time, guarantees you always have as much data as possible and no re-writing the same thing over
 	# and over.
-	temp_voluntary=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12032200'][0]['data']
-	temp_involuntary=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12032197'][0]['data']
-	data=[['DATE','type','indexed']]
+	temp_white=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS14000003'][0]['data']
+	temp_black=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS14000006'][0]['data']
+	temp_hispanic=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS14000009'][0]['data']
+	data=[['type','date','unemployment','startx','endx','3-month average']]
 
-	# percentage change indexed to December of 2007
-	voluntary_base=float([entry['value'] for entry in temp_voluntary if entry['year']=='2007' and entry['period']=='M12'][0])
-	involuntary_base=float([entry['value'] for entry in temp_involuntary if entry['year']=='2007' and entry['period']=='M12'][0])
+	# build all rows
+	white_average=sum([float(temp_white[0]['value']),float(temp_white[1]['value']),float(temp_white[2]['value'])])/3
+	for item in temp_white:
+		if(int(item['year'])>1999):
+			data.append(['white',item['periodName']+', '+item['year'],float(item['value'])])
 
-	# now build all rows
-	for item in temp_voluntary:
-		if(int(item['year'])>2006):
-			data.append([item['periodName']+', '+item['year'],'voluntary',100*(float(item['value'])-voluntary_base)/voluntary_base])
+	black_average=sum([float(temp_black[0]['value']),float(temp_black[1]['value']),float(temp_black[2]['value'])])/3
+	for item in temp_black:
+		if(int(item['year'])>1999):
+			data.append(['black',item['periodName']+', '+item['year'],float(item['value'])])
 
-	for item in temp_involuntary:
-		if(int(item['year'])>2006):
-			data.append([item['periodName']+', '+item['year'],'involuntary',100*(float(item['value'])-involuntary_base)/involuntary_base])
+	hispanic_average=sum([float(temp_hispanic[0]['value']),float(temp_hispanic[1]['value']),float(temp_hispanic[2]['value'])])/3
+	for item in temp_hispanic:
+		if(int(item['year'])>1999):
+			data.append(['hispanic',item['periodName']+', '+item['year'],float(item['value'])])
 
-	with open(location+'jobs-g6.csv','w') as cfile:
+	data.append(['white','','',three_month_ago.strftime("%B")+', '+str(three_month_ago.year),three_month_future.strftime("%B")+', '+str(three_month_future.year),white_average])
+	data.append(['black','','',three_month_ago.strftime("%B")+', '+str(three_month_ago.year),three_month_future.strftime("%B")+', '+str(three_month_future.year),black_average])
+	data.append(['hispanic','','',three_month_ago.strftime("%B")+', '+str(three_month_ago.year),three_month_future.strftime("%B")+', '+str(three_month_future.year),hispanic_average])
+
+	with open(location+'jobs-g4.csv','w') as cfile:
 		writer=csv.writer(cfile)
 		for row in data:
 			writer.writerow(row)	
 
 
 def graph5(json_data):
-	pass
+	# graph 5. This is done a little differently than 1,2,3,7,8 because I fell on my head and became smarter. Instead of trying to maintain and update
+	# a master file, just overwrite the file every time, guarantees you always have as much data as possible and no re-writing the same thing over
+	# and over.
+	temp_u3=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS14000000'][0]['data']
+	temp_u6=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS13327709'][0]['data']
+	data=[['date','u','type']]
+
+	# build all rows
+	for item in temp_u3:
+		if(int(item['year'])>1999):
+			data.append([item['periodName']+', '+item['year'],item['value'],'u3'])
+
+	for item in temp_u6:
+		if(int(item['year'])>1999):
+			data.append([item['periodName']+', '+item['year'],item['value'],'u6'])
+
+	with open(location+'jobs-g5.csv','w') as cfile:
+		writer=csv.writer(cfile)
+		for row in data:
+			writer.writerow(row)	
 
 
 def graph6(json_data):
@@ -222,86 +270,29 @@ def graph6(json_data):
 			writer.writerow(row)	
 
 
-def graph7(json_data,comparison):
-	# graph 7 - load existing data:
-	with open(location+'jobs-g7.csv','rU') as cfile:
-		reader=csv.reader(cfile)
-		data=[row for row in reader]
+def graph7(json_data):
+	# graph 5. This is done a little differently than 1,2,3,7,8 because I fell on my head and became smarter. Instead of trying to maintain and update
+	# a master file, just overwrite the file every time, guarantees you always have as much data as possible and no re-writing the same thing over
+	# and over.
+	temp_inflation=[series for series in json_data['Results']['series'] if series['seriesID']=='CUUR0000SA0'][0]['data']
+	temp_earnings=[series for series in json_data['Results']['series'] if series['seriesID']=='CES0500000008'][0]['data']
+	data=[['date','value','type']]
 
-	temp_inflation=[series for series in json_data['Results']['series'] if series['seriesID']=='CUUR0000SA0'][0]
-	temp_earnings=[series for series in json_data['Results']['series'] if series['seriesID']=='CES0500000008'][0]
-	temp_inflation_compare=[series for series in comparison['Results']['series'] if series['seriesID']=='CUUR0000SA0'][0]
-	temp_earnings_compare=[series for series in comparison['Results']['series'] if series['seriesID']=='CES0500000008'][0]
+	# build all rows
+	for item in temp_earnings:
+		if(int(item['year'])>2005):
+			yearago=[float(new['value']) for new in temp_earnings if int(new['year'])==int(item['year'])-1 and new['period']==item['period']][0]
+			data.append([item['periodName']+', '+item['year'],100*(float(item['value'])-yearago)/yearago,'earnings'])
 
-	oneyearstring=month+', '+str(year-1)
-	oys_1=one_month_ago.strftime("%B")+', '+str(one_month_ago.year-1)
-	oys_2=two_month_ago.strftime("%B")+', '+str(two_month_ago.year-1)
-	oys_3=three_month_ago.strftime("%B")+', '+str(three_month_ago.year-1)
-
-	if temp_earnings!=temp_earnings_compare:
-		for time_period in temp_earnings['data']:
-			if time_period['periodName']==month and int(time_period['year'])==year:
-				earnings=float(time_period['value'])
-				for row in data:
-					if row[0]==oneyearstring and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-						old_earnings=row[3]
-
-				growth=100*(float(earnings)-float(old_earnings))/float(old_earnings)
-				data.append([datestring,growth,'Year over year change in earnings for production and nonsupervisory workers',earnings])
-
-		# since there is preliminary data, make sure you go back three months and check those against the new data
-		for i,row in enumerate(data):
-			if row[0]==two_string and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-				match=[item for item in temp_earnings['data'] if item['periodName']==two_month_ago.strftime("%B") and int(item['year'])==two_month_ago.year]
-				earnings=float(match[0]['value'])
-
-				for row in data:
-					if row[0]==oys_2 and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-						old_earnings=row[3]
-
-				data[i][1]=100*(float(earnings)-float(old_earnings))/float(old_earnings)
-				data[i][3]=earnings
-
-			if row[0]==three_string and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-				match=[item for item in temp_earnings['data'] if item['periodName']==three_month_ago.strftime("%B") and int(item['year'])==three_month_ago.year]
-				earnings=float(match[0]['value'])
-
-				for row in data:
-					if row[0]==oys_3 and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-						old_earnings=row[3]
-
-				data[i][1]=100*(float(earnings)-float(old_earnings))/float(old_earnings)
-				data[i][3]=earnings
-
-			if row[0]==one_string and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-				match=[item for item in temp_earnings['data'] if item['periodName']==one_month_ago.strftime("%B") and int(item['year'])==one_month_ago.year]
-				earnings=float(match[0]['value'])
-
-				for row in data:
-					if row[0]==oys_1 and row[2]=='Year over year change in earnings for production and nonsupervisory workers':
-						old_earnings=row[3]
-
-				data[i][1]=100*(float(earnings)-float(old_earnings))/float(old_earnings)
-				data[i][3]=earnings
-
-	if temp_inflation!=temp_inflation_compare:
-		for time_period in temp_inflation['data']:
-			if time_period['periodName']==one_month_ago.strftime("%B") and int(time_period['year'])==one_month_ago.year:
-				inflation=float(time_period['value'])
-
-		oneyearonemonthstring=one_month_ago.strftime("%B")+', '+str(one_month_ago.year-1)
-		for row in data:
-			if row[0]==oneyearonemonthstring and row[2]=='Annual inflation':
-				old_inflation=row[3]
-
-		growth=100*(float(inflation)-float(old_inflation))/float(old_inflation)
-		newstring=one_month_ago.strftime("%B")+', '+str(one_month_ago.year)
-		data.append([newstring,growth,'Annual inflation',inflation])
+	for item in temp_inflation:
+		if(int(item['year'])>2005):
+			yearago=[float(new['value']) for new in temp_inflation if int(new['year'])==int(item['year'])-1 and new['period']==item['period']][0]
+			data.append([item['periodName']+', '+item['year'],100*(float(item['value'])-yearago)/yearago,'inflation'])
 
 	with open(location+'jobs-g7.csv','w') as cfile:
 		writer=csv.writer(cfile)
 		for row in data:
-			writer.writerow(row)
+			writer.writerow(row)	
 
 
 def graph8(json_data,comparison):
@@ -330,9 +321,6 @@ def graph8(json_data,comparison):
 	edu_average=2941.7
 	hea_average=15734.3
 	lei_average=13427.9
-
-	print temp_construction
-	print temp_construction_compare
 
 	if temp_construction!=temp_construction_compare:
 		for time_period in temp_construction['data']:
@@ -535,11 +523,13 @@ if comparison!=json_data:
 	print 'graph 2 done'
 	graph3(json_data,comparison)
 	print 'graph 3 done'
-#	graph4(json_data,comparison)
-#	graph5(json_data,comparison)
+	graph4(json_data)
+	print 'graph 4 done'
+	graph5(json_data)
+	print 'graph 5 done'
 	graph6(json_data)
 	print 'graph 6 done'
-	graph7(json_data,comparison)
+	graph7(json_data)
 	print 'graph 7 done'
 	graph8(json_data,comparison)
 	print 'graph 8 done'
