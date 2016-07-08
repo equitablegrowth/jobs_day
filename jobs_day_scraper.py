@@ -491,8 +491,7 @@ print location
 key=open(location+'key.txt','r').read()
 
 # get the month and year of the *previous* month
-# now=datetime.date.today()
-now=datetime.date(2016,6,24)
+now=datetime.date.today()
 currentmonth=monthdelta(now,-1)
 one_month_ago=monthdelta(currentmonth,-1)
 two_month_ago=monthdelta(currentmonth,-2)
