@@ -86,11 +86,11 @@ def graph3(json_data):
 	# build all rows
 	for item in temp_private:
 		if(int(item['year'])>2006):
-			data.append([item['periodName']+', '+item['year'],item['value'],100*item['value']/start_emp_private,'Private Sector'])
+			data.append([item['periodName']+', '+item['year'],item['value'],100*float(item['value'])/start_emp_private,'Private Sector'])
 
 	for item in temp_public:
 		if(int(item['year'])>2006):
-			data.append([item['periodName']+', '+item['year'],item['value'],100*item['value']/start_emp_public,'Public Sector'])
+			data.append([item['periodName']+', '+item['year'],item['value'],100*float(item['value'])/start_emp_public,'Public Sector'])
 
 	with open(location+'jobs-g3.csv','w') as cfile:
 		writer=csv.writer(cfile)
@@ -206,7 +206,7 @@ def graph7(json_data):
 		for row in data:
 			writer.writerow(row)
 
-def graph3(json_data):
+def graph8(json_data):
 	# graph 3. This is done a little differently than 1,2,3,7,8 because I fell on my head and became smarter. Instead of trying to maintain and update
 	# a master file, just overwrite the file every time, guarantees you always have as much data as possible and no re-writing the same thing over
 	# and over.
@@ -229,27 +229,27 @@ def graph3(json_data):
 	# build all rows
 	for item in temp_construction:
 		if(int(item['year'])>2006):
-			data.append([item['periodName']+', '+item['year'],100*item['value']/con_average,'Construction',item['value']])
+			data.append([item['periodName']+', '+item['year'],100*float(item['value'])/con_average,'Construction',item['value']])
 
 	for item in temp_manufacturing:
 		if(int(item['year'])>2006):
-			data.append([item['periodName']+', '+item['year'],100*item['value']/man_average,'Manufacturing',item['value']])
+			data.append([item['periodName']+', '+item['year'],100*float(item['value'])/man_average,'Manufacturing',item['value']])
 
 	for item in temp_retail:
 		if(int(item['year'])>2006):
-			data.append([item['periodName']+', '+item['year'],100*item['value']/ret_average,'Retail',item['value']])
+			data.append([item['periodName']+', '+item['year'],100*float(item['value'])/ret_average,'Retail',item['value']])
 
 	for item in temp_ed:
 		if(int(item['year'])>2006):
-			data.append([item['periodName']+', '+item['year'],100*item['value']/edu_average,'Educational services',item['value']])
+			data.append([item['periodName']+', '+item['year'],100*float(item['value'])/edu_average,'Educational services',item['value']])
 
 	for item in temp_health:
 		if(int(item['year'])>2006):
-			data.append([item['periodName']+', '+item['year'],100*item['value']/hea_average,'Health care and social assistance',item['value']])
+			data.append([item['periodName']+', '+item['year'],100*float(item['value'])/hea_average,'Health care and social assistance',item['value']])
 
 	for item in temp_leisure:
 		if(int(item['year'])>2006):
-			data.append([item['periodName']+', '+item['year'],100*item['value']/lei_average,'Leisure and hospitality',item['value']])
+			data.append([item['periodName']+', '+item['year'],100*float(item['value'])/lei_average,'Leisure and hospitality',item['value']])
 
 	with open(location+'jobs-g8.csv','w') as cfile:
 		writer=csv.writer(cfile)
