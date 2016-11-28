@@ -16,7 +16,7 @@ def monthdelta(date, delta):
 
 def data_scrape():
 	# get all series data in one go
-	series=['LNS11000000','LNS12032197','LNS12032200','LNS12300060','CES0500000001','CES9000000001','LNS14000003','LNS14000006','LNS14000009','LNS14000000','LNS13327709','LNS12032194','LNS12600000','CES0500000008','CES2000000001','CES3000000001','CES4200000001','CES6561000001','CES6562000001','CUUR0000SA0','CES7000000001']
+	series=['LNS12327659','LNS12327660','LNS12327689','LNS12327662','LNS11000000','LNS12032197','LNS12032200','LNS12300060','CES0500000001','CES9000000001','LNS14000003','LNS14000006','LNS14000009','LNS14000000','LNS13327709','LNS12032194','LNS12600000','CES0500000008','CES2000000001','CES3000000001','CES4200000001','CES6561000001','CES6562000001','CUUR0000SA0','CES7000000001']
 	data = json.dumps({"seriesid": series,"startyear":2000, "endyear":year, "registrationKey":key})
 	p = requests.post('http://api.bls.gov/publicAPI/v2/timeseries/data/', data=data, headers=headers)
 	json_data = json.loads(p.text)
@@ -72,6 +72,7 @@ def graph2(json_data,comparison):
 			for row in data:
 				writer.writerow(row)
 
+
 def graph3(json_data):
 	# graph 3. This is done a little differently than 1,2,3,7,8 because I fell on my head and became smarter. Instead of trying to maintain and update
 	# a master file, just overwrite the file every time, guarantees you always have as much data as possible and no re-writing the same thing over
@@ -96,6 +97,7 @@ def graph3(json_data):
 		writer=csv.writer(cfile)
 		for row in data:
 			writer.writerow(row)
+
 
 def graph4(json_data):
 	# graph 4. This is done a little differently than 1,2,3,7,8 because I fell on my head and became smarter. Instead of trying to maintain and update
@@ -206,6 +208,7 @@ def graph7(json_data):
 		for row in data:
 			writer.writerow(row)
 
+
 def graph8(json_data):
 	# graph 3. This is done a little differently than 1,2,3,7,8 because I fell on my head and became smarter. Instead of trying to maintain and update
 	# a master file, just overwrite the file every time, guarantees you always have as much data as possible and no re-writing the same thing over
@@ -256,6 +259,43 @@ def graph8(json_data):
 		for row in data:
 			writer.writerow(row)
 
+
+def graph9(json_data):
+	# graph 9 is epop by educational attainment.
+	# < high school, age 25+: LNS12327659
+	# high school graduates, age 25+: LNS12327660
+	# Some college or associate degree, age 25+: LNS12327689
+	# bachelor's degree, age 25+: LNS12327662
+
+	temp_1=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12327659'][0]['data']
+	temp_2=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12327660'][0]['data']
+	temp_3=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12327689'][0]['data']
+	temp_4=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12327662'][0]['data']
+	data=[['type','date','epop']]
+
+	# build all rows
+	for item in temp_1:
+		if(int(item['year'])>1999):
+			data.append(['Less than high school',item['periodName']+', '+item['year'],float(item['value'])])
+
+	for item in temp_2:
+		if(int(item['year'])>1999):
+			data.append(['High school graduate',item['periodName']+', '+item['year'],float(item['value'])])
+
+	for item in temp_3:
+		if(int(item['year'])>1999):
+			data.append(['Some college',item['periodName']+', '+item['year'],float(item['value'])])
+
+	for item in temp_4:
+		if(int(item['year'])>1999):
+			data.append(["Bachelor's degree or greater",item['periodName']+', '+item['year'],float(item['value'])])
+
+	with open(location+'jobs-g9.csv','w') as cfile:
+		writer=csv.writer(cfile)
+		for row in data:
+			writer.writerow(row)	
+
+
 location=os.path.dirname(os.path.realpath(__file__))+'/'
 # location='/home/eqgrowth/webapps/jobsday/data/'
 print location
@@ -286,27 +326,27 @@ headers = {'Content-type': 'application/json'}
 # MAIN FUNCTIONS
 json_data=data_scrape()
 print 'got data'
-comparison=compare(json_data)
-print 'loaded comparison'
-if comparison!=json_data:
-	graph1(json_data)
-	print 'graph 1 done'
-	graph2(json_data,comparison)
-	print 'graph 2 done'
-	graph3(json_data)
-	print 'graph 3 done'
-	graph4(json_data)
-	print 'graph 4 done'
-	graph5(json_data)
-	print 'graph 5 done'
-	graph6(json_data)
-	print 'graph 6 done'
-	graph7(json_data)
-	print 'graph 7 done'
-	graph8(json_data)
-	print 'graph 8 done'
 
-	pickle.dump(json_data,open(location+'json_data.p','wb'))
+graph1(json_data)
+print 'graph 1 done'
+graph2(json_data,comparison)
+print 'graph 2 done'
+graph3(json_data)
+print 'graph 3 done'
+graph4(json_data)
+print 'graph 4 done'
+graph5(json_data)
+print 'graph 5 done'
+graph6(json_data)
+print 'graph 6 done'
+graph7(json_data)
+print 'graph 7 done'
+graph8(json_data)
+print 'graph 8 done'
+graph9(json_data)
+print 'graph 9 done'
+
+pickle.dump(json_data,open(location+'json_data.p','wb'))
 
 
 
