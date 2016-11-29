@@ -293,7 +293,123 @@ def graph9(json_data):
 	with open(location+'jobs-g9.csv','w') as cfile:
 		writer=csv.writer(cfile)
 		for row in data:
-			writer.writerow(row)	
+			writer.writerow(row)
+
+
+def graph10(json_data):
+	# reasons for unemployment
+	# new entrants: LNS13023570
+	# reentrants: LNS13023558
+	# job leavers: LNS13023706
+	# job losers: LNS13023622
+
+	temp_1=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS13023570'][0]['data']
+	temp_2=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS13023558'][0]['data']
+	temp_3=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS13023706'][0]['data']
+	temp_4=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS13023622'][0]['data']
+	data=[['type','date','epop']]
+
+	# build all rows
+	for item in temp_1:
+		if(int(item['year'])>1999):
+			data.append(['New entrants to labor force',item['periodName']+', '+item['year'],float(item['value'])])
+
+	for item in temp_2:
+		if(int(item['year'])>1999):
+			data.append(['Re-entering labor force',item['periodName']+', '+item['year'],float(item['value'])])
+
+	for item in temp_3:
+		if(int(item['year'])>1999):
+			data.append(['Leaving job',item['periodName']+', '+item['year'],float(item['value'])])
+
+	for item in temp_4:
+		if(int(item['year'])>1999):
+			data.append(["Lost job",item['periodName']+', '+item['year'],float(item['value'])])
+
+	with open(location+'jobs-g10.csv','w') as cfile:
+		writer=csv.writer(cfile)
+		for row in data:
+			writer.writerow(row)
+
+
+def graph11(json_data):
+	# duration of unemployment
+	# unemployed <5 weeks: LNS13008397
+	# 5-14 weeks: LNS13025701
+	# 15+: LNS13008517
+
+	temp_1=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS13008397'][0]['data']
+	temp_2=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS13025701'][0]['data']
+	temp_3=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS13008517'][0]['data']
+	data=[['type','date','epop']]
+
+	# build all rows
+	for item in temp_1:
+		if(int(item['year'])>1999):
+			data.append(['Fewer than 5 weeks',item['periodName']+', '+item['year'],float(item['value'])])
+
+	for item in temp_2:
+		if(int(item['year'])>1999):
+			data.append(['5-14 weeks',item['periodName']+', '+item['year'],float(item['value'])])
+
+	for item in temp_3:
+		if(int(item['year'])>1999):
+			data.append(['More than 15 weeks',item['periodName']+', '+item['year'],float(item['value'])])
+
+	with open(location+'jobs-g11.csv','w') as cfile:
+		writer=csv.writer(cfile)
+		for row in data:
+			writer.writerow(row)
+
+
+def graph12(json_data):
+	# earnings by sector
+	# construction: CES2000000003
+	# manufacturing: CES3000000003
+	# financial: CES5500000003
+	# professional: CES6000000003
+	# education/health: CES6500000003
+	# leisure: CEU7000000003
+
+	temp_1=[series for series in json_data['Results']['series'] if series['seriesID']=='CES2000000003'][0]['data']
+	temp_2=[series for series in json_data['Results']['series'] if series['seriesID']=='CES3000000003'][0]['data']
+	temp_3=[series for series in json_data['Results']['series'] if series['seriesID']=='CES5500000003'][0]['data']
+	temp_4=[series for series in json_data['Results']['series'] if series['seriesID']=='CES6000000003'][0]['data']
+	temp_5=[series for series in json_data['Results']['series'] if series['seriesID']=='CES6500000003'][0]['data']
+	temp_6=[series for series in json_data['Results']['series'] if series['seriesID']=='CEU7000000003'][0]['data']
+	data=[['type','date','epop']]
+
+	# build all rows
+	for item in temp_1:
+		if(int(item['year'])>1999):
+			data.append(['Construction',item['periodName']+', '+item['year'],float(item['value'])])
+
+	for item in temp_2:
+		if(int(item['year'])>1999):
+			data.append(['Manufacturing',item['periodName']+', '+item['year'],float(item['value'])])
+
+	for item in temp_3:
+		if(int(item['year'])>1999):
+			data.append(['Financial',item['periodName']+', '+item['year'],float(item['value'])])
+
+	for item in temp_4:
+		if(int(item['year'])>1999):
+			data.append(['Professional',item['periodName']+', '+item['year'],float(item['value'])])
+
+	for item in temp_5:
+		if(int(item['year'])>1999):
+			data.append(['Education/Health',item['periodName']+', '+item['year'],float(item['value'])])
+
+	for item in temp_6:
+		if(int(item['year'])>1999):
+			data.append(['Leisure and Hospitality',item['periodName']+', '+item['year'],float(item['value'])])
+
+	with open(location+'jobs-g12.csv','w') as cfile:
+		writer=csv.writer(cfile)
+		for row in data:
+			writer.writerow(row)
+
+
 
 
 location=os.path.dirname(os.path.realpath(__file__))+'/'

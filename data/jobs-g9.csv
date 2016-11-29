@@ -1,0 +1,809 @@
+type,date,epop
+< High school,"October, 2016",7.3
+< High school,"September, 2016",8.5
+< High school,"August, 2016",7.2
+< High school,"July, 2016",6.3
+< High school,"June, 2016",7.5
+< High school,"May, 2016",7.1
+< High school,"April, 2016",7.5
+< High school,"March, 2016",7.4
+< High school,"February, 2016",7.3
+< High school,"January, 2016",7.4
+< High school,"December, 2015",6.7
+< High school,"November, 2015",6.8
+< High school,"October, 2015",7.3
+< High school,"September, 2015",7.7
+< High school,"August, 2015",7.7
+< High school,"July, 2015",8.2
+< High school,"June, 2015",8.1
+< High school,"May, 2015",8.5
+< High school,"April, 2015",8.5
+< High school,"March, 2015",8.6
+< High school,"February, 2015",8.4
+< High school,"January, 2015",8.6
+< High school,"December, 2014",8.8
+< High school,"November, 2014",8.6
+< High school,"October, 2014",7.9
+< High school,"September, 2014",8.3
+< High school,"August, 2014",9.1
+< High school,"July, 2014",9.4
+< High school,"June, 2014",9.1
+< High school,"May, 2014",9.0
+< High school,"April, 2014",8.7
+< High school,"March, 2014",9.4
+< High school,"February, 2014",10.0
+< High school,"January, 2014",9.6
+< High school,"December, 2013",9.9
+< High school,"November, 2013",10.6
+< High school,"October, 2013",10.8
+< High school,"September, 2013",10.5
+< High school,"August, 2013",11.2
+< High school,"July, 2013",10.7
+< High school,"June, 2013",10.7
+< High school,"May, 2013",10.9
+< High school,"April, 2013",11.5
+< High school,"March, 2013",11.1
+< High school,"February, 2013",11.3
+< High school,"January, 2013",12.0
+< High school,"December, 2012",11.7
+< High school,"November, 2012",11.9
+< High school,"October, 2012",12.0
+< High school,"September, 2012",11.6
+< High school,"August, 2012",11.8
+< High school,"July, 2012",12.3
+< High school,"June, 2012",12.7
+< High school,"May, 2012",12.9
+< High school,"April, 2012",12.5
+< High school,"March, 2012",12.8
+< High school,"February, 2012",13.2
+< High school,"January, 2012",13.0
+< High school,"December, 2011",13.7
+< High school,"November, 2011",12.8
+< High school,"October, 2011",13.5
+< High school,"September, 2011",14.3
+< High school,"August, 2011",14.1
+< High school,"July, 2011",14.5
+< High school,"June, 2011",14.4
+< High school,"May, 2011",14.5
+< High school,"April, 2011",14.7
+< High school,"March, 2011",14.1
+< High school,"February, 2011",14.0
+< High school,"January, 2011",14.3
+< High school,"December, 2010",15.0
+< High school,"November, 2010",15.4
+< High school,"October, 2010",15.0
+< High school,"September, 2010",15.6
+< High school,"August, 2010",14.1
+< High school,"July, 2010",13.5
+< High school,"June, 2010",14.2
+< High school,"May, 2010",14.6
+< High school,"April, 2010",14.7
+< High school,"March, 2010",14.9
+< High school,"February, 2010",15.8
+< High school,"January, 2010",15.3
+< High school,"December, 2009",15.0
+< High school,"November, 2009",14.7
+< High school,"October, 2009",15.2
+< High school,"September, 2009",14.9
+< High school,"August, 2009",15.6
+< High school,"July, 2009",15.3
+< High school,"June, 2009",15.6
+< High school,"May, 2009",15.2
+< High school,"April, 2009",14.9
+< High school,"March, 2009",14.0
+< High school,"February, 2009",13.2
+< High school,"January, 2009",12.4
+< High school,"December, 2008",11.1
+< High school,"November, 2008",10.8
+< High school,"October, 2008",10.3
+< High school,"September, 2008",9.8
+< High school,"August, 2008",9.7
+< High school,"July, 2008",8.6
+< High school,"June, 2008",8.7
+< High school,"May, 2008",8.1
+< High school,"April, 2008",7.7
+< High school,"March, 2008",8.4
+< High school,"February, 2008",7.4
+< High school,"January, 2008",7.7
+< High school,"December, 2007",7.7
+< High school,"November, 2007",7.7
+< High school,"October, 2007",7.3
+< High school,"September, 2007",7.6
+< High school,"August, 2007",6.5
+< High school,"July, 2007",7.3
+< High school,"June, 2007",6.7
+< High school,"May, 2007",6.6
+< High school,"April, 2007",7.1
+< High school,"March, 2007",6.9
+< High school,"February, 2007",7.3
+< High school,"January, 2007",6.9
+< High school,"December, 2006",6.7
+< High school,"November, 2006",6.6
+< High school,"October, 2006",5.8
+< High school,"September, 2006",6.4
+< High school,"August, 2006",6.8
+< High school,"July, 2006",7.1
+< High school,"June, 2006",7.1
+< High school,"May, 2006",7.0
+< High school,"April, 2006",6.9
+< High school,"March, 2006",6.9
+< High school,"February, 2006",7.1
+< High school,"January, 2006",7.0
+< High school,"December, 2005",7.4
+< High school,"November, 2005",7.4
+< High school,"October, 2005",7.3
+< High school,"September, 2005",8.2
+< High school,"August, 2005",7.5
+< High school,"July, 2005",7.5
+< High school,"June, 2005",6.9
+< High school,"May, 2005",7.8
+< High school,"April, 2005",8.2
+< High school,"March, 2005",7.8
+< High school,"February, 2005",7.8
+< High school,"January, 2005",7.7
+< High school,"December, 2004",8.1
+< High school,"November, 2004",8.0
+< High school,"October, 2004",8.4
+< High school,"September, 2004",8.7
+< High school,"August, 2004",8.1
+< High school,"July, 2004",8.2
+< High school,"June, 2004",8.7
+< High school,"May, 2004",8.8
+< High school,"April, 2004",8.6
+< High school,"March, 2004",8.8
+< High school,"February, 2004",8.6
+< High school,"January, 2004",9.1
+< High school,"December, 2003",7.9
+< High school,"November, 2003",8.7
+< High school,"October, 2003",9.0
+< High school,"September, 2003",8.6
+< High school,"August, 2003",9.3
+< High school,"July, 2003",8.8
+< High school,"June, 2003",9.4
+< High school,"May, 2003",9.0
+< High school,"April, 2003",8.5
+< High school,"March, 2003",8.6
+< High school,"February, 2003",8.9
+< High school,"January, 2003",8.8
+< High school,"December, 2002",8.9
+< High school,"November, 2002",9.0
+< High school,"October, 2002",8.7
+< High school,"September, 2002",7.8
+< High school,"August, 2002",8.4
+< High school,"July, 2002",8.6
+< High school,"June, 2002",7.8
+< High school,"May, 2002",8.3
+< High school,"April, 2002",9.1
+< High school,"March, 2002",8.1
+< High school,"February, 2002",8.3
+< High school,"January, 2002",8.2
+< High school,"December, 2001",8.3
+< High school,"November, 2001",8.0
+< High school,"October, 2001",7.6
+< High school,"September, 2001",7.7
+< High school,"August, 2001",7.2
+< High school,"July, 2001",6.8
+< High school,"June, 2001",6.9
+< High school,"May, 2001",6.6
+< High school,"April, 2001",6.8
+< High school,"March, 2001",6.8
+< High school,"February, 2001",7.5
+< High school,"January, 2001",6.7
+< High school,"December, 2000",5.9
+< High school,"November, 2000",6.5
+< High school,"October, 2000",6.4
+< High school,"September, 2000",6.2
+< High school,"August, 2000",6.2
+< High school,"July, 2000",6.4
+< High school,"June, 2000",6.3
+< High school,"May, 2000",6.9
+< High school,"April, 2000",6.2
+< High school,"March, 2000",6.6
+< High school,"February, 2000",6.0
+< High school,"January, 2000",6.4
+High school graduate,"October, 2016",5.5
+High school graduate,"September, 2016",5.2
+High school graduate,"August, 2016",5.1
+High school graduate,"July, 2016",5.0
+High school graduate,"June, 2016",5.0
+High school graduate,"May, 2016",5.1
+High school graduate,"April, 2016",5.4
+High school graduate,"March, 2016",5.4
+High school graduate,"February, 2016",5.3
+High school graduate,"January, 2016",5.3
+High school graduate,"December, 2015",5.6
+High school graduate,"November, 2015",5.4
+High school graduate,"October, 2015",5.3
+High school graduate,"September, 2015",5.3
+High school graduate,"August, 2015",5.5
+High school graduate,"July, 2015",5.5
+High school graduate,"June, 2015",5.4
+High school graduate,"May, 2015",5.7
+High school graduate,"April, 2015",5.4
+High school graduate,"March, 2015",5.3
+High school graduate,"February, 2015",5.4
+High school graduate,"January, 2015",5.4
+High school graduate,"December, 2014",5.3
+High school graduate,"November, 2014",5.7
+High school graduate,"October, 2014",5.8
+High school graduate,"September, 2014",5.4
+High school graduate,"August, 2014",6.1
+High school graduate,"July, 2014",6.0
+High school graduate,"June, 2014",5.8
+High school graduate,"May, 2014",6.4
+High school graduate,"April, 2014",6.2
+High school graduate,"March, 2014",6.3
+High school graduate,"February, 2014",6.4
+High school graduate,"January, 2014",6.5
+High school graduate,"December, 2013",7.0
+High school graduate,"November, 2013",7.2
+High school graduate,"October, 2013",7.3
+High school graduate,"September, 2013",7.6
+High school graduate,"August, 2013",7.4
+High school graduate,"July, 2013",7.5
+High school graduate,"June, 2013",7.7
+High school graduate,"May, 2013",7.3
+High school graduate,"April, 2013",7.5
+High school graduate,"March, 2013",7.7
+High school graduate,"February, 2013",7.9
+High school graduate,"January, 2013",8.1
+High school graduate,"December, 2012",8.0
+High school graduate,"November, 2012",8.0
+High school graduate,"October, 2012",8.3
+High school graduate,"September, 2012",8.5
+High school graduate,"August, 2012",8.6
+High school graduate,"July, 2012",8.5
+High school graduate,"June, 2012",8.5
+High school graduate,"May, 2012",8.2
+High school graduate,"April, 2012",8.0
+High school graduate,"March, 2012",8.1
+High school graduate,"February, 2012",8.3
+High school graduate,"January, 2012",8.5
+High school graduate,"December, 2011",8.7
+High school graduate,"November, 2011",8.8
+High school graduate,"October, 2011",9.4
+High school graduate,"September, 2011",9.4
+High school graduate,"August, 2011",9.3
+High school graduate,"July, 2011",9.1
+High school graduate,"June, 2011",10.0
+High school graduate,"May, 2011",9.6
+High school graduate,"April, 2011",9.9
+High school graduate,"March, 2011",9.7
+High school graduate,"February, 2011",9.7
+High school graduate,"January, 2011",9.5
+High school graduate,"December, 2010",9.8
+High school graduate,"November, 2010",10.0
+High school graduate,"October, 2010",9.8
+High school graduate,"September, 2010",9.7
+High school graduate,"August, 2010",10.0
+High school graduate,"July, 2010",10.0
+High school graduate,"June, 2010",10.6
+High school graduate,"May, 2010",10.9
+High school graduate,"April, 2010",10.8
+High school graduate,"March, 2010",11.0
+High school graduate,"February, 2010",10.7
+High school graduate,"January, 2010",10.2
+High school graduate,"December, 2009",10.6
+High school graduate,"November, 2009",10.3
+High school graduate,"October, 2009",11.0
+High school graduate,"September, 2009",10.6
+High school graduate,"August, 2009",9.7
+High school graduate,"July, 2009",9.5
+High school graduate,"June, 2009",9.7
+High school graduate,"May, 2009",10.0
+High school graduate,"April, 2009",9.5
+High school graduate,"March, 2009",9.2
+High school graduate,"February, 2009",8.5
+High school graduate,"January, 2009",8.2
+High school graduate,"December, 2008",7.8
+High school graduate,"November, 2008",7.0
+High school graduate,"October, 2008",6.4
+High school graduate,"September, 2008",6.2
+High school graduate,"August, 2008",5.8
+High school graduate,"July, 2008",5.4
+High school graduate,"June, 2008",5.1
+High school graduate,"May, 2008",5.0
+High school graduate,"April, 2008",5.0
+High school graduate,"March, 2008",5.1
+High school graduate,"February, 2008",4.7
+High school graduate,"January, 2008",4.7
+High school graduate,"December, 2007",4.7
+High school graduate,"November, 2007",4.5
+High school graduate,"October, 2007",4.6
+High school graduate,"September, 2007",4.5
+High school graduate,"August, 2007",4.4
+High school graduate,"July, 2007",4.6
+High school graduate,"June, 2007",4.1
+High school graduate,"May, 2007",4.4
+High school graduate,"April, 2007",4.1
+High school graduate,"March, 2007",4.0
+High school graduate,"February, 2007",4.3
+High school graduate,"January, 2007",4.3
+High school graduate,"December, 2006",4.3
+High school graduate,"November, 2006",4.3
+High school graduate,"October, 2006",4.1
+High school graduate,"September, 2006",4.1
+High school graduate,"August, 2006",4.6
+High school graduate,"July, 2006",4.5
+High school graduate,"June, 2006",4.1
+High school graduate,"May, 2006",4.3
+High school graduate,"April, 2006",4.4
+High school graduate,"March, 2006",4.1
+High school graduate,"February, 2006",4.4
+High school graduate,"January, 2006",4.4
+High school graduate,"December, 2005",4.5
+High school graduate,"November, 2005",4.8
+High school graduate,"October, 2005",4.8
+High school graduate,"September, 2005",4.9
+High school graduate,"August, 2005",4.7
+High school graduate,"July, 2005",4.8
+High school graduate,"June, 2005",4.8
+High school graduate,"May, 2005",4.5
+High school graduate,"April, 2005",4.4
+High school graduate,"March, 2005",4.7
+High school graduate,"February, 2005",4.9
+High school graduate,"January, 2005",4.7
+High school graduate,"December, 2004",4.8
+High school graduate,"November, 2004",4.8
+High school graduate,"October, 2004",4.8
+High school graduate,"September, 2004",4.7
+High school graduate,"August, 2004",4.9
+High school graduate,"July, 2004",5.0
+High school graduate,"June, 2004",5.2
+High school graduate,"May, 2004",5.1
+High school graduate,"April, 2004",5.3
+High school graduate,"March, 2004",5.3
+High school graduate,"February, 2004",5.0
+High school graduate,"January, 2004",4.9
+High school graduate,"December, 2003",5.4
+High school graduate,"November, 2003",5.3
+High school graduate,"October, 2003",5.5
+High school graduate,"September, 2003",5.3
+High school graduate,"August, 2003",5.4
+High school graduate,"July, 2003",5.4
+High school graduate,"June, 2003",5.7
+High school graduate,"May, 2003",5.6
+High school graduate,"April, 2003",5.7
+High school graduate,"March, 2003",5.5
+High school graduate,"February, 2003",5.4
+High school graduate,"January, 2003",5.2
+High school graduate,"December, 2002",5.3
+High school graduate,"November, 2002",5.2
+High school graduate,"October, 2002",4.9
+High school graduate,"September, 2002",5.0
+High school graduate,"August, 2002",5.2
+High school graduate,"July, 2002",5.1
+High school graduate,"June, 2002",5.4
+High school graduate,"May, 2002",5.5
+High school graduate,"April, 2002",5.5
+High school graduate,"March, 2002",5.4
+High school graduate,"February, 2002",5.3
+High school graduate,"January, 2002",5.3
+High school graduate,"December, 2001",4.9
+High school graduate,"November, 2001",5.0
+High school graduate,"October, 2001",4.7
+High school graduate,"September, 2001",4.4
+High school graduate,"August, 2001",4.4
+High school graduate,"July, 2001",4.1
+High school graduate,"June, 2001",3.8
+High school graduate,"May, 2001",3.9
+High school graduate,"April, 2001",3.7
+High school graduate,"March, 2001",3.8
+High school graduate,"February, 2001",3.7
+High school graduate,"January, 2001",3.8
+High school graduate,"December, 2000",3.5
+High school graduate,"November, 2000",3.5
+High school graduate,"October, 2000",3.6
+High school graduate,"September, 2000",3.5
+High school graduate,"August, 2000",3.7
+High school graduate,"July, 2000",3.4
+High school graduate,"June, 2000",3.4
+High school graduate,"May, 2000",3.4
+High school graduate,"April, 2000",3.3
+High school graduate,"March, 2000",3.3
+High school graduate,"February, 2000",3.4
+High school graduate,"January, 2000",3.4
+Some college,"October, 2016",3.8
+Some college,"September, 2016",4.2
+Some college,"August, 2016",4.3
+Some college,"July, 2016",4.3
+Some college,"June, 2016",4.2
+Some college,"May, 2016",3.9
+Some college,"April, 2016",4.1
+Some college,"March, 2016",4.1
+Some college,"February, 2016",4.2
+Some college,"January, 2016",4.2
+Some college,"December, 2015",4.1
+Some college,"November, 2015",4.4
+Some college,"October, 2015",4.3
+Some college,"September, 2015",4.3
+Some college,"August, 2015",4.4
+Some college,"July, 2015",4.4
+Some college,"June, 2015",4.2
+Some college,"May, 2015",4.4
+Some college,"April, 2015",4.6
+Some college,"March, 2015",4.8
+Some college,"February, 2015",5.0
+Some college,"January, 2015",5.2
+Some college,"December, 2014",5.0
+Some college,"November, 2014",4.8
+Some college,"October, 2014",4.9
+Some college,"September, 2014",5.4
+Some college,"August, 2014",5.4
+Some college,"July, 2014",5.4
+Some college,"June, 2014",5.2
+Some college,"May, 2014",5.5
+Some college,"April, 2014",5.7
+Some college,"March, 2014",5.9
+Some college,"February, 2014",6.0
+Some college,"January, 2014",5.9
+Some college,"December, 2013",6.1
+Some college,"November, 2013",6.4
+Some college,"October, 2013",6.4
+Some college,"September, 2013",6.1
+Some college,"August, 2013",6.1
+Some college,"July, 2013",6.1
+Some college,"June, 2013",6.5
+Some college,"May, 2013",6.5
+Some college,"April, 2013",6.3
+Some college,"March, 2013",6.3
+Some college,"February, 2013",6.5
+Some college,"January, 2013",6.9
+Some college,"December, 2012",6.8
+Some college,"November, 2012",6.5
+Some college,"October, 2012",6.9
+Some college,"September, 2012",6.6
+Some college,"August, 2012",6.7
+Some college,"July, 2012",7.2
+Some college,"June, 2012",7.3
+Some college,"May, 2012",7.7
+Some college,"April, 2012",7.6
+Some college,"March, 2012",7.5
+Some college,"February, 2012",7.2
+Some college,"January, 2012",7.1
+Some college,"December, 2011",7.6
+Some college,"November, 2011",7.7
+Some college,"October, 2011",8.1
+Some college,"September, 2011",8.5
+Some college,"August, 2011",8.3
+Some college,"July, 2011",8.3
+Some college,"June, 2011",8.3
+Some college,"May, 2011",7.8
+Some college,"April, 2011",7.5
+Some college,"March, 2011",7.5
+Some college,"February, 2011",7.9
+Some college,"January, 2011",8.1
+Some college,"December, 2010",8.1
+Some college,"November, 2010",8.6
+Some college,"October, 2010",8.2
+Some college,"September, 2010",8.9
+Some college,"August, 2010",8.7
+Some college,"July, 2010",8.3
+Some college,"June, 2010",8.1
+Some college,"May, 2010",8.2
+Some college,"April, 2010",8.4
+Some college,"March, 2010",8.4
+Some college,"February, 2010",8.1
+Some college,"January, 2010",8.6
+Some college,"December, 2009",8.7
+Some college,"November, 2009",8.8
+Some college,"October, 2009",8.7
+Some college,"September, 2009",8.3
+Some college,"August, 2009",8.1
+Some college,"July, 2009",8.0
+Some college,"June, 2009",8.1
+Some college,"May, 2009",7.8
+Some college,"April, 2009",7.7
+Some college,"March, 2009",7.5
+Some college,"February, 2009",7.3
+Some college,"January, 2009",6.5
+Some college,"December, 2008",5.7
+Some college,"November, 2008",5.5
+Some college,"October, 2008",5.2
+Some college,"September, 2008",5.0
+Some college,"August, 2008",4.9
+Some college,"July, 2008",4.6
+Some college,"June, 2008",4.3
+Some college,"May, 2008",4.3
+Some college,"April, 2008",4.0
+Some college,"March, 2008",3.9
+Some college,"February, 2008",3.8
+Some college,"January, 2008",3.7
+Some college,"December, 2007",3.8
+Some college,"November, 2007",3.3
+Some college,"October, 2007",3.5
+Some college,"September, 2007",3.4
+Some college,"August, 2007",3.6
+Some college,"July, 2007",3.6
+Some college,"June, 2007",3.5
+Some college,"May, 2007",3.4
+Some college,"April, 2007",3.6
+Some college,"March, 2007",3.6
+Some college,"February, 2007",3.6
+Some college,"January, 2007",3.8
+Some college,"December, 2006",3.4
+Some college,"November, 2006",3.4
+Some college,"October, 2006",3.4
+Some college,"September, 2006",3.6
+Some college,"August, 2006",3.5
+Some college,"July, 2006",3.6
+Some college,"June, 2006",3.5
+Some college,"May, 2006",3.8
+Some college,"April, 2006",3.8
+Some college,"March, 2006",3.7
+Some college,"February, 2006",3.6
+Some college,"January, 2006",3.6
+Some college,"December, 2005",3.9
+Some college,"November, 2005",3.9
+Some college,"October, 2005",3.8
+Some college,"September, 2005",3.7
+Some college,"August, 2005",3.5
+Some college,"July, 2005",3.7
+Some college,"June, 2005",3.9
+Some college,"May, 2005",3.9
+Some college,"April, 2005",3.9
+Some college,"March, 2005",3.9
+Some college,"February, 2005",4.2
+Some college,"January, 2005",4.1
+Some college,"December, 2004",4.2
+Some college,"November, 2004",4.3
+Some college,"October, 2004",4.2
+Some college,"September, 2004",4.1
+Some college,"August, 2004",4.1
+Some college,"July, 2004",4.2
+Some college,"June, 2004",4.1
+Some college,"May, 2004",4.0
+Some college,"April, 2004",4.1
+Some college,"March, 2004",4.7
+Some college,"February, 2004",4.3
+Some college,"January, 2004",4.5
+Some college,"December, 2003",4.4
+Some college,"November, 2003",4.7
+Some college,"October, 2003",4.8
+Some college,"September, 2003",4.9
+Some college,"August, 2003",4.9
+Some college,"July, 2003",5.0
+Some college,"June, 2003",4.9
+Some college,"May, 2003",4.9
+Some college,"April, 2003",4.8
+Some college,"March, 2003",4.8
+Some college,"February, 2003",4.7
+Some college,"January, 2003",4.7
+Some college,"December, 2002",4.9
+Some college,"November, 2002",4.7
+Some college,"October, 2002",4.6
+Some college,"September, 2002",4.6
+Some college,"August, 2002",4.4
+Some college,"July, 2002",4.4
+Some college,"June, 2002",4.6
+Some college,"May, 2002",4.8
+Some college,"April, 2002",4.6
+Some college,"March, 2002",4.3
+Some college,"February, 2002",4.2
+Some college,"January, 2002",4.3
+Some college,"December, 2001",4.2
+Some college,"November, 2001",4.2
+Some college,"October, 2001",4.1
+Some college,"September, 2001",3.4
+Some college,"August, 2001",3.3
+Some college,"July, 2001",3.0
+Some college,"June, 2001",3.0
+Some college,"May, 2001",3.0
+Some college,"April, 2001",2.9
+Some college,"March, 2001",2.7
+Some college,"February, 2001",2.8
+Some college,"January, 2001",3.0
+Some college,"December, 2000",2.7
+Some college,"November, 2000",2.6
+Some college,"October, 2000",2.4
+Some college,"September, 2000",2.6
+Some college,"August, 2000",2.8
+Some college,"July, 2000",2.8
+Some college,"June, 2000",2.7
+Some college,"May, 2000",2.6
+Some college,"April, 2000",2.6
+Some college,"March, 2000",2.8
+Some college,"February, 2000",3.0
+Some college,"January, 2000",2.6
+Bachelor's degree or greater,"October, 2016",2.6
+Bachelor's degree or greater,"September, 2016",2.5
+Bachelor's degree or greater,"August, 2016",2.7
+Bachelor's degree or greater,"July, 2016",2.5
+Bachelor's degree or greater,"June, 2016",2.5
+Bachelor's degree or greater,"May, 2016",2.4
+Bachelor's degree or greater,"April, 2016",2.4
+Bachelor's degree or greater,"March, 2016",2.6
+Bachelor's degree or greater,"February, 2016",2.5
+Bachelor's degree or greater,"January, 2016",2.5
+Bachelor's degree or greater,"December, 2015",2.5
+Bachelor's degree or greater,"November, 2015",2.5
+Bachelor's degree or greater,"October, 2015",2.5
+Bachelor's degree or greater,"September, 2015",2.5
+Bachelor's degree or greater,"August, 2015",2.5
+Bachelor's degree or greater,"July, 2015",2.5
+Bachelor's degree or greater,"June, 2015",2.5
+Bachelor's degree or greater,"May, 2015",2.7
+Bachelor's degree or greater,"April, 2015",2.7
+Bachelor's degree or greater,"March, 2015",2.5
+Bachelor's degree or greater,"February, 2015",2.7
+Bachelor's degree or greater,"January, 2015",2.8
+Bachelor's degree or greater,"December, 2014",2.8
+Bachelor's degree or greater,"November, 2014",3.1
+Bachelor's degree or greater,"October, 2014",3.0
+Bachelor's degree or greater,"September, 2014",2.9
+Bachelor's degree or greater,"August, 2014",3.2
+Bachelor's degree or greater,"July, 2014",3.1
+Bachelor's degree or greater,"June, 2014",3.3
+Bachelor's degree or greater,"May, 2014",3.2
+Bachelor's degree or greater,"April, 2014",3.3
+Bachelor's degree or greater,"March, 2014",3.4
+Bachelor's degree or greater,"February, 2014",3.4
+Bachelor's degree or greater,"January, 2014",3.3
+Bachelor's degree or greater,"December, 2013",3.3
+Bachelor's degree or greater,"November, 2013",3.4
+Bachelor's degree or greater,"October, 2013",3.8
+Bachelor's degree or greater,"September, 2013",3.7
+Bachelor's degree or greater,"August, 2013",3.4
+Bachelor's degree or greater,"July, 2013",3.8
+Bachelor's degree or greater,"June, 2013",3.8
+Bachelor's degree or greater,"May, 2013",3.8
+Bachelor's degree or greater,"April, 2013",3.9
+Bachelor's degree or greater,"March, 2013",3.8
+Bachelor's degree or greater,"February, 2013",3.8
+Bachelor's degree or greater,"January, 2013",3.8
+Bachelor's degree or greater,"December, 2012",4.0
+Bachelor's degree or greater,"November, 2012",3.9
+Bachelor's degree or greater,"October, 2012",3.7
+Bachelor's degree or greater,"September, 2012",4.0
+Bachelor's degree or greater,"August, 2012",4.1
+Bachelor's degree or greater,"July, 2012",4.1
+Bachelor's degree or greater,"June, 2012",4.0
+Bachelor's degree or greater,"May, 2012",3.9
+Bachelor's degree or greater,"April, 2012",4.0
+Bachelor's degree or greater,"March, 2012",4.1
+Bachelor's degree or greater,"February, 2012",4.2
+Bachelor's degree or greater,"January, 2012",4.3
+Bachelor's degree or greater,"December, 2011",4.1
+Bachelor's degree or greater,"November, 2011",4.4
+Bachelor's degree or greater,"October, 2011",4.3
+Bachelor's degree or greater,"September, 2011",4.2
+Bachelor's degree or greater,"August, 2011",4.2
+Bachelor's degree or greater,"July, 2011",4.2
+Bachelor's degree or greater,"June, 2011",4.3
+Bachelor's degree or greater,"May, 2011",4.5
+Bachelor's degree or greater,"April, 2011",4.5
+Bachelor's degree or greater,"March, 2011",4.4
+Bachelor's degree or greater,"February, 2011",4.3
+Bachelor's degree or greater,"January, 2011",4.3
+Bachelor's degree or greater,"December, 2010",4.8
+Bachelor's degree or greater,"November, 2010",5.0
+Bachelor's degree or greater,"October, 2010",4.6
+Bachelor's degree or greater,"September, 2010",4.5
+Bachelor's degree or greater,"August, 2010",4.6
+Bachelor's degree or greater,"July, 2010",4.5
+Bachelor's degree or greater,"June, 2010",4.4
+Bachelor's degree or greater,"May, 2010",4.6
+Bachelor's degree or greater,"April, 2010",4.8
+Bachelor's degree or greater,"March, 2010",4.9
+Bachelor's degree or greater,"February, 2010",4.9
+Bachelor's degree or greater,"January, 2010",4.9
+Bachelor's degree or greater,"December, 2009",4.9
+Bachelor's degree or greater,"November, 2009",4.8
+Bachelor's degree or greater,"October, 2009",4.7
+Bachelor's degree or greater,"September, 2009",5.0
+Bachelor's degree or greater,"August, 2009",4.8
+Bachelor's degree or greater,"July, 2009",4.8
+Bachelor's degree or greater,"June, 2009",4.8
+Bachelor's degree or greater,"May, 2009",4.8
+Bachelor's degree or greater,"April, 2009",4.4
+Bachelor's degree or greater,"March, 2009",4.3
+Bachelor's degree or greater,"February, 2009",4.1
+Bachelor's degree or greater,"January, 2009",3.9
+Bachelor's degree or greater,"December, 2008",3.6
+Bachelor's degree or greater,"November, 2008",3.2
+Bachelor's degree or greater,"October, 2008",3.1
+Bachelor's degree or greater,"September, 2008",2.6
+Bachelor's degree or greater,"August, 2008",2.8
+Bachelor's degree or greater,"July, 2008",2.5
+Bachelor's degree or greater,"June, 2008",2.4
+Bachelor's degree or greater,"May, 2008",2.2
+Bachelor's degree or greater,"April, 2008",2.1
+Bachelor's degree or greater,"March, 2008",2.1
+Bachelor's degree or greater,"February, 2008",2.0
+Bachelor's degree or greater,"January, 2008",2.1
+Bachelor's degree or greater,"December, 2007",2.1
+Bachelor's degree or greater,"November, 2007",2.2
+Bachelor's degree or greater,"October, 2007",2.1
+Bachelor's degree or greater,"September, 2007",2.0
+Bachelor's degree or greater,"August, 2007",2.1
+Bachelor's degree or greater,"July, 2007",2.1
+Bachelor's degree or greater,"June, 2007",2.0
+Bachelor's degree or greater,"May, 2007",2.0
+Bachelor's degree or greater,"April, 2007",1.9
+Bachelor's degree or greater,"March, 2007",1.8
+Bachelor's degree or greater,"February, 2007",1.9
+Bachelor's degree or greater,"January, 2007",2.1
+Bachelor's degree or greater,"December, 2006",1.8
+Bachelor's degree or greater,"November, 2006",1.8
+Bachelor's degree or greater,"October, 2006",1.9
+Bachelor's degree or greater,"September, 2006",2.1
+Bachelor's degree or greater,"August, 2006",1.8
+Bachelor's degree or greater,"July, 2006",2.0
+Bachelor's degree or greater,"June, 2006",2.1
+Bachelor's degree or greater,"May, 2006",2.1
+Bachelor's degree or greater,"April, 2006",2.2
+Bachelor's degree or greater,"March, 2006",2.2
+Bachelor's degree or greater,"February, 2006",2.2
+Bachelor's degree or greater,"January, 2006",2.1
+Bachelor's degree or greater,"December, 2005",2.1
+Bachelor's degree or greater,"November, 2005",2.3
+Bachelor's degree or greater,"October, 2005",2.3
+Bachelor's degree or greater,"September, 2005",2.3
+Bachelor's degree or greater,"August, 2005",2.1
+Bachelor's degree or greater,"July, 2005",2.3
+Bachelor's degree or greater,"June, 2005",2.3
+Bachelor's degree or greater,"May, 2005",2.4
+Bachelor's degree or greater,"April, 2005",2.4
+Bachelor's degree or greater,"March, 2005",2.4
+Bachelor's degree or greater,"February, 2005",2.4
+Bachelor's degree or greater,"January, 2005",2.4
+Bachelor's degree or greater,"December, 2004",2.5
+Bachelor's degree or greater,"November, 2004",2.5
+Bachelor's degree or greater,"October, 2004",2.5
+Bachelor's degree or greater,"September, 2004",2.6
+Bachelor's degree or greater,"August, 2004",2.7
+Bachelor's degree or greater,"July, 2004",2.6
+Bachelor's degree or greater,"June, 2004",2.7
+Bachelor's degree or greater,"May, 2004",2.9
+Bachelor's degree or greater,"April, 2004",2.9
+Bachelor's degree or greater,"March, 2004",2.9
+Bachelor's degree or greater,"February, 2004",2.9
+Bachelor's degree or greater,"January, 2004",2.9
+Bachelor's degree or greater,"December, 2003",3.0
+Bachelor's degree or greater,"November, 2003",3.1
+Bachelor's degree or greater,"October, 2003",3.1
+Bachelor's degree or greater,"September, 2003",3.2
+Bachelor's degree or greater,"August, 2003",3.2
+Bachelor's degree or greater,"July, 2003",3.1
+Bachelor's degree or greater,"June, 2003",3.1
+Bachelor's degree or greater,"May, 2003",3.0
+Bachelor's degree or greater,"April, 2003",3.0
+Bachelor's degree or greater,"March, 2003",3.1
+Bachelor's degree or greater,"February, 2003",3.0
+Bachelor's degree or greater,"January, 2003",3.0
+Bachelor's degree or greater,"December, 2002",2.9
+Bachelor's degree or greater,"November, 2002",2.9
+Bachelor's degree or greater,"October, 2002",3.0
+Bachelor's degree or greater,"September, 2002",2.9
+Bachelor's degree or greater,"August, 2002",2.8
+Bachelor's degree or greater,"July, 2002",3.0
+Bachelor's degree or greater,"June, 2002",3.0
+Bachelor's degree or greater,"May, 2002",2.9
+Bachelor's degree or greater,"April, 2002",2.9
+Bachelor's degree or greater,"March, 2002",2.8
+Bachelor's degree or greater,"February, 2002",2.9
+Bachelor's degree or greater,"January, 2002",2.9
+Bachelor's degree or greater,"December, 2001",3.0
+Bachelor's degree or greater,"November, 2001",2.9
+Bachelor's degree or greater,"October, 2001",2.6
+Bachelor's degree or greater,"September, 2001",2.5
+Bachelor's degree or greater,"August, 2001",2.3
+Bachelor's degree or greater,"July, 2001",2.2
+Bachelor's degree or greater,"June, 2001",2.2
+Bachelor's degree or greater,"May, 2001",2.1
+Bachelor's degree or greater,"April, 2001",2.1
+Bachelor's degree or greater,"March, 2001",2.0
+Bachelor's degree or greater,"February, 2001",1.6
+Bachelor's degree or greater,"January, 2001",1.6
+Bachelor's degree or greater,"December, 2000",1.5
+Bachelor's degree or greater,"November, 2000",1.5
+Bachelor's degree or greater,"October, 2000",1.6
+Bachelor's degree or greater,"September, 2000",1.9
+Bachelor's degree or greater,"August, 2000",1.9
+Bachelor's degree or greater,"July, 2000",1.7
+Bachelor's degree or greater,"June, 2000",1.6
+Bachelor's degree or greater,"May, 2000",1.6
+Bachelor's degree or greater,"April, 2000",1.5
+Bachelor's degree or greater,"March, 2000",1.7
+Bachelor's degree or greater,"February, 2000",1.6
+Bachelor's degree or greater,"January, 2000",1.8
