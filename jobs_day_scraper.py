@@ -16,7 +16,7 @@ def monthdelta(date, delta):
 
 def data_scrape():
 	# get all series data in one go
-	series=['LNS12327659','LNS12327660','LNS12327689','LNS12327662','LNS11000000','LNS12032197','LNS12032200','LNS12300060','CES0500000001','CES9000000001','LNS14000003','LNS14000006','LNS14000009','LNS14000000','LNS13327709','LNS12032194','LNS12600000','CES0500000008','CES2000000001','CES3000000001','CES4200000001','CES6561000001','CES6562000001','CUUR0000SA0','CES7000000001']
+	series=['CES2000000003','CES3000000003','CES5500000003','CES6000000003','CES6500000003','CEU7000000003','LNS13008397','LNS13025701','LNS13008517','LNS13023570','LNS13023558','LNS13023706','LNS13023622','LNS14027662','LNS14027660','LNS14027659','LNS14027689','LNS12327659','LNS12327660','LNS12327689','LNS12327662','LNS11000000','LNS12032197','LNS12032200','LNS12300060','CES0500000001','CES9000000001','LNS14000003','LNS14000006','LNS14000009','LNS14000000','LNS13327709','LNS12032194','LNS12600000','CES0500000008','CES2000000001','CES3000000001','CES4200000001','CES6561000001','CES6562000001','CUUR0000SA0','CES7000000001']
 	data = json.dumps({"seriesid": series,"startyear":2000, "endyear":year, "registrationKey":key})
 	p = requests.post('http://api.bls.gov/publicAPI/v2/timeseries/data/', data=data, headers=headers)
 	json_data = json.loads(p.text)
@@ -49,28 +49,25 @@ def graph1(json_data):
 			writer.writerow(row)	
 
 
-def graph2(json_data,comparison):
+def graph2(json_data):
 	# graph 2 - load existing data:
 	with open(location+'jobs-g2.csv','rU') as cfile:
 		reader=csv.reader(cfile)
 		data=[row for row in reader]
 
 	temp=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12300060'][0]
-	temp_compare=[series for series in comparison['Results']['series'] if series['seriesID']=='LNS12300060'][0]
 
-	if temp!=temp_compare:
-		print 'graph 2 changed'
-		elapsed=8+((2016-now.year)*12)+(1/12)*(now.month-1)
+	elapsed=8+((2016-now.year)*12)+(1/12)*(now.month-1)
 
-		for time_period in temp['data']:
-			if time_period['periodName']==month and int(time_period['year'])==year:
-				epop=float(time_period['value'])
-				data.append(['December 2007-Present',epop,elapsed,float(epop)-79.7])
+	for time_period in temp['data']:
+		if time_period['periodName']==month and int(time_period['year'])==year:
+			epop=float(time_period['value'])
+			data.append(['December 2007-Present',epop,elapsed,float(epop)-79.7])
 
-		with open(location+'jobs-g2.csv','w') as cfile:
-			writer=csv.writer(cfile)
-			for row in data:
-				writer.writerow(row)
+	with open(location+'jobs-g2.csv','w') as cfile:
+		writer=csv.writer(cfile)
+		for row in data:
+			writer.writerow(row)
 
 
 def graph3(json_data):
@@ -261,22 +258,21 @@ def graph8(json_data):
 
 
 def graph9(json_data):
-	# graph 9 is epop by educational attainment.
-	# < high school, age 25+: LNS12327659
-	# high school graduates, age 25+: LNS12327660
-	# Some college or associate degree, age 25+: LNS12327689
-	# bachelor's degree, age 25+: LNS12327662
+	# college grads - LNS14027662
+	# high school grads - LNS14027660
+	# < high school - LNS14027659
+	# some college - LNS14027689
 
-	temp_1=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12327659'][0]['data']
-	temp_2=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12327660'][0]['data']
-	temp_3=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12327689'][0]['data']
-	temp_4=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12327662'][0]['data']
+	temp_1=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS14027659'][0]['data']
+	temp_2=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS14027660'][0]['data']
+	temp_3=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS14027689'][0]['data']
+	temp_4=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS14027662'][0]['data']
 	data=[['type','date','epop']]
 
 	# build all rows
 	for item in temp_1:
 		if(int(item['year'])>1999):
-			data.append(['Less than high school',item['periodName']+', '+item['year'],float(item['value'])])
+			data.append(['<High school',item['periodName']+', '+item['year'],float(item['value'])])
 
 	for item in temp_2:
 		if(int(item['year'])>1999):
@@ -410,6 +406,42 @@ def graph12(json_data):
 			writer.writerow(row)
 
 
+def graph13(json_data):
+	# graph 13 is epop by educational attainment.
+	# < high school, age 25+: LNS12327659
+	# high school graduates, age 25+: LNS12327660
+	# Some college or associate degree, age 25+: LNS12327689
+	# bachelor's degree, age 25+: LNS12327662
+
+	temp_1=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12327659'][0]['data']
+	temp_2=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12327660'][0]['data']
+	temp_3=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12327689'][0]['data']
+	temp_4=[series for series in json_data['Results']['series'] if series['seriesID']=='LNS12327662'][0]['data']
+	data=[['type','date','epop']]
+
+	# build all rows
+	for item in temp_1:
+		if(int(item['year'])>1999):
+			data.append(['Less than high school',item['periodName']+', '+item['year'],float(item['value'])])
+
+	for item in temp_2:
+		if(int(item['year'])>1999):
+			data.append(['High school graduate',item['periodName']+', '+item['year'],float(item['value'])])
+
+	for item in temp_3:
+		if(int(item['year'])>1999):
+			data.append(['Some college',item['periodName']+', '+item['year'],float(item['value'])])
+
+	for item in temp_4:
+		if(int(item['year'])>1999):
+			data.append(["Bachelor's degree or greater",item['periodName']+', '+item['year'],float(item['value'])])
+
+	with open(location+'jobs-g13.csv','w') as cfile:
+		writer=csv.writer(cfile)
+		for row in data:
+			writer.writerow(row)
+
+
 
 
 location=os.path.dirname(os.path.realpath(__file__))+'/'
@@ -445,7 +477,7 @@ print 'got data'
 
 graph1(json_data)
 print 'graph 1 done'
-graph2(json_data,comparison)
+graph2(json_data)
 print 'graph 2 done'
 graph3(json_data)
 print 'graph 3 done'
@@ -461,6 +493,14 @@ graph8(json_data)
 print 'graph 8 done'
 graph9(json_data)
 print 'graph 9 done'
+graph10(json_data)
+print 'graph 10 done'
+graph11(json_data)
+print 'graph 11 done'
+graph12(json_data)
+print 'graph 12 done'
+graph13(json_data)
+print 'graph 13 done'
 
 pickle.dump(json_data,open(location+'json_data.p','wb'))
 
