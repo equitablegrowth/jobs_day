@@ -18,7 +18,7 @@ def data_scrape():
 	# get all series data in one go
 	series=['CES2000000003','CES3000000003','CES5500000003','CES6000000003','CES6500000003','CEU7000000003','LNS13008397','LNS13025701','LNS13008517','LNS13023570','LNS13023558','LNS13023706','LNS13023622','LNS14027662','LNS14027660','LNS14027659','LNS14027689','LNS12327659','LNS12327660','LNS12327689','LNS12327662','LNS11000000','LNS12032197','LNS12032200','LNS12300060','CES0500000001','CES9000000001','LNS14000003','LNS14000006','LNS14000009','LNS14000000','LNS13327709','LNS12032194','LNS12600000','CES0500000008','CES2000000001','CES3000000001','CES4200000001','CES6561000001','CES6562000001','CUUR0000SA0','CES7000000001']
 	data = json.dumps({"seriesid": series,"startyear":2000, "endyear":year, "registrationKey":key})
-	p = requests.post('http://api.bls.gov/publicAPI/v2/timeseries/data/', data=data, headers=headers)
+	p = requests.post('https://api.bls.gov/publicAPI/v2/timeseries/data/', data=data, headers=headers)
 	json_data = json.loads(p.text)
 	return json_data
 
@@ -26,7 +26,6 @@ def compare(json_data):
 	# compare the json_data object to existing object
 	temp=pickle.load(open(location+'json_data.p','r'))		
 	return temp
-
 
 def graph1(json_data):
 	# graph 1. This is done a little differently than 1,2,3,7,8 because I fell on my head and became smarter. Instead of trying to maintain and update
